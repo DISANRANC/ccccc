@@ -1,0 +1,93 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "507821",
+      "name": "群蜂业务管理",
+      "font_class": "qunfengyewuguanli",
+      "unicode": "e7c0",
+      "unicode_decimal": 59328
+    },
+    {
+      "icon_id": "691961",
+      "name": "系统业务管理",
+      "font_class": "xitongyewuguanli",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "807967",
+      "name": "统计",
+      "font_class": "tongji",
+      "unicode": "e631",
+      "unicode_decimal": 58929
+    },
+    {
+      "icon_id": "1987009",
+      "name": "用户",
+      "font_class": "user",
+      "unicode": "e6a6",
+      "unicode_decimal": 59046
+    },
+    {
+      "icon_id": "3978028",
+      "name": "统计",
+      "font_class": "tongji1",
+      "unicode": "e628",
+      "unicode_decimal": 58920
+    },
+    {
+      "icon_id": "4878208",
+      "name": "业务管理",
+      "font_class": "business-management",
+      "unicode": "e6c3",
+      "unicode_decimal": 59075
+    },
+    {
+      "icon_id": "5065483",
+      "name": "统计",
+      "font_class": "shuangsechangyongtubiao-",
+      "unicode": "e608",
+      "unicode_decimal": 58888
+    },
+    {
+      "icon_id": "5428140",
+      "name": "业务管理",
+      "font_class": "yewuguanli",
+      "unicode": "e607",
+      "unicode_decimal": 58887
+    },
+    {
+      "icon_id": "7171189",
+      "name": "综合业务管理平台",
+      "font_class": "yewuguanli1",
+      "unicode": "e62d",
+      "unicode_decimal": 58925
+    },
+    {
+      "icon_id": "10143467",
+      "name": "用户",
+      "font_class": "yonghu",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "11527459",
+      "name": "运用管理平台",
+      "font_class": "yunyongguanlipingtai",
+      "unicode": "e681",
+      "unicode_decimal": 59009
+    },
+    {
+      "icon_id": "11607771",
+      "name": "运用管理平台",
+      "font_class": "yunyongguanlipingtai1",
+      "unicode": "e682",
+      "unicode_decimal": 59010
+    }
+  ]
+}
