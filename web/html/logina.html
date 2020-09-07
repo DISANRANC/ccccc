@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>厦门科技馆</title>
+  <meta name="keywords" content="厦门科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+  <meta name="description"
+    content="厦门科技馆位于厦门市文化艺术中心，于2007年3月16日正式对外开放，建筑面积21000平方米，常设展厅面积12000平方米，设有&ldquo;海洋摇篮&rdquo;、&ldquo;探索发现&rdquo;、&ldquo;创造文明&rdquo;、&ldquo;和谐发展&rdquo;、&ldquo;儿童未来&rdquo;5大主题展馆，以及1个健康主题乐园、1个光学展区、1个&ldquo;海峡两岸海洋科技展示馆&rdquo;、3个特效影院，馆藏设施近400套件。">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="stylesheet" type="text/css" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+  <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/nprogress.js"></script>
+  <script type="text/javascript" src="/js/wow.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      new WOW().init();
+      NProgress.start();
+      NProgress.done();
+    })
+  </script>
+  <!--[if lt IE 9]><script type="text/javascript">window.location.href='http://cdn.dmeng.net/upgrade-your-browser.html?referrer='+location.href;</script><![endif]-->
+</head>
+<body ontouchstart>
+  <div class="login">
+    <div class="weui-cell__bd">
+      <div class="loginbox wow fadeup">
+        <div class="login1">
+          <div class="weui-cell__bd">
+            <img src="/images/logo2.png" alt="">
+          </div>
+          <a href="/g" title="" class="back">返回首页</a>
+        </div>
+        <form class="login2" action="#" method="post" id="form1" onsubmit="return false">
+          <div class="input">
+            <div class="weui-cell__bd">
+              <input type="text" name="account" placeholder="请输入您购票时填写的手机号码" class="phone" id="phonenum">
+            </div>
+          </div>
+          <div class="input">
+            <div class="weui-cell__bd">
+              <input type="text" name="sms" placeholder="请输入短信中的验证码" id="smscode">
+            </div>
+            <input type="button" class="retry getcodebtn hand" value="获取验证码"></input>
+          </div>
+          <div class="input">
+            <div class="weui-cell__bd">
+              <input type="text" name="captcha" placeholder="请输入验证码" id="code">
+            </div>
+            <div>
+              <img src="/html/captcha.html" id="captcha" alt="" style="cursor: pointer">
+            </div>
+          </div>
+          <div class="login-tips">
+            <div class="tipsbox">
+              <img src="/images/tishi.png" alt="">
+              <div class="tiptxt"></div>
+            </div>
+          </div>
+          <button type="submit" class="btn1" id="loginbtn">登录</button>
+        </form>
+
+        <div class="login3 clearfix" style="text-align:center;">
+          <div class="item" style="text-align:center;">
+            <img src="/images/weixin.png" alt="">
+            <p>微信登录</p>
+            <div id="login_container"></div>
+          </div>
+          <div class="item" id="qqlogin">
+            <img src="/images/qq.png" alt="">
+            <p>qq登录</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <div class="left">
+      咨询热线：0592-5148555 </div>
+    <div class="navs">
+      <!-- <a href="/g" title="首页">首页</a>
+      <a href="/g/about" title="参观指南">参观指南</a>
+      <a href="/g/news" title="新闻中心">新闻中心</a>
+      <a href="/g/buy" title="游客服务">游客服务</a>
+      <a href="/g/cases" title="展馆活动">展馆活动</a>
+      <a href="/g/login" title="登录/注册">登录/注册</a> -->
+    </div>
+    <div class="right">COPYRIGHT厦门科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备09055120号网安备案号35020302034028
+      <a href="http://beian.miit.gov.cn" target="_blank"></a>
+    </div>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?317b4274e7a05ddafcfecd4d48ac044e";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </footer>
+  <style>
+    #login_container {
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      margin-left: -1rem;
+      display: none
+    }
+    iframe {
+      width: 2rem;
+      height: 2rem;
+    }
+    .loginbox .login3 .item {
+      position: relative
+    }
+    .loginbox .login3 .item:hover #login_container {
+      display: block;
+    }
+  </style>
+  <script type="text/javascript" src="/js/layer/layer.js"></script>
+  <script type="text/javascript" src="http://res.wx.qq.com/connect/zh_CN/htmledition/js/wxLogin.js"></script>
+  <script type="text/javascript" src="/js/Validform/5.3.2/Validform.min.js"></script>
+  <script type="text/javascript">
+    var obj = new WxLogin({
+      self_redirect: false,
+      id: "login_container",
+      appid: "wx81fe00f9f886f85d",
+      scope: "snsapi_login",
+      redirect_uri: encodeURIComponent('http://www.xmstm.com.cn/g/qrlogin'),
+      state: "",
+      style: "black",
+      href: "data:text/css;base64,LmltcG93ZXJCb3ggLmluZm97ZGlzcGxheTpub25lO30NCi5pbXBvd2VyQm94IC50aXRsZXtkaXNwbGF5Om5vbmU7fQ0KLmltcG93ZXJCb3ggLnFyY29kZXttYXJnaW4tdG9wOjA7bWF4LXdpZHRoOjEwMCU7d2lkdGg6YXV0bztib3JkZXI6MH0="
+    });
+    $(function () {
+      $('#qqlogin').click(function () {
+        window.location.href = '/html/qqlogin'
+      })
+      $(".phone").bind('input propertychange', function () {
+        if ($(this).val() > 0) {
+          $(".loginbox .login2 .btn1").addClass('on')
+        } else {
+          $(".loginbox .login2 .btn1").removeClass('on')
+        }
+      })
+
+      function isMobile(value) {
+
+        if (!/(^1[3|4|5|7|8][0-9]{9}$)/.test(value)) {
+
+          return false;
+
+        }
+
+        return true;
+
+      }
+      $("#captcha").click(function () {
+        console.log(123)
+        $(this).attr("src", "/html/captcha.html?t=" + new Date().getTime())
+      });
+      var countdown = 60;
+
+      function settime(obj) {
+        if (countdown == 0) {
+          obj.attr("disabled", false);
+          obj.val("获取验证码");
+          countdown = 60;
+          return;
+        } else {
+          obj.attr("disabled", true);
+          obj.val("重新发送(" + countdown + ")");
+          countdown--;
+        }
+        setTimeout(function () {
+          settime(obj)
+        }, 1000)
+      }
+      $(".retry").click(function () {
+
+
+        var mobile = $("#phonenum").val()
+        if (mobile == '') {
+          layer.msg("手机号码不能为空")
+          return false;
+        }
+        if (!isMobile(mobile)) {
+          layer.msg("请输入正确的手机号码")
+          return false;
+        }
+
+
+        var type = "login";
+        //console.log(mobile)
+        $.ajax({
+          type: 'POST',
+          url: '/g/sms',
+          dataType: "json",
+          data: {
+            mobile: mobile,
+            type: type
+          },
+          success: function (e) {
+            if (e.code == 0) {
+              layer.msg(e.msg)
+              //time($(".getcode"))
+              settime($(".getcodebtn"))
+            } else if (e.code == 1) {
+              layer.msg(e.msg);
+
+            }
+          }
+        })
+      })
+
+      $("#loginbtn").click(function () {
+        var phone = $("#phonenum").val()
+        var sms = $("#smscode").val()
+        var code = $("#code").val()
+        if (!isMobile(phone)) {
+          $(".loginbox .tipsbox").fadeIn()
+          $(".loginbox .tipsbox .tiptxt").text("请输入正确的手机号码")
+        } else if (sms == "") {
+          $(".loginbox .tipsbox").fadeIn()
+          $(".loginbox .tipsbox .tiptxt").text("短信验证码不能为空")
+        } else if (code == "") {
+          $(".loginbox .tipsbox").fadeIn()
+          $(".loginbox .tipsbox .tiptxt").text("验证码不能为空")
+        } else {
+          $("#form1").Validform({
+            tiptype: 2,
+            ajaxPost: true,
+            showAllError: true,
+            callback: function (ret) {
+              if (ret.code) {
+                if (ret.msg == '验证码错误!') {
+                  $("#captcha").click();
+                  $("[name='captcha']").val('');
+                  layer.msg(ret.msg);
+                } else {
+                  layer.alert(ret.msg);
+                }
+              } else {
+                $(".loginbox .tipsbox").fadeOut();
+                layer.msg("登录成功！");
+                window.location.href = "/g/record";
+              }
+            }
+          });
+        }
+      })
+
+    })
+  </script>
+  <style type="text/css">
+    footer {
+      background: #3d464d;
+      height: .55rem;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0
+    }
+
+    @media (max-width: 767px) {
+      footer {
+        position: static;
+      }
+    }
+  </style>
+</body>
+
+</html>

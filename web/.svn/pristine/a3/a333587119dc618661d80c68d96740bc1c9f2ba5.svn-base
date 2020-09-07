@@ -1,0 +1,131 @@
+/* tourenter start */
+    .tourenter .item{
+        box-shadow:0px 0px 10px rgba(0,0,0,.15);
+        display:block;
+        transition:all .3s
+    }
+    .tourenter .item .content{
+        padding: .15rem .2rem;
+    }
+    .tourenter .row{margin:0 -.2rem;}
+    .tourenter .col-sm-4{
+        padding:.2rem;
+    }
+    .tourenter .item .h1{
+        font-size:.2rem;
+        color:#333;
+        margin-bottom:.1rem;
+    }
+    .tourenter .item .imgbox img{
+        height:100%;
+        width:100%;
+        object-fit: cover
+    }
+    .tourenter .item .h2{
+        display:flex;
+        align-items:center;
+    }
+    .tourenter .item .h2 .txt1{
+        border: 1px solid #999;
+        border-radius:3px;
+        font-size:.14rem;
+        color:#999;
+        margin-right:.1rem;
+        padding:2px 5px;
+    }
+    .tourenter .item .h2 .txt2{
+        font-size:.14rem;
+        color:#999;
+    }
+    .tourenter .item .h3{
+        font-size:.18rem;
+        color:#999;
+        margin-top:.1rem
+    }
+    .tourenter .item .h3 span{
+        color:#ff6c31;
+    }
+/* tourenter end */
+
+/* change start */
+    .news1-top .title span {
+        background-color: #2184FF; 
+        border-radius: 0.06rem; 
+        color: #ffffff; 
+        font-size: 0.12rem; 
+        padding: 0.05rem 0.26rem;
+    }
+    .news1-top .item .time {
+        font-size: .18rem;
+    }
+    header .logo {
+        width: 1.80rem;
+        font-family: 'Microsoft Yahei';
+        font-weight: bold; 
+        color: #ffffff;
+        font-size: 0.2rem;
+    }
+    .news1-top .item .time {
+        font-size: .16rem;
+    }
+    .banner2 .banner-title .en {
+        font-size: .17rem;
+        color: #ffffff;
+        font-family: "Georgia";
+        line-height: 2;
+    }
+    .banner2 .bgimg {
+        height: 6.0rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .subnav .item:after {
+        background: linear-gradient(to right, #43C9DD, #4194F9);
+    }
+    .subnav .item {
+        line-height: .73rem; 
+        font-family: 'Microsoft Yahei';
+        font-weight: bold; 
+        color: #555555;
+    }
+    .subnav .item:not(:last-child):before {
+        width: 0px;
+    }
+    header .header-top {
+        border-bottom: none;
+        /* width: 11.44rem; */
+        /* margin-left: 3.6rem; */
+        height: .7rem;
+        /* background-color: blanchedalmond; */
+    }
+    header {
+        border-bottom: 1px solid rgba(255, 255, 255, .278);
+    }
+/* change end */
+
+/* media start */
+@media (min-width: 1600px){
+    .container2 {
+        margin: 0 3.61rem;
+    }
+}
+@media (min-width: 640px){
+    .container {
+        margin: 0 18.88%;
+    }
+}
+@media (min-width: 1000px){
+    .tourenter .item:hover{transform:translateY(-6px)}
+}
+@media (max-width: 767px){
+    .tourenter{padding:15px 0}
+    .tourenter .item{display:flex;align-items:center;margin-bottom:15px}
+    .tourenter .item .imgbox{width:40%}
+    .tourenter .item .content{padding:0 .2rem;flex:1}
+    .tourenter .item .h1{font-size:14px;margin-bottom:8px}
+    .tourenter .item .h2 .txt1{font-size:12px;}
+    .tourenter .item .h2 .txt2{font-size:12px;}
+    .tourenter .item .h3{font-size:14px;margin-top:12px}
+    .tourenter .col-sm-4{padding:0 .2rem;}
+}
+/* media end */

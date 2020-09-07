@@ -1,0 +1,406 @@
+
+body{
+    background-color: #f9f9f9;
+}
+
+.container2-bg {
+    margin: 0 11%;
+    background-color: rgb(255, 255, 255);
+}
+.exhibitionHall {
+    margin: 2.45% 18.75%;
+}
+/* tourenter start */
+    .tourenter .item{
+        box-shadow:0px 0px 10px rgba(0,0,0,.15);
+        display:block;
+        transition:all .3s
+    }
+    .tourenter .item .content{
+        padding: .15rem .2rem;
+    }
+    .tourenter .row{margin:0 -.2rem;}
+    .tourenter .col-sm-4{
+        padding:.2rem;
+    }
+    .tourenter .item .h1{
+        font-size:.2rem;
+        color:#333;
+        margin-bottom:.1rem;
+    }
+    .tourenter .item .imgbox img{
+        height:100%;
+        width:100%;
+        object-fit: cover
+    }
+    .tourenter .item .h2{
+        display:flex;
+        align-items:center;
+    }
+    .tourenter .item .h2 .txt1{
+        border: 1px solid #999;
+        border-radius:3px;
+        font-size:.14rem;
+        color:#999;
+        margin-right:.1rem;
+        padding:2px 5px;
+    }
+    .tourenter .item .h2 .txt2{
+        font-size:.14rem;
+        color:#999;
+    }
+    .tourenter .item .h3{
+        font-size:.18rem;
+        color:#999;
+        margin-top:.1rem
+    }
+    .tourenter .item .h3 span{
+        color:#ff6c31;
+    }
+/* tourenter end */
+
+/* change start */
+    .news1-top .title span {
+        background-color: #2184FF; 
+        border-radius: 0.06rem; 
+        color: #ffffff; 
+        font-size: 0.11rem; 
+        padding: 0.04rem 0.27rem;
+        font-family: 'Microsoft YaHei';
+    }
+    .news1-top .item .time {
+        font-size: .17rem;
+    }
+    header .logo {
+        width: 1.80rem;
+        font-family: 'Microsoft Yahei';
+        font-weight: bold; 
+        color: #ffffff;
+        font-size: 0.2rem;
+    }
+    .news1-top .item .time {
+        font-size: .16rem;
+    }
+    .banner2 .banner-title .en {
+        font-size: .17rem;
+        color: #ffffff;
+        font-family: "Georgia";
+        line-height: 2;
+    }
+    .banner2 .bgimg {
+        height: 6.0rem;
+        width: 100%;
+        object-fit: cover;
+    }
+    .subnav .item:after {
+        background: linear-gradient(to right, #43C9DD, #4194F9);
+    }
+    .subnav .item {
+        line-height: .73rem; 
+        font-family: 'Microsoft Yahei';
+        font-weight: bold; 
+        color: #555555;
+    }
+    .news1-top .item .txt {
+        font-family: 'Microsoft Yahei';
+        color: #555555;
+    }
+    .news1-top .item .time {
+        font-family: 'Microsoft Yahei';
+        color: #555555;
+    }
+    .subnav .item:not(:last-child):before {
+        width: 0px;
+    }
+    header .header-top {
+        border-bottom: none;
+        height: .7rem;
+    }
+    header {
+        border-bottom: 1px solid rgba(255, 255, 255, .278);
+    }
+    .news1-top {
+        padding: 0 0rem;
+        height: 84px;
+    }
+    /* activity1 start*/
+        .activity1 .one {
+            display: flex;
+        }
+        .activity1 .one .left{
+            flex: 3;
+        }
+        .activity1 .one .right{
+            flex: 2;
+        }
+        .activity1 .one .left{
+            position: relative;
+        }
+        .activity1 .one .left,
+        .activity1 .one .right-top {
+            padding-top: 1.29rem;
+        }
+
+        .activity1 .one .right{
+            padding-right: 1.46rem;
+        }
+        .activity1 .one .right-top{
+            display: flex;
+            border-bottom: none;
+        }
+        .activity1 .one .right-top .item{
+            flex: 1;
+            height: 2.98rem;
+            background-color: #BFBFBF;
+            margin-left: 0.12rem;
+        }
+        .activity1 .one .right-bottom{
+            display: flex;
+        }
+        .activity1 .one .right-bottom .item{
+            flex: 1;
+            height: 1.20rem;
+            background-color: #BFBFBF;
+            margin-top: -0.18rem;
+            margin-left: 0.12rem;
+        }
+        .activity1 .one .title2 {
+            padding-left: 1.49rem;
+            margin-top: 0.55rem;
+        }
+        .activity1 .one .title1 {
+            padding-left: 1.49rem;
+            /* position: relative; */
+            white-space: nowrap;
+            font-size: 0.28rem;
+            font-family: 'Microsoft YaHei';
+            font-weight: bold;
+            color: #000000;
+            line-height: 1.14rem;
+            letter-spacing:0.03rem;
+
+        }
+        .activity1 .one .title1:after {
+            content: "";
+            width: 2.29rem;
+            height: 0.05rem;
+            background: #E5E5E5;
+            top: auto;
+            bottom: -0rem;
+            left: 1.49rem;
+            position: absolute;
+            z-index: -1;
+        }
+        .activity1 .one .title2{
+            font-size: 0.15rem;
+            font-family: 'STXihei';
+            font-weight: 400;
+            color: #666666;
+            line-height: 0.24rem;
+            letter-spacing:0.03rem;
+        }
+    /* activity1 end */
+
+    /* .two */
+        .two{
+            padding-left: 1.5rem;
+            padding-right: 1.5rem;
+            height: 14rem;
+            width: 100%;
+            position: relative;
+            margin-top: 0.41rem;
+        }
+        .two h1{
+            color: #000000;
+            font-size: 0.24rem;
+            font-family: 'Microsoft YaHei';
+            letter-spacing: 0.03rem;
+        }
+        .two-top{
+            height: 1.7rem;
+            display: flex;
+            margin-top: 1rem;
+            /* border: 1px solid #000000; */
+        }
+        .two-top .two-top-left{
+            background-color: #bfbfbf   ;
+            flex: 2;
+        }
+        .two-top .two-top-center{
+            flex: 6;
+            padding-top: 0.14rem;
+            margin-left: 0.6rem;
+            margin-right: 1.1rem;
+            border-bottom: 1px solid #65adff;
+        }
+        .two-top .two-top-center h1{
+            font-family: 'Microsoft YaHei';
+            font-size: 0.2rem;
+            letter-spacing: 0.03rem;
+        }
+        .two-top .two-top-center .two-top-centent{
+            margin-top: 0.23rem;
+            font-size: 0.16rem;
+            color: #666666;
+            font-family: 'Microsoft YaHei';
+        }
+        .two-top .two-top-center .two-top-time{
+            margin-top: 0.23rem;
+            font-size: 0.16rem;
+            color: #666666;
+            font-family: 'Microsoft YaHei';
+            text-align: right;
+        }
+        .two-top .two-top-right{
+            flex: 1;
+            position: relative;
+        }
+        .two-top .two-top-right:after{
+            content: "";
+            width: 1px;
+            height: 1rem;
+            background: #bfbfbf;
+            top: 0.58rem;
+            left: 20%;
+            position: absolute;
+            /* z-index: ; */
+        }
+        .two-top .two-top-right h1{
+            color: #999999;
+            font-size: 0.36rem;
+            font-family: 'Microsoft YaHei';
+            font-weight: bold;
+            letter-spacing: 0.03rem;
+            text-align: left;
+        }
+
+        
+        .two-bottom{
+            height: 1.7rem;
+            display: flex;
+            /* border: 1px solid #000000;    */
+            margin-top: 1rem;
+        }
+        .two-bottom div{
+            /* border: 1px solid #000000; */
+            /* margin: 10px; */
+        }
+        .two-bottom .two-bottom-left{
+            flex: 1;
+            position: relative;
+        }
+        .two-bottom .two-bottom-left:after{
+            content: "";
+            width: 1px;
+            height: 1rem;
+            background: #bfbfbf;
+            top: 0.58rem;
+            right: 20%;
+            position: absolute;
+        }
+        .two-bottom .two-bottom-left h1{
+            color: #999999;
+            font-size: 0.36rem;
+            font-family: 'Microsoft YaHei';
+            font-weight: bold;
+            letter-spacing: 0.03rem;
+            text-align: right;
+        }
+        .two-bottom .two-bottom-center{
+            flex: 6;
+            padding-top: 0.14rem;
+            margin-left: 0.64rem;
+            margin-right: 0.58rem;
+            position: relative;
+            /* border-bottom: 1px solid #65adff; */
+        }
+        .two-bottom .two-bottom-center:after{
+            content: "";
+            width: 1rem;
+            height: 1px;
+            background: #bfbfbf;
+            top: auto;
+            bottom: 0rem;
+            left: 0rem;
+            position: absolute;
+        }
+        .two-bottom .two-bottom-center h1{
+            font-family: 'Microsoft YaHei';
+            font-size: 0.2rem;
+            letter-spacing: 0.03rem;
+        }
+        .two-bottom .two-bottom-center .two-bottom-centent{
+            margin-top: 0.23rem;
+            font-size: 0.16rem;
+            color: #666666;
+            font-family: 'Microsoft YaHei';
+        }
+        .two-bottom .two-bottom-center .two-bottom-time{
+            margin-top: 0.23rem;
+            font-size: 0.16rem;
+            color: #666666;
+            font-family: 'Microsoft YaHei';
+            text-align: right;
+        }
+        .two-bottom .two-bottom-right{
+            flex: 2;
+            background-color: #bfbfbf;
+        }
+    /* two end */
+    .news1-top{
+        margin: 0rem 13.5%;
+        padding: 0.86rem 0 0.34rem 0;
+        border-bottom: 1px solid #ededed;
+    }
+/* change end */
+
+/* media start */
+    @media (min-width: 1600px){
+        .container2-bg {
+            margin: 0 11%;
+            background-color: rgb(255, 255, 255);
+        }
+        .exhibitionHall {
+            margin: 2.45% 18.75%;
+        }
+    }
+    @media (min-width: 640px){
+        .container {
+            margin: 0 6.48% 0 13.6%;
+        }
+    }
+    @media (min-width: 1000px){
+        .tourenter .item:hover{
+            transform:translateY(-6px)
+        }
+    }
+    @media (max-width: 767px){
+        .tourenter{
+            padding:15px 0
+        }
+        .tourenter .item{
+            display:flex;align-items:center;margin-bottom:15px
+        }
+        .tourenter .item .imgbox{
+            width:40%
+        }
+        .tourenter .item .content{
+            padding:0 .2rem;flex:1
+        }
+        .tourenter .item .h1{
+            font-size:14px;margin-bottom:8px
+        }
+        .tourenter .item .h2 .txt1{
+            font-size:12px;
+        }
+        .tourenter .item .h2 .txt2{
+            font-size:12px;
+        }
+        .tourenter .item .h3{
+            font-size:14px;margin-top:12px;
+        }
+        .tourenter .col-sm-4{
+            padding:0 .2rem;
+        }
+    }
+/* media end */

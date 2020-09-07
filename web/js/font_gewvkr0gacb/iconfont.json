@@ -1,0 +1,51 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "5092011",
+      "name": "营业时间",
+      "font_class": "yingyeshijian",
+      "unicode": "e70b",
+      "unicode_decimal": 59147
+    },
+    {
+      "icon_id": "7091895",
+      "name": "批量设定营业时间",
+      "font_class": "piliangshedingyingyeshijian",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "8351809",
+      "name": "二维码",
+      "font_class": "erweima",
+      "unicode": "e69a",
+      "unicode_decimal": 59034
+    },
+    {
+      "icon_id": "13241607",
+      "name": "电 话 (1)备份",
+      "font_class": "dianhuabeifen",
+      "unicode": "e610",
+      "unicode_decimal": 58896
+    },
+    {
+      "icon_id": "15226173",
+      "name": "子公司-营业时间",
+      "font_class": "zigongsi-yingyeshijian",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "16619106",
+      "name": "电 话",
+      "font_class": "dianhua",
+      "unicode": "e6b4",
+      "unicode_decimal": 59060
+    }
+  ]
+}
