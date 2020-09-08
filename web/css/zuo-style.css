@@ -3058,9 +3058,9 @@
   z-index: 5
 }
 
-.about .one .imgbox {
+/* .about .one .imgbox {
   padding-right: .95rem
-}
+} */
 
 .about .two {
   display: flex;
@@ -3088,13 +3088,13 @@
   margin-right: .5rem
 }
 
-.kexue {
+/* .kexue {
   display: flex;
 }
 
 .kexue .sheji {
   display: flex;
-}
+} */
 
 .about .two .right {
   flex: 1;

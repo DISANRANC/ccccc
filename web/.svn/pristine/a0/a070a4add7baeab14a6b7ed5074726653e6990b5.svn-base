@@ -65,7 +65,7 @@
       cursor: pointer;
     }
 
-    .login-header span a:hover {
+    .login-header span:hover {
       color: #337ab7;
     }
 
@@ -88,12 +88,8 @@
     }
 
     @media (max-width:767px) {
-      .row /deep/ .el-button {
+      .demo-ruleForm /deep/ el-button{
         padding: 12px 6px !important;
-      }
-
-      .row /deep/ input {
-        padding: 0 2px !important;
       }
     }
   </style>
@@ -105,13 +101,11 @@
       <div class="login-container">
         <div class="login-header">
           <div>淮安科技馆</div>
-          <span>
-            <a href="/index">返回首页</a>
-          </span>
+          <span>返回首页</span>
         </div>
-        <el-form :model="ruleForm" :rules="rules" ref="ruleForm" class="demo-ruleForm">
-          <el-form-item prop="mobile">
-            <el-input v-model="ruleForm.mobile" maxlength="11" autocomplete="off" placeholder="请输入手机号码">
+        <el-form :model="ruleForm" status-icon :rules="rules" ref="ruleForm" class="demo-ruleForm">
+          <el-form-item prop="phone">
+            <el-input v-model="ruleForm.phone" maxlength="11" autocomplete="off" placeholder="请输入手机号码">
             </el-input>
           </el-form-item>
           <el-form-item prop="chart">
@@ -127,7 +121,7 @@
             <div class="row">
               <el-input v-model.number="ruleForm.short" maxlength="6" autocomplete="off" placeholder="请输入短信验证码"
                 style="width:2rem;"></el-input>
-              <el-button class="short-btn" type="primary" @click="handlerShort">获取验证码</el-button>
+              <el-button class="short-btn" type="primary">获取验证码</el-button>
             </div>
           </el-form-item>
           <el-form-item>
@@ -162,48 +156,48 @@
   </div>
 
   <script>
-    function isMobile(value) {
-      if (!/(^1[3|4|5|7|8][0-9]{9}$)/.test(value)) {
-        return false;
-      }
-      return true;
-    }
-    var validatePhone = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入手机号码'));
-      } else if (!isMobile(value)) {
-        callback(new Error('请输入正确的手机号码'));
-      } else {
-        callback();
-      }
-    };
-    var validateChart = (rule, value, callback) => {
-      if (value === '') {
-        callback(new Error('请输入图形验证码'));
-      } else {
-        callback();
-      }
-    };
-    var validateShort = (rule, value, callback) => {
-      if (value === '') {
-        return callback(new Error('请输入短信验证码'));
-      } else {
-        callback();
-      }
-    };
     var app = new Vue({
       el: "#app",
       data() {
+        function isMobile(value) {
+          if (!/(^1[3|4|5|7|8][0-9]{9}$)/.test(value)) {
+            return false;
+          }
+          return true;
+        }
+        var validatePhone = (rule, value, callback) => {
+          if (value === '') {
+            callback(new Error('请输入手机号码'));
+          } else if (!isMobile(value)) {
+            callback(new Error('请输入正确的手机号码'));
+          } else {
+            callback();
+          }
+        };
+        var validateChart = (rule, value, callback) => {
+          if (value === '') {
+            callback(new Error('请输入图形验证码'));
+          } else {
+            callback();
+          }
+        };
+        var validateShort = (rule, value, callback) => {
+          if (value === '') {
+            return callback(new Error('请输入短信验证码'));
+          } else {
+            callback();
+          }
+        };
         return {
           captcha: '',
           captchaKey: '',
           ruleForm: {
-            mobile: '',
+            phone: '',
             chart: '',
             short: ''
           },
           rules: {
-            mobile: [{
+            phone: [{
               validator: validatePhone,
               trigger: 'blur'
             }],
@@ -234,73 +228,23 @@
               'Content-Type': 'application/json'
             },
           }).then(res => {
+            console.log(res)
             if (res.data.code === 0) {
               this.captchaKey = res.data.captcha.captchaKey
               this.captcha = res.data.captcha.captcha
-            } else {
-              layer.msg(res.data.msg)
             }
           }).catch(err => {
             console.error(err)
           })
         },
-        handlerShort() {
-          if (this.ruleForm.mobile === '') {
-            layer.msg('请输入手机号码')
-          } else if (!isMobile(this.ruleForm.mobile)) {
-            layer.msg('请输入正确的手机号码')
-          } else if (this.ruleForm.chart === '') {
-            layer.msg('请输入图形验证码')
-          } else {
-            let params = {
-              mobile: this.ruleForm.mobile,
-              captcha: this.ruleForm.chart,
-              captchaKey: this.captchaKey
-            }
-            axios({
-                methods: 'GET',
-                url: 'http://192.168.100.92/api/sendSms',
-                params,
-                headers: {
-                  'Content-Type': 'application/x-www-form-urlencoded'
-                }
-              }).then(res => {
-                console.log(res)
-                if (res.data.code === 0) {
-                  layer.msg('短信验证码已发送,请注意查收')
-                } else {
-                  layer.msg(res.data.msg)
-                }
-              })
-              .catch(err => {
-                console.error(err)
-              })
-          }
-        },
         submitForm(formName) {
           this.$refs[formName].validate((valid) => {
             if (valid) {
-              let params = {
-                mobile: this.ruleForm.mobile,
-                code: 9999
-              }
-              axios({
-                method: 'POST',
-                url: 'http://192.168.100.92/api/login',
-                data: params,
-                headers: {
-                  'Content-Type': 'application/json'
-                },
-              }).then(res => {
-                console.log(res)
-                if (res.data.code === 0) {
-                  layer.msg('登录成功~')
-                } else {
-                  layer.msg(res.data.msg)
-                }
-              }).catch(err => {
-                console.error(err)
-              })
+              layer.msg('登录成功~')
+              this.$message({
+                message: '恭喜你，这是一条成功消息',
+                type: 'success'
+              });
             } else {
               return false
             }
