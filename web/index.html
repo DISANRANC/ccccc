@@ -20,6 +20,7 @@
   <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+  <link rel="stylesheet" type="text/css" href="/css/index.css">
   <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="/js/layer/layer.js"></script>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -37,467 +38,258 @@
 </head>
 
 <body ontouchstart>
-  <header>
-    <div class="container">
-      <div class="header-top">
-        <div class="weui-cell__bd title">
-          淮安科技馆
-        </div>
-        <div class="nav-icon">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-      <div class="navs">
-        <a href="/index" title="首页" class="item">
-          <div class="cn">首页</div>
-          <div class="en">Home</div>
-        </a>
-        <a href="/html/guide/guide" title="参观指南" class="item">
-          <div class="cn">参观指南 </div>
-          <div class="en">Tour guide</div>
-        </a>
-        <a href="/html/news/news" title="新闻公告" class="item">
-          <div class="cn">新闻公告 </div>
-          <div class="en">News</div>
-        </a>
-        <a href="" title="游客服务" class="item">
-          <div class="cn">游客服务 </div>
-          <div class="en">Tourist Service </div>
-        </a>
-        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
-          <div class="cn">展馆活动 </div>
-          <div class="en">Exhibition hall activities</div>
-        </a>
-        <a href="/html/login" title="我与科技馆" class="item">
-          <div class="cn">我与科技馆</div>
-          <div class="en">Me and STC</div>
-        </a>
-      </div>
-    </div>
-    </div>
-  </header>
-  <div class="banner">
-    <div class="swiper-container bannerswiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
-            <div class="container content-box">
-              <div class="h1">淮安科技馆 </div>
-              <div class="title2">
-                <div class="h1">
-                  让科学更好玩 </div>
-                <div class="h2">
-                  Huaian Science and Technology Museum Make Science More Fun </div>
-              </div>
-            </div>
+  <div id="app">
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="weui-cell__bd title">
+            淮安科技馆
+          </div>
+          <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
-      </div>
-      <div class="swiper-pagination"></div>
-      <div class="scroll-box">
-        <div class="mouse"></div>
-        <p>发现更多精彩</p>
-      </div>
-    </div>
-    <div class="video-box wow faderight container" data-wow-delay=".2s">
-      <div class="video-top">
-        <div class="swiper-num weui-cell__bd">
-          <span class="current"></span>
-          <span>/</span>
-          <span class="total"></span>
+        <div class="navs">
+          <a href="/index" title="首页" class="item">
+            <div class="cn">首页</div>
+            <div class="en">Home</div>
+          </a>
+          <a href="/html/guide/guide" title="参观指南" class="item">
+            <div class="cn">参观指南 </div>
+            <div class="en">Tour guide</div>
+          </a>
+          <a href="/html/news/news" title="新闻公告" class="item">
+            <div class="cn">新闻公告 </div>
+            <div class="en">News</div>
+          </a>
+          <a href="" title="游客服务" class="item">
+            <div class="cn">游客服务 </div>
+            <div class="en">Tourist Service </div>
+          </a>
+          <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+            <div class="cn">展馆活动 </div>
+            <div class="en">Exhibition hall activities</div>
+          </a>
+          <a href="/html/login" title="我与科技馆" class="item">
+            <div class="cn">我与科技馆</div>
+            <div class="en">Me and STC</div>
+          </a>
         </div>
-        <div class="video-btn prev">
-          <img src="/images/prev.png" alt="">
-        </div>
-        <div class="video-btn next">
-          <img src="/images/next.png" alt="">
-        </div>
       </div>
-      <div class="swiper-container video-swiper">
+    </header>
+    <div class="banner">
+      <div class="swiper-container bannerswiper">
         <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="video-item">
-              <div class="imgbox">
-                <img src="/images/20191216/d6798df44aec6ead9d87636c2a8674bf.jpg" alt="" class="postimg">
-                <img src="/images/paly.png" alt="" class="play-btn"
-                  data-video="/video/349804b0d1ed8b682397b19129252477.mp4">
+            <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
+              <div class="container content-box">
+                <div class="h1">淮安科技馆 </div>
+                <div class="title2">
+                  <div class="h1">
+                    让科学更好玩 </div>
+                  <div class="h2">
+                    Huaian Science and Technology Museum Make Science More Fun </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="swiper-slide">
-            <div class="video-item">
-              <div class="imgbox">
-                <img src="/images/20191216/bfd37534c8920a9e6b7133d936fce0e3.jpg" alt="" class="postimg">
-                <img src="/images/paly.png" alt="" class="play-btn"
-                  data-video="/video/b4710a8e6578b53dc164a9a7ab20ce21.mp4">
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="scroll-box">
+          <div class="mouse"></div>
+          <p>发现更多精彩</p>
+        </div>
+      </div>
+      <div class="video-box wow faderight container" data-wow-delay=".2s">
+        <div class="video-top">
+          <div class="swiper-num weui-cell__bd">
+            <span class="current"></span>
+            <span>/</span>
+            <span class="total"></span>
+          </div>
+          <div class="video-btn prev">
+            <img src="/images/prev.png" alt="">
+          </div>
+          <div class="video-btn next">
+            <img src="/images/next.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-container video-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="imgbox">
+                  <img src="/images/20191216/d6798df44aec6ead9d87636c2a8674bf.jpg" alt="" class="postimg">
+                  <img src="/images/paly.png" alt="" class="play-btn"
+                    data-video="/video/349804b0d1ed8b682397b19129252477.mp4">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="imgbox">
+                  <img src="/images/20191216/bfd37534c8920a9e6b7133d936fce0e3.jpg" alt="" class="postimg">
+                  <img src="/images/paly.png" alt="" class="play-btn"
+                    data-video="/video/b4710a8e6578b53dc164a9a7ab20ce21.mp4">
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="wrapper">
-    <div class="box">
-      <div class="idxtab">
-        <div class="container">
-          <a href="/index" target="_blank" class="item">
-            <div>
-              <div class="weui-cell__bd">
-                <img src="/images/icon_ac00loznzrq/shijian.png" alt="" class="iconimg">
-                <div class="txtbox">
-                  <div class="cn">场馆营业时间</div>
-                  <div class="cn">开馆 09:00 <span>——</span> 闭馆 17:00</div>
-                  <div class="cn buy">预约购票</div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" target="_blank" class="item">
-            <div>
-              <div class="weui-cell__bd">
-                <img src="/images/icon_ac00loznzrq/dianhuabeifen.png" alt="" class="iconimg">
-                <div class="txtbox">
-                  <div class="cn">全国统一服务热线</div>
-                  <div class="cn">400-000-XX00</div>
-                </div>
-              </div>
-            </div>
-          </a>
-          <a href="" target="_blank" class="item">
-            <div>
-              <div class="weui-cell__bd">
-                <img src="/images/icon_ac00loznzrq/erweima.png" alt="" class="iconimg">
-                <div class="txtbox">
-                  <div class="cn">扫一扫关注公众号</div>
-                  <div class="cn"></div>
-                </div>
-              </div>
-            </div>
-          </a>
-        </div>
-      </div>
-      <div class="index1">
-        <div class="container">
-          <div>
-            <h3>展馆介绍</h3>
-            <h4>Exhibition hall introduction</h4>
-            <div>
+    <div class="wrapper">
+      <div class="box">
+        <div class="idxtab">
+          <div class="container">
+            <a href="/index" target="_blank" class="item">
               <div>
-                <div>
-                  <img src="" alt="">
+                <div class="weui-cell__bd">
+                  <img src="/images/icon_ac00loznzrq/shijian.png" alt="" class="iconimg">
+                  <div class="txtbox">
+                    <div class="cn">场馆营业时间</div>
+                    <div class="cn">开馆 09:00 <span>——</span> 闭馆 17:00</div>
+                    <div class="cn buy">预约购票</div>
+                  </div>
                 </div>
-                <div>
-                  <h3>海洋*摇篮馆</h3></h3>
-                  <p>海洋馆介绍文字，海洋馆介绍文字海洋馆介绍 文字海洋馆介绍文字海洋馆介绍文字。
-                    海洋馆介绍 文字海洋馆介绍文字海洋馆介绍文字海洋馆介绍文 字海洋馆介绍文字
-                    海洋馆介绍文字海洋馆介绍文字 海洋馆介绍文字海洋馆介绍文字。</p>
+              </div>
+            </a>
+            <a href="" target="_blank" class="item">
+              <div>
+                <div class="weui-cell__bd">
+                  <img src="/images/icon_ac00loznzrq/dianhuabeifen.png" alt="" class="iconimg">
+                  <div class="txtbox">
+                    <div class="cn">全国统一服务热线</div>
+                    <div class="cn">400-000-XX00</div>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <a href="" target="_blank" class="item">
+              <div>
+                <div class="weui-cell__bd">
+                  <img src="/images/icon_ac00loznzrq/erweima.png" alt="" class="iconimg">
+                  <div class="txtbox">
+                    <div class="cn">扫一扫关注公众号</div>
+                    <div class="cn"></div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="index1">
+          <div class="container">
+            <div class="hall-info">
+              <h3>展馆介绍</h3>
+              <h4>Exhibition hall introduction</h4>
+              <div>
+                <div v-for="(item,index) in hallInfoList" :key="index">
+                  <div class="hall-info-container" v-if="++index%2!==0">
+                    <div class="img-box">
+                      <img v-if="item.imageMain!==''" :src="baseUrl + item.imageMain" alt="">
+                      <img v-else
+                        src="http://192.168.100.92:8089/download/exhibition/20200904/3aa3c3feeea24f8bab52b5c4bb92b4be.jpg"
+                        alt="">
+                    </div>
+                    <div class="hall-info-text">
+                      <div class="hall-info-text-top">
+                        <h3>{{item.name}}</h3>
+                        <span v-if="index<=8">0{{index}}</span>
+                        <span v-else>{{index}}</span>
+                      </div>
+                      <p>{{item.description}}</p>
+                    </div>
+                  </div>
+                  <div class="hall-info-container bg-img two-column" v-else>
+                    <div class="hall-info-text">
+                      <div class="hall-info-text-top temp-padd">
+                        <span v-if="index<=8">0{{index}}</span>
+                        <span v-else>{{index}}</span>
+                        <h3>{{item.name}}</h3>
+                      </div>
+                      <p>{{item.description}}</p>
+                    </div>
+                    <div class="img-box tow">
+                      <img v-if="item.imageMain!==''" :src="baseUrl + item.imageMain" alt="">
+                      <img v-else
+                        src="http://192.168.100.92:8089/download/exhibition/20200904/3aa3c3feeea24f8bab52b5c4bb92b4be.jpg"
+                        alt="">
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-
-
-          <!-- <div class="idx1box">
-            <div class="left weui-cell_primary">
-              <div class="linebox">
-                <img src="/images/ui/piaoyi3.png" alt="">
-              </div>
-              <div class="itembox">
-                <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                      <div class="idx1left1 wow fadeup">
-
-                        <div class="title">
-                          <div class="num">
-                            01 </div>
-                          <div class="en">
-                            Museum<br>of<br>Ocean </div>
+        </div>
+        <div class="footer-chart">
+          <img src="/images/ui/piaoyi2.png" alt="" class="move-img">
+          <div class="footer-chart-text">
+            <h3>最新活动</h3>
+            <h4>Real-time information</h4>
+          </div>
+          <div class="my-swiper-container">
+            <div class="jiantou jiantou-left temp-none">
+              <img src="/images/ui/jiantou.png" alt="">
+            </div>
+            <div class="temp-swiper">
+              <div class="my-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide" v-for="(item,index) in footerImgList" :key="index">
+                    <div class="my-swiper-box">
+                      <img :src="item.url" alt="">
+                      <div class="my-swiper-info">
+                        <h3>{{item.name}}</h3>
+                        <p>{{item.info}}</p>
+                        <div class="my-swiper-pagination-box">
+                          <div :class="['my-swiper-pagination',swiperPaginationIndex === ++index?'current-swiper':'']"
+                            v-for="(item,index) in footerImgList.length" :key="index"></div>
                         </div>
-                        <div class="colorbox" data-wow-delay=".2s">
-                          <div class="imgbox">
-                            <img src="/images/20200123/4b80fa81088daa4c8aad2460ebfaf64b.jpg"
-                              alt="Museum<br>of<br>Ocean">
-                            <p>read more +</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="idx1left2 wow fadeup">
-                        <img src="/images/20200123/fff89bfc5547503372c0197865b6db06.jpg" alt="">
-                        <p>
-                          淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字。
-                        </p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="idx1left1 wow fadeup">
-
-                        <div class="title">
-                          <div class="num">
-                            02 </div>
-                          <div class="en">
-                            Museum<br>of<br>Discovery </div>
-                        </div>
-                        <div class="colorbox" data-wow-delay=".2s">
-                          <div class="imgbox">
-                            <img src="/images/20191210/0381924bf8eed46082055f3c30487a34.jpg"
-                              alt="Museum<br>of<br>Discovery">
-                            <p>read more +</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="idx1left2 wow fadeup">
-                        <img src="/images/20191224/bfbd55549f295ce6c62b1abba74fa03b.jpg" alt="">
-                        <p style="text-align: left;">淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字。<br /></p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="idx1left1 wow fadeup">
-
-                        <div class="title">
-                          <div class="num">
-                            03 </div>
-                          <div class="en">
-                            Museum<br>of<br>Life </div>
-                        </div>
-                        <div class="colorbox" data-wow-delay=".2s">
-                          <div class="imgbox">
-                            <img src="/images/20191218/c441b05edc46834ee2b71b5cb3f9a09a.jpg" alt="Museum<br>of<br>Life">
-                            <p>read more +</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="idx1left2 wow fadeup">
-                        <img src="/images/20191224/e7cff53d7037db93b1d1c68d06fd0085.jpg" alt="">
-                        <p>淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字。</p>
-                        <p><br /></p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="idx1left1 wow fadeup">
-                        <div class="title">
-                          <div class="num">
-                            04 </div>
-                          <div class="en">
-                            Museum<br>of<br>Creation </div>
-                        </div>
-                        <div class="colorbox" data-wow-delay=".2s">
-                          <div class="imgbox">
-                            <img src="/images/20191224/04cb6fc34b4c727f3b40d840724b2c70.jpg"
-                              alt="Museum<br>of<br>Creation">
-                            <p>read more +</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="idx1left2 wow fadeup">
-                        <img src="/images/20191224/5edd7db463fe3a0206136023cdaa6cda.jpg" alt="">
-                        <p>
-                          淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字。
-                        </p>
-                      </div>
-                    </div>
-                    <div class="swiper-slide">
-                      <div class="idx1left1 wow fadeup">
-
-                        <div class="title">
-                          <div class="num">
-                            05 </div>
-                          <div class="en">
-                            Museum<br>of<br>Children </div>
-                        </div>
-                        <div class="colorbox" data-wow-delay=".2s">
-                          <div class="imgbox">
-                            <img src="/images/20191219/712f5e33dcb6453ea7cb1a0032e7a432.jpg"
-                              alt="Museum<br>of<br>Children">
-                            <p>read more +</p>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="idx1left2 wow fadeup">
-                        <img src="/images/20191225/3f8f2dd6ac4835f5ea23894a6434acd0.jpg" alt="">
-                        <p>
-                          淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字，淮安科技馆介绍文字。                          
-                        </p>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="right">
-              <div class="righttitle">
-                <div>
-                  Ocean </div>
-                <div>
-                  Physics </div>
-                <div>
-                  Human </div>
-                <div>
-                  Machinery </div>
-                <div>
-                  Child </div>
-              </div>
-              <img src="/images/diwen.png" alt="" class="diwen">
-              <div class="righttab">
-                <div class="item">
-                  <img src="/images/20191210/467602d52a792fddfbcb718c6b149d44.png" alt="海洋·摇篮馆" class="before">
-                  <img src="/images/20191210/387e6462c689516a7214becf4bec9d3d.png" alt="海洋·摇篮馆" class="after">
-                  <div class="title">
-                    海洋·摇篮馆 </div>
-                  <div class="title2">
-                    浪花下的神秘世界 </div>
-                </div>
-                <div class="item">
-                  <img src="/images/20191210/26aab6f0711f34462010356004635398.png" alt="探索·发现馆" class="before">
-                  <img src="/images/20191210/7aa65ba3913297ded1eb338c948b1478.png" alt="探索·发现馆" class="after">
-                  <div class="title">
-                    探索·发现馆 </div>
-                  <div class="title2">
-                    神奇物理王国 </div>
-                </div>
-                <div class="item">
-                  <img src="/images/20191210/c9d140aceedda0e8ee1741c90084281a.png" alt="和谐·发展馆" class="before">
-                  <img src="/images/20191210/a1083e83d1b3aa1d43e1b1f93b113ccd.png" alt="和谐·发展馆" class="after">
-                  <div class="title">
-                    和谐·发展馆 </div>
-                  <div class="title2">
-                    生命奥秘与身体世界 </div>
-                </div>
-                <div class="item">
-                  <img src="/images/20191210/05640dee089c0180816928a43e23f484.png" alt="创造·文明馆" class="before">
-                  <img src="/images/20191210/2cb570f78317411be66721922b0b284d.png" alt="创造·文明馆" class="after">
-                  <div class="title">
-                    创造·文明馆 </div>
-                  <div class="title2">
-                    现代机械文明 </div>
-                </div>
-                <div class="item">
-                  <img src="/images/20191210/d56b6fb1aac8b0b1dcb8f6e93412ef0f.png" alt="儿童·未来馆" class="before">
-                  <img src="/images/20191210/afa94c34e83e46c668d1fe824c36046e.png" alt="儿童·未来馆" class="after">
-                  <div class="title">
-                    儿童·未来馆 </div>
-                  <div class="title2">
-                    未来科学家乐园 </div>
-                </div>
-              </div>
-            </div>
-          </div> -->
-        </div>
-      </div>
-      <div class="index2">
-        <img src="/images/ui/piaoyi2.png" alt="" class="circle">
-        <img src="/images/20200102/08e2c63b571a87dce3ad9b7597b71c5f.jpg" alt="最新活动banner图" class="bgimg"> fooder-bg
-        <div class="container">
-          <div class="title">最新活动</div>
-          <div class="swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-
-                <div class="col">
-                  <a href="" title="会员5月课程 ▏这个大咖的故事贯穿了整个初高中物理" class="item" data-img="">
-                    <div class="h1">
-                      会员5月课程 ▏这个大咖的故事贯穿了整个初高中物理 </div>
-                    <p>本月的课程主要围绕第一个发现电磁之间联系的科学家——奥斯特展开，他在做了60多次实验后终于发现了电流的磁效应，即电生磁。</p>
-                    <img src="/images/goto.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-
-                <div class="col">
-                  <a href="" title="会员2月课程 ▏&ldquo;神一样的男人&rdquo;阿西莫夫:100年来,我们仍活在他的预言之下" class="item" data-img="">
-                    <div class="h1">
-                      会员2月课程 ▏&ldquo;神一样的男人&rdquo;阿西莫夫:100年来,我们仍活在他的预言之下 </div>
-                    <p>
-                      本月我们要带小会员们认识的是一位超酷的科幻小说家&mdash;&mdash;艾萨克&middot;阿西莫夫，他一生著述近500本，题材涉及自然科学、社会科学和文学艺术等许多领域，其作品中以《基地系列》《银河帝国三部曲》和《机器人系列》三大系列被誉为&ld…
-                    </p>
-                    <img src="/images/goto.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-
-                <div class="col">
-                  <a href="" title="会员3月课程 ▏关于生命的天书，长得竟然像麻花&hellip;&hellip;" class="item" data-img="">
-                    <div class="h1">
-                      会员3月课程 ▏关于生命的天书，长得竟然像麻花&hellip;&hellip; </div>
-                    <p>
-                      本月要带小会员们认识的是一场&ldquo;跨国合作&rdquo;&mdash;&mdash;美国科学家沃森和英国生物学家克里克合作，提出了DNA分子的双螺旋结构学说，使生物学的研究进入到分子阶段，由于提出DNA的双螺旋模型学说，沃森和克里克一起获得了1962年诺贝尔生理…
-                    </p>
-                    <img src="/images/goto.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-
-                <div class="col">
-                  <a href="" title="会员1月课程 ▏跟着达尔文走进科学小工坊，观察植物叶脉，体验神奇扎染" class="item" data-img="">
-                    <div class="h1">
-                      会员1月课程 ▏跟着达尔文走进科学小工坊，观察植物叶脉，体验神奇扎染 </div>
-                    <p>
-                      第一期要带小会员们认识的科学家是&mdash;&mdash;鼎鼎大名的达尔文先生，他通过五年环球航行观察并搜集了动植物和地质等方面的大量材料形成了生物进化的概念。本期会员活动围绕&ldquo;植物笔记&rdquo;展开，小会员们自动分成小组在辅导员的带领下…
-                    </p>
-                    <img src="/images/goto.png" alt="">
-                  </a>
-                </div>
-              </div>
-              <div class="swiper-slide">
-
-                <div class="col">
-                  <a href="" title="厦门科技馆首度推出&ldquo;会员卡&rdquo;" class="item" data-img="">
-                    <div class="h1">
-                      淮安科技馆首度推出&ldquo;会员卡&rdquo; </div>
-                    <p>
-                      2020年已经拉开序幕，崭新的一年，厦门科技馆要有，大动作。即日起至2月29日，299元会员年卡开放注册，五大主题展厅，400多件科学展品，丰富有趣的科学互动空间，不！限！次！数！畅玩（7月、8月及国庆黄金周不可使用）。还有超多会员专属特…
-                    </p>
-                    <img src="/images/goto.png" alt="">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="prev swiperbtn">
-              <img src="/images/prev.png" alt="">
-            </div>
-            <div class="next swiperbtn">
-              <img src="/images/next.png" alt="">
+            <div class="jiantou jiantou-right temp-none">
+              <img class="jiantou-rotate" src="/images/ui/jiantou.png" alt="">
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="video-window">
-    <div class="top clearfix">
-      <div class="video-close"><img src="/images/close10.png" alt=""></div>
+    <div class="video-window">
+      <div class="top clearfix">
+        <div class="video-close"><img src="/images/close10.png" alt=""></div>
+      </div>
+      <video src="" controls></video>
     </div>
-    <video src="" controls></video>
+    <div class="mask"></div>
+    <footer>
+      <div class="left">
+        咨询热线：0592-5148555 </div>
+      <div class="navs">
+        <a href="/index" title="首页">首页</a>
+        <a href="/html/guide" title="参观指南">参观指南</a>
+        <a href="/html/news" title="新闻中心">新闻中心</a>
+        <a href="" title="游客服务">游客服务</a>
+        <a href="" title="展馆活动">展馆活动</a>
+        <a href="" title="我与科技馆">我与科技馆</a>
+      </div>
+      <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
+      <script>
+        var _hmt = _hmt || [];
+        (function () {
+          var hm = document.createElement("script");
+          hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    </footer>
   </div>
-  <div class="mask"></div>
-  <footer>
-    <div class="left">
-      咨询热线：0592-5148555 </div>
-    <div class="navs">
-      <a href="/index" title="首页">首页</a>
-      <a href="/html/guide" title="参观指南">参观指南</a>
-      <a href="/html/news" title="新闻中心">新闻中心</a>
-      <a href="" title="游客服务">游客服务</a>
-      <a href="" title="展馆活动">展馆活动</a>
-      <a href="" title="我与科技馆">我与科技馆</a>
-    </div>
-    <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
-    <script>
-      var _hmt = _hmt || [];
-      (function () {
-        var hm = document.createElement("script");
-        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
-        var s = document.getElementsByTagName("script")[0];
-        s.parentNode.insertBefore(hm, s);
-      })();
-    </script>
-  </footer>
   <script type="text/javascript">
     $(function () {
       $("header .navs .item").eq(0).addClass("on")
@@ -567,9 +359,87 @@
         },
       })
       $(".announcebox .closebox").click(function () {
-        $(".announcebox").hide('400', function () {
-        });
+        $(".announcebox").hide('400', function () {});
       })
+    })
+  </script>
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+  <script src="/js/qs.min.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          hallInfoList: [],
+          baseUrl: 'http://192.168.100.92:8089/download/',
+          iconSwiper: null,
+          footerImgList: [{
+              url: 'http://192.168.100.92:8089/download/exhibition/20200904/3aa3c3feeea24f8bab52b5c4bb92b4be.jpg',
+              name: '啊啊',
+              info: '最动最新活动最新活最新活动最活动最动最新活动最新活动最新活动新活动最动最新活动最新活动最新活动新活动最动最新活动最新活动最新活动新活动最动最新活动最新活动最新活动新活动最动最新活动最新活动最新活动新活动'
+            },
+            {
+              url: 'http://192.168.100.92:8089/download/exhibition/20200904/36721137c1c847ff9358e38c7259d201.jpg',
+              name: '飒飒',
+              info: '最新活动最新活动最新活动最新活动最新活动最新活动最新活动最新活动'
+            }, {
+              url: 'http://192.168.100.92:8089/download/exhibition/20200904/5cbd07f479194d1ab740f3e670595157.jpg',
+              name: '对的',
+              info: '最新活动最新活动最新活动最新活动最新活动最新活动最新活动最新活动'
+            },
+          ],
+          swiperPaginationIndex: 1,
+        }
+      },
+      created() {
+        this.handlerHallInfo()
+      },
+      mounted() {
+        let that = this
+        this.iconSwiper = new Swiper('.my-swiper', {
+          // loop: true,
+          // slidesPerView: 'auto',
+          // slidesPerView: 1,
+          // loopedSlides: 1,
+          // loop: true,
+          // speed: 800,
+          // slidesPerView: 5,
+          effect: "fade",
+          preventClicksPropagation: false,
+          autoplay: {
+            delay: 2000,
+          },
+          navigation: {
+            nextEl: '.jiantou-right',
+            prevEl: '.jiantou-left',
+          },
+          pagination: {
+            el: '.my-swiper-pagination',
+            type: 'custom',
+            renderCustom: function (swiper, current, total) {
+              that.swiperPaginationIndex = current
+              console.log(that.swiperPaginationIndex)
+            }
+          }
+        })
+      },
+      methods: {
+        handlerHallInfo() {
+          axios({
+            method: 'POST',
+            url: 'http://192.168.100.92/api/exhibition/findArea',
+            data: {},
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          }).then(res => {
+            res.data.code === 0 ? this.hallInfoList = [...res.data.data] : ''
+          }).catch(err => {
+            console.error(err)
+          })
+        },
+      },
     })
   </script>
 </body>

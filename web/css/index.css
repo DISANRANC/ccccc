@@ -1,0 +1,260 @@
+.hall-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hall-info h3 {
+  margin: .05rem 0;
+  font-size: .26rem;
+  font-weight: 600;
+}
+
+.hall-info h4 {
+  font-size: .16rem;
+  color: #2B333D;
+}
+
+@media(max-width: 767px) {
+  .hall-info {
+    padding-bottom: 1.8rem;
+  }
+}
+
+@media (max-width: 930px) {
+  .hall-info .hall-info-container {
+    flex-direction: column-reverse;
+  }
+
+  .two-column {
+    flex-direction: column !important;
+  }
+
+  .hall-info-container .img-box {
+    margin: 0 !important;
+    padding: .5rem;
+  }
+
+  .hall-info-container div img {
+    width: 100% !important;
+  }
+}
+
+@media (min-width:931px) {
+  .hall-info .hall-info-container {
+    width: 11.17rem;
+    height: 3.81rem;
+  }
+}
+
+.hall-info .hall-info-container {
+  display: flex;
+  margin-top: 1.47rem;
+  background: url(/images/ui/bg.png) no-repeat 100% / cover;
+  border-radius: .1rem;
+}
+
+.bg-img {
+  background: url(/images/ui/left.png) no-repeat 100% / cover !important;
+}
+
+
+.hall-info-container .img-box {
+  display: flex;
+  margin-top: -.5rem;
+  margin-left: -.9rem;
+}
+
+.tow {
+  margin-left: 0 !important;
+  margin-right: -.9rem !important;
+}
+
+.temp-padd {
+  padding: 0 .7rem 0 .4rem !important;
+}
+
+.hall-info-container div img {
+  width: 5.75rem;
+  height: 3.81rem;
+  border-radius: .1rem;
+}
+
+.hall-info-container .hall-info-text {
+  flex: 1;
+  font-size: .2rem;
+  color: #FFFFFF;
+}
+
+.hall-info-container .hall-info-text .hall-info-text-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 .4rem 0 .7rem;
+}
+
+.hall-info-container .hall-info-text .hall-info-text-top span {
+  font-size: 50px;
+  font-weight: 600;
+  opacity: .5;
+}
+
+.hall-info-container .hall-info-text .hall-info-text-top h3 {
+  margin: 0;
+  text-align: start;
+  font-size: .26rem;
+  font-weight: 600;
+}
+
+.hall-info-container .hall-info-text p {
+  padding: 0 .7rem;
+  text-align: justify;
+}
+
+.footer-chart {
+  position: relative;
+  padding: .68rem 0 1.49rem 0;
+  width: 100%;
+  /* height: 6.5rem; */
+  background-color: #EDF0F3;
+}
+
+.footer-chart .move-img {
+  max-width: 18vw;
+  position: absolute;
+  right: 11.5vw;
+  top: -8vw;
+  z-index: 10;
+  -webkit-animation: img2 10s ease-in-out infinite;
+  animation: img2 10s ease-in-out infinite;
+}
+
+.footer-chart .footer-chart-text {
+  text-align: center;
+}
+
+.footer-chart .footer-chart-text h3 {
+  margin: .05rem 0;
+  font-size: .26rem;
+  font-weight: 600;
+}
+
+.footer-chart .footer-chart-text h4 {
+  font-size: .16rem;
+  color: #2B333D;
+}
+
+.my-swiper-box {
+  display: flex;
+}
+
+.my-swiper-box img {
+  width: 5.35rem;
+  height: 3rem;
+  border-radius: .05rem;
+}
+
+.my-swiper-info {
+  flex: 1;
+  padding: .5rem .5rem 0 .5rem;
+  color: #333333;
+  background-color: #FFFFFF;
+}
+
+.my-swiper-info h3 {
+  margin: 0;
+  text-align: start;
+  font-size: .22rem;
+  font-weight: 600;
+}
+
+.my-swiper-info p {
+  margin: .3rem 0;
+  height: 1.3rem;
+  font-size: .18rem;
+  text-align: justify;
+}
+
+.my-swiper {
+  width: 100%;
+}
+
+.my-swiper-pagination-box {
+  display: flex;
+}
+
+.my-swiper-pagination {
+  display: inline-block;
+  margin-right: .2rem;
+  width: 46px;
+  height: 4px;
+  background: #E5E5E5;
+}
+
+.current-swiper {
+  background: #1D9DFF;
+}
+
+.my-swiper-container {
+  display: flex;
+  justify-content: center;
+  margin-top: .82rem;
+}
+
+.temp-swiper{
+  width: 12rem;
+  margin: 0 .6rem;
+}
+@media(min-width:1307px){
+  .footer-chart{
+    height: 6.5rem;
+  }
+}
+@media(max-width:1306px){
+  .temp-swiper{
+    width: 10rem;
+    margin: 0 .3rem;
+  }
+}
+
+@media(max-width:850px){
+  .temp-swiper{
+    width: 6rem;
+    margin: 0 .1rem;
+  }
+  .my-swiper-box{
+    flex-direction: column;
+    align-items: center;
+  }
+  .my-swiper-pagination-box{
+    margin-bottom: .2rem;
+  }
+}
+
+@media(max-width:467px){
+  .temp-none{
+    display: none !important;
+  }
+}
+
+.jiantou {
+  display: flex;
+  align-items: center;
+}
+
+.jiantou img {
+  width: .6rem;
+  height: 1.5rem;
+}
+
+.jiantou-rotate {
+  transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  /* IE 9 */
+  -moz-transform: rotate(180deg);
+  /* Firefox */
+  -webkit-transform: rotate(180deg);
+  /* Safari 和 Chrome */
+  -o-transform: rotate(180deg);
+  /* Opera */
+}
