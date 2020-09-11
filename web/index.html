@@ -240,7 +240,6 @@
                   <div class="swiper-slide" v-for="item in footerImgList" :key="item.id">
                     <div class="my-swiper-box">
                       <img :src="downloadBaseUrl+item.coverImg" alt="">
-                      <!-- <img :src="item.coverImg" alt=""> -->
                       <div class="my-swiper-info">
                         <h3>{{item.title}}</h3>
                         <p>{{item.descripation}}</p>
@@ -500,7 +499,6 @@
                 console.error(err)
               })
           })
-
         }
       },
     })

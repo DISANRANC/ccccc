@@ -19,7 +19,7 @@
   <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
-  <link rel="stylesheet" type="text/css" href="/css/cinema-info.css">
+  <link rel="stylesheet" type="text/css" href="/css/temporary-exhibition.css">
   <link rel="stylesheet" type="text/css" href="/css/guide.css">
   <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="/js/layer/layer.js"></script>
@@ -92,9 +92,9 @@
       <div class="container2">
         <a href="/html/guide/guide" title="" class="item">关于我们</a>
         <a href="/html/guide/often-exhibition" title="" class="item">常设展览</a>
-        <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
-        <a href="" title="" class="item on">影院信息</a>
-        <a href="" title="" class="item ">推荐线路</a>
+        <a href="/html/guide/temporary-exhibition" title="" class="item on">临时展览</a>
+        <a href="/html/guide/cinema-info" title="" class="item">影院信息</a>
+        <a href="" title="" class="item">推荐线路</a>
         <a href="" title="" class="item">科技馆VR全景</a>
       </div>
     </div>
@@ -132,67 +132,30 @@
             <img src="/images/dian1.png" alt="">
           </a>
         </div>
-      </div>
-      <div class="cinema">
-        <div class="cinema-box">
-          <div class="container2 clearfix">
-            <div :class="['item',cinemaIndex === index?'activity':'']" v-for="(item,index) in cinemaList" :key="index"
-              @click="handlerCinema(index,item.code)">
-              <img src="/images/cinema.png" alt="">
-              <div class="h1">{{item.name}}</div>
-              <p>{{item.remark}}</p>
+        <div>
+          <div class="tabs">
+            <div :class="['tabs-item',index===tabsIndex?'tabs-item-temp':'']" v-for="(item,index) in tabsList"
+              :key="index">{{item.title}}</div>
+            <el-dropdown>
+              <el-button type="primary">
+                展览回顾<i class="el-icon-arrow-down el-icon--right"></i>
+              </el-button>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item>黄金糕</el-dropdown-item>
+                <el-dropdown-item>狮子头</el-dropdown-item>
+                <el-dropdown-item>螺蛳粉</el-dropdown-item>
+                <el-dropdown-item>双皮奶</el-dropdown-item>
+                <el-dropdown-item>蚵仔煎</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </div>
+          <div class="tabs-tow">
+            <div class="tabs-tow-item" v-for="item in exhibitionList" :key="item.id">
+              <el-button type="primary">{{item.name}}</el-button>
             </div>
           </div>
         </div>
       </div>
-      <div class="film">
-        <div class="container2">
-          <div class="top">
-            <img src="/images/guide/xingxing.png" alt="">
-            <p>购票须知：一人一票，一票只可观看一个影院/剧场一个场次</p>
-          </div>
-          <div class="film-list" v-if="filmList.length!==0">
-            <div class="item" v-for="(item,index) in filmList" :key="index" @click="handlerFilm(item.id)">
-              <img :src="downloadBaseUrl + item.coverImg" alt="">
-              <p>{{item.filmName}}</p>
-              <div class="item-bottom">
-                <span>{{item.filmDate}}</span>
-                <div class="temp-box">
-                  <img src="/images/guide/shizhong.png" alt="">
-                  <span>{{item.duration}}</span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="r-footer">
-            <el-pagination @current-change="handleCurrentChange" background :current-page="params.page"
-              layout="prev, pager, next, jumper" :page-size="params.limit" :total="total" v-if="total !== 0">
-            </el-pagination>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="my-dialog">
-      <!-- :style=" {backgroundImage:'url('+personalData.avatar+')'}" -->
-      <el-dialog :visible.sync="dialogVisible" class="temp-dialog">
-        <div class="film-details-box"
-          style="background-image: url(http://192.168.100.92:8089/download/film_cover\05558e8ffc5a4ad4b5a4f04c0d75a50e.jpg)">
-          <div class="top">
-            <p>播放时长：{{filmDetails.duration}}</p>
-            <p>播放时间：{{filmDetails.playTime}}</p>
-          </div>
-          <p class="p1">{{filmDetails.type}}</p>
-          <p class="p2">{{filmDetails.filmName}}</p>
-          <p class="p3">{{filmDetails.intro}}</p>
-          <div>
-            <el-button round="true" icon="el-icon-s-ticket" type="primary">购票</el-button>
-          </div>
-          <div class="bottom">
-            <img src="/images/guide/gantanhao.png" alt="">
-            <p>适合人群：{{filmDetails.suitable}}</p>
-          </div>
-        </div>
-      </el-dialog>
     </div>
     <div class="link-box">
       <div class="container2">
@@ -264,19 +227,17 @@
       el: '#app',
       data() {
         return {
-          dialogVisible: false,
-          total: 1,
-          filmDetails: {},
-          params: {
-            page: 1,
-            limit: 12,
-            filmName: '',
-            cinemaId: ''
-          },
+          year: '',
           baseUrl: 'http://192.168.100.92',
           downloadBaseUrl: 'http://192.168.100.92:8089/download/',
-          cinemaIndex: 0,
-          cinemaList: [],
+          tabsIndex: 0,
+          exhibitionList: [],
+          tabsList: [{
+              title: '正在展览'
+            }, {
+              title: '巡展合作'
+            }
+          ],
           linkList: [{
             url: '',
             name: '北京科技馆'
@@ -305,94 +266,28 @@
             url: '',
             name: '深圳科技馆'
           }, ],
-          filmList: []
         }
       },
       created() {
-        // this.getFilmList()
-        this.getListCinema()
+        this.findAll()
       },
       methods: {
-        handlerFilm(id) {
-          this.getCinemaInfo(id)
-        },
-        handleClose() {
-          console.log(1)
-        },
-        handlerCinema(index, id) {
-          this.cinemaIndex = index
-          console.log(id)
-          this.params.page = 1
-          this.params.cinemaId = id
-          this.getFilmList()
-        },
-        getCinemaInfo(id) {
+        findAll() {
           axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/api/info/${id}`,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              if (res.data.code === 0) {
-                console.log(res)
-                this.filmDetails = {
-                  ...res.data.contenfilm
-                }
-                this.dialogVisible = true
-              } else {
-                layer.msg(res.data.msg)
-              }
-            })
-            .catch(err => {
-              console.error(err)
-            })
-        },
-        getListCinema() {
-          axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/api/listCinema`,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              console.log(res)
-              if (res.data.code === 0) {
-                if (res.data.list.length !== 0) {
-                  this.cinemaList = [...res.data.list]
-                  this.params.cinemaId = this.cinemaList[0].code
-                  this.getFilmList()
-                }
-              } else {
-                layer.msg(res.data.msg)
-              }
-            })
-            .catch(err => {
-              console.error(err)
-            })
-        },
-        getFilmList() {
-          console.log(this.params)
-          axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/api/listAllFilm`,
-              params: this.params,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              console.log(res)
-              res.data.code === 0 ? this.filmList = [...res.data.page.list] : layer.msg(res.data.msg)
-              res.data.code === 0 ? this.total = res.data.page.totalCount : ''
-              console.log(this.total)
-            })
-            .catch(err => {
-              console.error(err)
-            })
-        },
-        handleCurrentChange(val) {
-          this.params.page = val
-          this.getFilmList()
+            method: 'POST',
+            url: `${this.baseUrl}/api/exhibitiontemporary/findAll`,
+            data: {
+              year: this.year
+            },
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          }).then(res => {
+            console.log(res)
+            res.data.code===0?this.exhibitionList = res.data.data:layer.msg(res.data.msg)
+          }).catch(err => {
+            console.error(err)
+          })
         }
       },
     })

@@ -93,7 +93,7 @@
       <div class="container2">
         <a href="/html/guide/guide" title="" class="item">关于我们</a>
         <a href="/html/guide/often-exhibition" title="" class="item on">常设展览</a>
-        <a href="" title="" class="item">临时展览</a>
+        <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
         <a href="/html/guide/cinema-info" title="" class="item ">影院信息</a>
         <a href="" title="" class="item ">推荐线路</a>
         <a href="" title="" class="item">科技馆VR全景</a>
@@ -133,8 +133,19 @@
             <img src="/images/dian1.png" alt="">
           </a>
         </div>
-        <div class="permanent1">
-          <div class="choosebox">
+        <div class="permanent1" style="margin-top: 0">
+          <div class="container-list">
+            <div :class="[exhibitionAreaIndex===index?'temp-exhibition':'','btn-container']"
+             v-for="(item,index) in exhibitionAreaArr" :key="item.id" @click="selectArea(item.id,index)">
+              <div class="button">
+                <div class="button__content">
+                  <!-- <span class="num">0{{++index}}</span> -->
+                  <span>{{item.name}}</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="choosebox">
             <div class="itembox">
               <div :class="[iconimgIndex===index?'on':'','item']" v-for="(item,index) in iconimgList" :key="index"
                 @click="handlerIconimg(index)">
@@ -151,41 +162,34 @@
                 </div>
               </div>
             </div>
-          </div>
-          <div class="permanent-main">
+          </div> -->
+          <div class="permanent-main" v-if="exhibitionAreaArr.length!==0">
             <div class="top">
-              <img src="/images/guide/about.png" alt="">
+              <img :src="downloadBaseUrl + exhibitionAreaArr[exhibitionAreaIndex].imageMain" alt="">
               <div class="top-right">
-                <h3>海洋 * 摇篮馆</h3>
-                <p>海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-                  海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-                  海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-                  海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-                  海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-                </p>
+                <h3>{{exhibitionAreaArr[exhibitionAreaIndex].name}}</h3>
+                <p>{{exhibitionAreaArr[exhibitionAreaIndex].description}}</p>
                 <div class="log">
-                  <div class="item">主展内容</div>
-                  <div class="item">主展内容</div>
-                  <div class="item">主展内容</div>
-                  <div class="item">主展内容</div>
+                  <div class="item" v-for="e in projectList" :key="e.id">{{e.name}}</div>
                 </div>
               </div>
             </div>
-            <h3>主展示项目</h3>
-            <div>
-              <div>
-                <div>01深海电梯</div>
-                <div>02深海电梯</div>
-                <div>03深海电梯</div>
-                <div>04深海电梯</div>
+            <h3 class="main-title" v-if="projectList.length!==0">主展示项目</h3>
+            <div class="permanent-main-bottom" v-if="projectList.length!==0">
+              <div class="main-title-list">
+                <div :class="[projectIndex===index?'temp-exhibition':'','btn-container']"
+                 v-for="(item,index) in projectList" :key="item.id" @click="selectProject(index,item)">
+                  <div class="button">
+                    <div class="button__content">
+                      <span class="num">0{{++index}}</span>
+                      <span>{{item.name}}</span>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <p>海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-                海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆海洋摇篮馆
-              </p>
-              <div style="display: flex;">
-                <img src="/images/guide/about.png" alt="">
-                <img src="/images/guide/about.png" alt="">
-                <img src="/images/guide/about.png" alt="">
+              <p class="info">{{projectList[projectIndex].description}}</p>
+              <div class="footer-img">
+                <img :src="downloadBaseUrl + projectList[projectIndex].imageMain" alt="">
               </div>
             </div>
           </div>
@@ -236,27 +240,35 @@
     })
   </script>
   <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
   <script>
     var app = new Vue({
       el: '#app',
       data() {
         return {
-          iconimgList: [{
-            realImg: '/images/20200401/e111608d47ea56f5325be03b1d9c65d6.png',
-            emptyImg: '/images/20200401/e02db80faa1cc33c50a2836874b699f0.png',
-          }, {
-            realImg: '/images/20200401/2efc4cd839abd4dd69fbfa05b50e53f3.png',
-            emptyImg: '/images/20200401/d3379aa1318bb767a3ccfd90914f1d49.png',
-          }, {
-            realImg: '/images/20200401/d926a8fb85867d50eaf205f8d5d146f0.png',
-            emptyImg: '/images/20200401/61ced6621cf289d74c18fc76d965824b.png',
-          }, {
-            realImg: '/images/20200401/0a9b53a5c85d28d4ad1635c57895e824.png',
-            emptyImg: '/images/20200401/652983ef12e3adad16debe2581bf731d.png',
-          }, {
-            realImg: '/images/20200401/c1a4262eb0e0a26e2b64591e748749eb.png',
-            emptyImg: '/images/20200401/192eaad95cb4067b84dc4816e32a5785.png',
-          }, ],
+          exhibitionAreaIndex: 0,
+          exhibitionAreaId: '',
+          exhibitionAreaArr: [],//区域 project
+          projectList: [], // 项目
+          projectIndex: 0,
+          baseUrl: 'http://192.168.100.92',
+          downloadBaseUrl: 'http://192.168.100.92:8089/download/',
+          // iconimgList: [{
+          //   realImg: '/images/20200401/e111608d47ea56f5325be03b1d9c65d6.png',
+          //   emptyImg: '/images/20200401/e02db80faa1cc33c50a2836874b699f0.png',
+          // }, {
+          //   realImg: '/images/20200401/2efc4cd839abd4dd69fbfa05b50e53f3.png',
+          //   emptyImg: '/images/20200401/d3379aa1318bb767a3ccfd90914f1d49.png',
+          // }, {
+          //   realImg: '/images/20200401/d926a8fb85867d50eaf205f8d5d146f0.png',
+          //   emptyImg: '/images/20200401/61ced6621cf289d74c18fc76d965824b.png',
+          // }, {
+          //   realImg: '/images/20200401/0a9b53a5c85d28d4ad1635c57895e824.png',
+          //   emptyImg: '/images/20200401/652983ef12e3adad16debe2581bf731d.png',
+          // }, {
+          //   realImg: '/images/20200401/c1a4262eb0e0a26e2b64591e748749eb.png',
+          //   emptyImg: '/images/20200401/192eaad95cb4067b84dc4816e32a5785.png',
+          // }, ],
           iconimgIndex: 0,
           swiperSlideList: [{
             url: '/images/guanmap1.jpg'
@@ -272,10 +284,22 @@
           iconSwiper: null
         }
       },
-      created() {
-
+      async created() {
+        console.log(1)
+        let res = await this.getExhibition()
+        console.log(res)
+        if (res.data.code === 0) {
+          this.exhibitionAreaArr = res.data.data
+        } else {
+          layer.msg(res.data.msg)
+        }
+        console.log(this.exhibitionAreaArr)
+        this.exhibitionAreaId = this.exhibitionAreaArr.length !== 0 ? this.exhibitionAreaArr[0].id : ''
+        console.log(this.exhibitionAreaId)
+        this.exhibitionAreaId ? this.handlerExhibition(this.exhibitionAreaId) : ''
       },
       mounted() {
+        console.log(3)
         this.iconSwiper = new Swiper('.permanent1 .swiper-container', {
           effect: "fade",
           noSwiping: true,
@@ -285,9 +309,57 @@
         })
       },
       methods: {
+        async getExhibition() {
+          return new Promise((resolve) => {
+            axios({
+                methods: 'GET',
+                url: `${this.baseUrl}/api/exhibition/findArea`,
+                headers: {
+                  'Content-Type': 'application/x-www-form-urlencoded'
+                }
+              }).then(res => {
+                resolve(res)
+              })
+              .catch(err => {
+                console.error(err)
+              })
+          })
+        },
+        handlerExhibition(id) {
+          axios({
+            method: 'POST',
+            url: `${this.baseUrl}/api/exhibition/findExhibition`,
+            data: {
+              areaId: id,
+              isMain: 1
+            },
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          }).then(res => {
+            console.log(res)
+            res.data.code === 0 ? this.projectList = res.data.data : ''
+            if (res.data.code === 0){
+              this.projectList = res.data.data
+            }else{
+              layer.msg(res.data.msg)
+            }
+          }).catch(err => {
+            console.error(err)
+          })
+        },
         handlerIconimg(index) {
           this.iconimgIndex = index
           this.iconSwiper.slideTo(index, 800)
+        },
+        selectArea(id,index){
+          this.handlerExhibition(id)
+          this.exhibitionAreaIndex = index
+        },
+        selectProject(index,item){
+          console.log(index)
+          this.projectIndex = --index
+          console.log(item)
         }
       },
     })
