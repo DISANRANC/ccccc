@@ -1,0 +1,834 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>游客服务</title>
+    <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+    <meta name="description"
+      content="淮安科技馆位于淮安市文化艺术中心，于2007年3月16日正式对外开放，建筑面积21000平方米，常设展厅面积12000平方米，设有&ldquo;海洋摇篮&rdquo;、&ldquo;探索发现&rdquo;、&ldquo;创造文明&rdquo;、&ldquo;和谐发展&rdquo;、&ldquo;儿童未来&rdquo;5大主题展馆，以及1个健康主题乐园、1个光学展区、1个&ldquo;海峡两岸海洋科技展示馆&rdquo;、3个特效影院，馆藏设施近400套件。">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="/image/logo.ico">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+    <link rel="stylesheet" type="text/css" href="/css/tourist.css">
+    <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="/js/layer/layer.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/nprogress.js"></script>
+    <script type="text/javascript" src="/js/wow.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        new WOW().init();
+        NProgress.start();
+        NProgress.done();
+      })
+    </script>
+  </head>
+<body ontouchstart="">
+<header style="display: none;">
+	<div class="container">
+		<div class="header-top">
+			<div class="weui-cell__bd">
+				<a href="" title="" class="logo"><img src="/public/attachment/images/20191204/400a30dbd1f9e66a6315541f94cd3f1e.png" alt=""></a>
+			</div>
+			<!--<div class="people">
+				<img src="/public/static/guide/images/people.png" alt="">
+				<span class="txt">馆区瞬时承载量</span>
+				<span class="num">0</span>
+			</div>-->
+			<a class="right-btn center" href="/g/record" title="">
+				<img src="/public/static/guide/images/mine.png" alt="">
+				<span>个人中心</span>
+			</a>
+			<div class="right-btn time">
+				<img src="/public/static/guide/images/time.png" alt="">
+				<span>营业时间</span>
+				<div class="time-box">
+					<div class="title">
+						开馆时间
+					</div>
+					<p>9:00 </p>
+					<div class="title">
+						闭馆时间
+					</div>
+					<p>17:00 </p>
+				</div>
+			</div>
+			
+			<a class="right-btn buy" href="/g/buy" title="">
+				<img src="/public/static/guide/images/ticket.png" alt="">
+				<span>立即购票</span>
+			</a>
+			<div class="nav-icon">
+				<span></span>
+				<span></span>
+				<span></span>
+			</div>
+		</div>
+		<div class="navs">
+			<a href="/g" title="首页" class="item">
+				<div class="cn">
+					首页
+				</div>
+				<div class="en">
+					Home
+				</div>
+			</a>
+			<a href="/g/about" title="参观指南" class="item">
+				<div class="cn">
+					参观指南				</div>
+				<div class="en">
+					Visitor's Guide				</div>
+			</a>
+			<a href="/g/news" title="新闻公告" class="item">
+				<div class="cn">
+					新闻公告				</div>
+				<div class="en">
+					News				</div>
+			</a>
+			<a href="/g/buy" title="游客服务" class="item on">
+				<div class="cn">
+					游客服务				</div>
+				<div class="en">
+					Tourist Service				</div>
+			</a>
+			<a href="/g/cases" title="展馆活动" class="item">
+				<div class="cn">
+					展馆活动				</div>
+				<div class="en">
+					Events				</div>
+			</a>
+			<a href="http://www.kjgpx.com/" target="_blank" title="培训中心" class="item">
+				<div class="cn">
+					培训中心
+				</div>
+				<div class="en">
+                    The Training Center
+				</div>
+			</a>
+			<!--			<a href="/g/login" title="登录/注册" class="item">
+				<div class="cn">
+					登录/注册
+				</div>
+				<div class="en">
+					Login / Register
+				</div>
+			</a>
+			-->
+			<!--<a href="javascript:return false;" title="登录/注册" class="item" onclick="layer.msg('模块升级中');">
+				<div class="cn">
+					登录/注册
+				</div>
+				<div class="en">
+					Login / Register
+				</div>
+			</a>-->
+			<!-- 	     <a href="login.php" title="" class="item">
+                        <div class="cn">
+                        立即购票
+                        </div>
+                        <div class="en">
+                            Buy Ticket
+                        </div>
+                    </a> -->
+		</div>
+
+	</div>
+</header>
+<script>
+    /*function show() {
+        $.ajax({
+            type: 'POST',
+            url: "/g/total",
+            data:{},
+            dataType: 'json',
+            success: function(data){
+                console.log(data.total_num)
+                $(".people.num").html(data.total_num);
+            }
+        });
+    }*/
+    //setInterval("show()",60000);
+</script>
+<div class="banner2">
+	<img src="/public/attachment/images/20191210/f41bf391efbc3b8f51e5b5d26ac4f91b.jpg" alt="游客服务" class="bgimg">
+	<div class="banner-title">
+		<div class="container2">
+			<div class="en wow fadeup animated" style="visibility: visible;">
+				Tourist Service			</div>
+			<div class="cn wow fadeup animated" data-wow-delay=".2s" style="visibility: visible;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;">
+				游客服务			</div>
+		</div>
+	</div>
+</div>
+<div class="subnav">
+	<div class="container2">
+		<a href="/g/buy" title="" class="item on">在线购票</a>
+		<a href="/g/lines" title="" class="item">交通线路</a>
+		<!--<a href="/g/newes" title="" class="item">新闻公告</a>-->
+		<a href="/g/facility" title="" class="item">服务设施</a>
+		<a href="/g/method" title="" class="item ">游玩攻略</a>
+		<a href="/g/question" title="" class="item">常见问题</a>
+		<!--<a href="https://www.wenjuan.com/s/JJ3qum/" target="_blank" title="" class="item">问卷调查</a>-->
+		<a href="/g/ask" title="问卷调查" class="item">问卷调查</a>
+	</div>
+</div>
+<div class="tourbuy">
+	<div class="container2 wow fadeup animated" style="visibility: visible;">
+		<div class="news1-top">
+			<div class="title">
+				<img src="/public/static/guide/images/newsicon.png" alt="">
+				<span>新闻公告</span>
+			</div>
+			<div class="swiper-container swiper-container-horizontal">
+				<div class="swiper-wrapper" style="transition-duration: 0ms; transform: translate3d(-3210px, 0px, 0px);">
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/16" class="item">
+							<span class="time">2020.02.14</span>
+							<span class="txt weui-cell_primary">万众一心积极打响防疫攻坚战，厦门…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/21" class="item">
+							<span class="time">2020.04.13</span>
+							<span class="txt weui-cell_primary">厦门科技馆有序恢复开放，迎来首批…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/22" class="item">
+							<span class="time">2020.04.13</span>
+							<span class="txt weui-cell_primary">千里共学堂，厦门科技馆开拓别样趣…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/23" class="item">
+							<span class="time">2020.04.13</span>
+							<span class="txt weui-cell_primary">厦门科技馆《猛犸时代》主题展览火…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/24" class="item">
+							<span class="time">2020.04.13</span>
+							<span class="txt weui-cell_primary">致敬最美逆行者，厦门科技馆邀约全…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/25" class="item">
+							<span class="time">2020.04.13</span>
+							<span class="txt weui-cell_primary">厦门科技馆恢复开放多举措保障旅游…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/27" class="item">
+							<span class="time">2020.05.19</span>
+							<span class="txt weui-cell_primary">厦门科技馆首次“探海直播”上线直…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/28" class="item">
+							<span class="time">2020.05.19</span>
+							<span class="txt weui-cell_primary">各项举措并行，厦门科技馆晋江SM“探…</span>
+						</a>
+					</div>
+										<div class="swiper-slide" style="width: 321px;">
+						<a href="/g/newsintro/29" class="item">
+							<span class="time">2020.05.19</span>
+							<span class="txt weui-cell_primary">千里共学堂，厦门科技馆开拓别样趣…</span>
+						</a>
+					</div>
+										<div class="swiper-slide swiper-slide-prev" style="width: 321px;">
+						<a href="/g/newsintro/32" class="item">
+							<span class="time">2020.06.05</span>
+							<span class="txt weui-cell_primary">“益童成长·童创未来”——困境儿童…</span>
+						</a>
+					</div>
+										<div class="swiper-slide swiper-slide-active" style="width: 321px;">
+						<a href="/g/newsintro/33" class="item">
+							<span class="time">2020.08.11</span>
+							<span class="txt weui-cell_primary">“童心童梦，助力成长”六·一公益活…</span>
+						</a>
+					</div>
+										<div class="swiper-slide swiper-slide-next" style="width: 321px;">
+						<a href="/g/newsintro/34" class="item">
+							<span class="time">2020.08.11</span>
+							<span class="txt weui-cell_primary">厦门科技馆带领外来务工子女走进&amp;…</span>
+						</a>
+					</div>
+									</div>
+			<span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
+			<a href="/g/news" title="" class="more">
+				<img src="/public/static/guide/images/dian.png" alt="">
+				<img src="/public/static/guide/images/dian1.png" alt="">
+			</a>
+		</div>
+		<table class="hidden-xs">
+			<thead>
+			<tr>
+				<th>序号</th>
+				<th>收费项目</th>
+				<th>门市价</th>
+				<th>收费标准</th>
+				<!--<th>备注</th>-->
+				<th>操作</th>
+			</tr>
+			</thead>
+			<tbody>
+						<tr>
+				<td>01</td>
+				<td>成人票（上午场）</td>
+				<td>160.00元</td>
+				<td>120.00元</td>
+				<!--<td >0</td>-->
+				<td>
+					<a class="details" title="查看详情" data-cert="" data-status="1" data-notes="0" data-intro="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="0" data-ex-time="00:00~23:59" data-id="67" data-refund-rule="3" data-title="成人票（上午场）" data-ddays="0" data-name="成人票（上午场）" data-addr="持“本人身份证”至思明区体育路的厦门科技馆 序厅 自助机取票后验证入馆" data-price="120.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+					<!--<a href="/g/flow/67" title="" class="btn1">立即购票</a>-->
+					<!---->
+
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!--<a href="/g/flow/67" title="" class="btn1">立即购票</a>-->
+					<!---->
+				</td>
+			</tr>
+						<tr>
+				<td>01</td>
+				<td>优惠票上午场（教师/学生/老人）　</td>
+				<td>120.00元</td>
+				<td>100.00元</td>
+				<!--<td >0</td>-->
+				<td>
+					<a class="details" title="查看详情" data-cert="" data-status="1" data-notes="0" data-intro="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="0" data-ex-time="00:00~23:59" data-id="69" data-refund-rule="3" data-title="优惠票上午场（教师/学生/老人）　" data-ddays="0" data-name="优惠票上午场（教师/学生/老人）　" data-addr="持“本人身份证”和优惠证件至思明区体育路的厦门科技馆 序厅 自助机取票后验证入馆" data-price="100.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+					<!--<a href="/g/flow/69" title="" class="btn1">立即购票</a>-->
+					<!---->
+
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!--<a href="/g/flow/69" title="" class="btn1">立即购票</a>-->
+					<!---->
+				</td>
+			</tr>
+						<tr>
+				<td>01</td>
+				<td>成人票（下午场）</td>
+				<td>160.00元</td>
+				<td>120.00元</td>
+				<!--<td >0</td>-->
+				<td>
+					<a class="details" title="查看详情" data-cert="" data-status="1" data-notes="0" data-intro="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="0" data-ex-time="00:00~23:59" data-id="71" data-refund-rule="3" data-title="成人票（下午场）" data-ddays="0" data-name="成人票（下午场）" data-addr="持“本人身份证”至思明区体育路的厦门科技馆“序厅”自助机取票后验证入馆" data-price="120.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+					<!--<a href="/g/flow/71" title="" class="btn1">立即购票</a>-->
+					<!---->
+
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!--<a href="/g/flow/71" title="" class="btn1">立即购票</a>-->
+					<!---->
+				</td>
+			</tr>
+						<tr>
+				<td>01</td>
+				<td>优惠票下午场（教师/学生/老人）　</td>
+				<td>120.00元</td>
+				<td>100.00元</td>
+				<!--<td >0</td>-->
+				<td>
+					<a class="details" title="查看详情" data-cert="" data-status="1" data-notes="0" data-intro="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="0" data-ex-time="00:00~23:59" data-id="68" data-refund-rule="3" data-title="优惠票下午场（教师/学生/老人）　" data-ddays="0" data-name="优惠票下午场（教师/学生/老人）　" data-addr="持“本人身份证”和优惠证件至思明区体育路的厦门科技馆“序厅”自助机取票后验证入馆" data-price="100.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+					<!--<a href="/g/flow/68" title="" class="btn1">立即购票</a>-->
+					<!---->
+
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!--<a href="/g/flow/68" title="" class="btn1">立即购票</a>-->
+					<!---->
+				</td>
+			</tr>
+						<!--<tr>
+				<td>A套票</td>
+				<td>主展厅+儿童乐园+飞越影院</td>
+				<td>110元</td>
+				<td>100元</td>
+				<td rowspan="2">1.2米以上学生、60-69周岁老人、教师持教师资格证购票80元，1.2米以下儿童购买电影票30元/人。</td>
+				<td rowspan="2">
+					<a class="details" title="查看详情" data-title="A套票" data-name="主展厅+儿童乐园+飞越影院" data-price="111">
+						详情
+					</a>
+					<a href="javascript:return false;" title="" class="btn1" onclick="layer.msg('模块升级中');" >立即购票</a>
+				</td>
+			</tr>-->
+			<!--<tr>
+				<td>B套票</td>
+				<td>主展厅+儿童乐园+梦幻剧场</td>
+				<td>110元</td>
+				<td>100元</td>
+				<td></td>
+				<td></td>
+			</tr>
+			<tr>
+				<td>C套票</td>
+				<td>主展厅+儿童乐园</td>
+				<td>80元</td>
+				<td>80元</td>
+				<td>1.2米以上学生、60-69周岁老人、教师，持有效证件购票60元。一名成人购票后仅限携带一名1.2米以下儿童。</td>
+				<td>
+					<a class="details" title="查看详情">
+						详情
+					</a>
+					<a href="javascript:return false;" title="" class="btn1" onclick="layer.msg('模块升级中');">立即购票</a>
+				</td>
+			</tr>
+			<tr>
+				<td>D套票</td>
+				<td>主展厅</td>
+				<td>40元</td>
+				<td>40元</td>
+				<td>1.2米以上学生、60-69周岁老人、教师，持有效证件购票20元。一名成人购票后仅限携带一名1.2米以下儿童。</td>
+				<td>
+					<a class="details" title="查看详情">
+						详情
+					</a>
+					<a href="javascript:return false;" title="" class="btn1" onclick="layer.msg('模块升级中');">立即购票</a>
+				</td>
+			</tr>
+			<tr>
+				<td>E套票</td>
+				<td>儿童乐园</td>
+				<td>40元</td>
+				<td>40元</td>
+				<td>1.2米以下儿童免费，一名成人购票后仅限携带一名1.2米以下儿童。</td>
+				<td>
+					<a class="details" title="查看详情">
+						详情
+					</a>
+					<a href="javascript:return false;" title="" class="btn1" onclick="layer.msg('模块升级中');">立即购票</a>
+				</td>
+			</tr>
+			<tr>
+				<td>F套票</td>
+				<td>梦幻剧场 / 飞越影院 </td>
+				<td>30元</td>
+				<td>30元</td>
+				<td>一人一票，一张票只能观看一场电影一个场次，1.2米以下儿童需购票。</td>
+				<td>
+					<a class="details" title="查看详情">
+						详情
+					</a>
+					<a href="javascript:return false;" class="btn1" onclick="layer.msg('模块升级中');">立即购票</a>
+				</td>
+			</tr>-->
+			</tbody>
+		</table>
+		<div class="hidden-lg hidden-md hidden-sm">
+						<div class="itembox">
+				<div class="item">
+					<div class="title">序号</div><div class="txt"></div>
+				</div>
+				<div class="item">
+					<div class="title">收费项目</div><div class="txt">成人票（上午场）</div>
+				</div>
+				<div class="item">
+					<div class="title">门市价</div><div class="txt txt1">160.00元</div>
+				</div>
+				<div class="item">
+					<div class="title">收费标准</div><div class="txt">120.00元</div>
+				</div>
+				<!--<div class="item">
+                <div class="title">备注</div><div class="txt">0</div>
+                </div>-->
+				<div class="item">
+					<div class="title">操作</div><div class="txt">
+                    <!--<a href="/g/flow/67" title="" class="btn1">立即购票</a>-->
+					<!--<a href="/g/flow/67" title="成人票（上午场）" class="btn1"  >立即购票</a><a class="details"  title="查看详情" data-id="67" data-refund-rule="3"  data-title="成人票（上午场）" data-name="成人票（上午场）" data-price="120.00">详情</a></div>
+                    -->
+					<!---->
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!---->
+					<a class="details" title="查看详情" data-id="67" data-notes="0" data-cert="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="" data-refund-rule="3" data-title="成人票（上午场）" data-ddays="0" data-name="成人票（上午场）" data-addr="持“本人身份证”至思明区体育路的厦门科技馆 序厅 自助机取票后验证入馆" data-price="120.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+				</div>
+				</div>
+			</div>
+						<div class="itembox">
+				<div class="item">
+					<div class="title">序号</div><div class="txt"></div>
+				</div>
+				<div class="item">
+					<div class="title">收费项目</div><div class="txt">优惠票上午场（教师/学生/老人）　</div>
+				</div>
+				<div class="item">
+					<div class="title">门市价</div><div class="txt txt1">120.00元</div>
+				</div>
+				<div class="item">
+					<div class="title">收费标准</div><div class="txt">100.00元</div>
+				</div>
+				<!--<div class="item">
+                <div class="title">备注</div><div class="txt">0</div>
+                </div>-->
+				<div class="item">
+					<div class="title">操作</div><div class="txt">
+                    <!--<a href="/g/flow/69" title="" class="btn1">立即购票</a>-->
+					<!--<a href="/g/flow/69" title="优惠票上午场（教师/学生/老人）　" class="btn1"  >立即购票</a><a class="details"  title="查看详情" data-id="69" data-refund-rule="3"  data-title="优惠票上午场（教师/学生/老人）　" data-name="优惠票上午场（教师/学生/老人）　" data-price="100.00">详情</a></div>
+                    -->
+					<!---->
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!---->
+					<a class="details" title="查看详情" data-id="69" data-notes="0" data-cert="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="" data-refund-rule="3" data-title="优惠票上午场（教师/学生/老人）　" data-ddays="0" data-name="优惠票上午场（教师/学生/老人）　" data-addr="持“本人身份证”和优惠证件至思明区体育路的厦门科技馆 序厅 自助机取票后验证入馆" data-price="100.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+				</div>
+				</div>
+			</div>
+						<div class="itembox">
+				<div class="item">
+					<div class="title">序号</div><div class="txt"></div>
+				</div>
+				<div class="item">
+					<div class="title">收费项目</div><div class="txt">成人票（下午场）</div>
+				</div>
+				<div class="item">
+					<div class="title">门市价</div><div class="txt txt1">160.00元</div>
+				</div>
+				<div class="item">
+					<div class="title">收费标准</div><div class="txt">120.00元</div>
+				</div>
+				<!--<div class="item">
+                <div class="title">备注</div><div class="txt">0</div>
+                </div>-->
+				<div class="item">
+					<div class="title">操作</div><div class="txt">
+                    <!--<a href="/g/flow/71" title="" class="btn1">立即购票</a>-->
+					<!--<a href="/g/flow/71" title="成人票（下午场）" class="btn1"  >立即购票</a><a class="details"  title="查看详情" data-id="71" data-refund-rule="3"  data-title="成人票（下午场）" data-name="成人票（下午场）" data-price="120.00">详情</a></div>
+                    -->
+					<!---->
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!---->
+					<a class="details" title="查看详情" data-id="71" data-notes="0" data-cert="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="" data-refund-rule="3" data-title="成人票（下午场）" data-ddays="0" data-name="成人票（下午场）" data-addr="持“本人身份证”至思明区体育路的厦门科技馆“序厅”自助机取票后验证入馆" data-price="120.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+				</div>
+				</div>
+			</div>
+						<div class="itembox">
+				<div class="item">
+					<div class="title">序号</div><div class="txt"></div>
+				</div>
+				<div class="item">
+					<div class="title">收费项目</div><div class="txt">优惠票下午场（教师/学生/老人）　</div>
+				</div>
+				<div class="item">
+					<div class="title">门市价</div><div class="txt txt1">120.00元</div>
+				</div>
+				<div class="item">
+					<div class="title">收费标准</div><div class="txt">100.00元</div>
+				</div>
+				<!--<div class="item">
+                <div class="title">备注</div><div class="txt">0</div>
+                </div>-->
+				<div class="item">
+					<div class="title">操作</div><div class="txt">
+                    <!--<a href="/g/flow/68" title="" class="btn1">立即购票</a>-->
+					<!--<a href="/g/flow/68" title="优惠票下午场（教师/学生/老人）　" class="btn1"  >立即购票</a><a class="details"  title="查看详情" data-id="68" data-refund-rule="3"  data-title="优惠票下午场（教师/学生/老人）　" data-name="优惠票下午场（教师/学生/老人）　" data-price="100.00">详情</a></div>
+                    -->
+					<!---->
+					<!--					<a  title="" class="btn1" onclick="layer.msg('该门票已停售')">立即购票</a>
+					-->
+					<!---->
+					<a class="details" title="查看详情" data-id="68" data-notes="0" data-cert="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="" data-refund-rule="3" data-title="优惠票下午场（教师/学生/老人）　" data-ddays="0" data-name="优惠票下午场（教师/学生/老人）　" data-addr="持“本人身份证”和优惠证件至思明区体育路的厦门科技馆“序厅”自助机取票后验证入馆" data-price="100.00" data-up-limit="10" data-hour="16:00">
+						详情
+					</a>
+				</div>
+				</div>
+			</div>
+					</div>
+		<!--<div class="tipsbox">
+			<img src="/public/static/guide/images/tips.png" alt="">
+			<p class="weui-cell__bd">说明：丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券 </p>
+						<p class="weui-cell__bd">【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆</p><p> </p>
+						<p class="weui-cell__bd">【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定。一个手机号每天最多预约5张票。<br></p><p>&nbsp; </p>
+						<p class="weui-cell__bd">【入馆须知】参观当日，观众须全程佩戴口罩，携带有效身份证原件、预约订单短信，同时提供本人实时的  “ 闽政通 ” 绿色健康码 ，配合工作人员做好体温测量工作，安检后入馆；体温≥37.3℃谢绝入馆。&nbsp;</p><p>&nbsp; </p>
+						<p class="weui-cell__bd">【开放展厅】目前开放 “ 主展厅 ”、“儿童乐园” 和 “ 猛犸时代 ” 主题展，排队和观展时请保持1.5米以上距离，建议参观时间控制在2小时内。儿童乐园内“丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券。</p><p> </p>
+						<p class="weui-cell__bd">【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆。&nbsp;
+</p><p> </p>
+						<p class="weui-cell__bd">【婴幼儿票】身高1.2米以下婴幼儿至首页中“展厅免费票”产品组实名制预约。</p><p>&nbsp; </p>
+						<p class="weui-cell__bd">【特殊证件】持非身份证的观众若无法完成在线预约，须至少提前一天拨打预约电话，预约成功后，凭有效证件至售票处核验购票。预约电话：0592-5148555，预约时间：周二至周日，9:00-17:00。</p><p>&nbsp; </p>
+						<p class="weui-cell__bd">【取票地点】观众实名制购票后，持 “ 本人身份证 ” 或短信中 “ 8位数字码 ” 至思明区体育路95号厦门科技馆 “ 序厅自助机 ” 取票，然后验证入馆参观。
+
+ </p>
+						<p class="weui-cell__bd">【联系电话】0592-5148555、5147666</p><p> </p>
+						<p class="weui-cell__bd">【温馨提示】由于疫情期间应相关部门要求，仅开放主展厅单个入馆通道，暂不提供儿童馆、临时展厅单展门票售卖，由此带来的不便，敬请见谅!</p><p><br></p> </p>
+					</div>-->
+		<!--		<div class="tipsbox">
+					</div>
+				<div class="tipsbox">
+			周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆</p><p>		</div>
+				<div class="tipsbox">
+			馆内日接待量不超过核定最大承载量50%的限流规定。一个手机号每天最多预约5张票。<br></p><p>&nbsp;		</div>
+				<div class="tipsbox">
+			参观当日，观众须全程佩戴口罩，携带有效身份证原件、预约订单短信，同时提供本人实时的  “ 闽政通 ” 绿色健康码 ，配合工作人员做好体温测量工作，安检后入馆；体温≥37.3℃谢绝入馆。&nbsp;</p><p>&nbsp;		</div>
+				<div class="tipsbox">
+			目前开放 “ 主展厅 ”、“儿童乐园” 和 “ 猛犸时代 ” 主题展，排队和观展时请保持1.5米以上距离，建议参观时间控制在2小时内。儿童乐园内“丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券。</p><p>		</div>
+				<div class="tipsbox">
+			1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆。&nbsp;
+</p><p>		</div>
+				<div class="tipsbox">
+			身高1.2米以下婴幼儿至首页中“展厅免费票”产品组实名制预约。</p><p>&nbsp;		</div>
+				<div class="tipsbox">
+			持非身份证的观众若无法完成在线预约，须至少提前一天拨打预约电话，预约成功后，凭有效证件至售票处核验购票。预约电话：0592-5148555，预约时间：周二至周日，9:00-17:00。</p><p>&nbsp;		</div>
+				<div class="tipsbox">
+			观众实名制购票后，持 “ 本人身份证 ” 或短信中 “ 8位数字码 ” 至思明区体育路95号厦门科技馆 “ 序厅自助机 ” 取票，然后验证入馆参观。
+
+		</div>
+				<div class="tipsbox">
+			0592-5148555、5147666</p><p>		</div>
+				<div class="tipsbox">
+			由于疫情期间应相关部门要求，仅开放主展厅单个入馆通道，暂不提供儿童馆、临时展厅单展门票售卖，由此带来的不便，敬请见谅!</p><p><br></p>		</div>
+		-->
+
+	</div>
+</div>
+<div class="ticket-box" style="margin-top: -328.484px; display: none;">
+	<img src="/public/static/guide/images/close2.png" alt="" class="ticket-close">
+	<div class="title">成人票（上午场）</div>
+	<div class="item-box">
+        <h4 style="text-align:center">预订须知</h4>
+                <div class="item">
+            【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆<p></p><p>        </p></div>
+                <div class="item">
+            【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定。一个手机号每天最多预约5张票。<br><p></p><p>&nbsp;        </p></div>
+                <div class="item">
+            【入馆须知】参观当日，观众须全程佩戴口罩，携带有效身份证原件、预约订单短信，同时提供本人实时的  “ 闽政通 ” 绿色健康码 ，配合工作人员做好体温测量工作，安检后入馆；体温≥37.3℃谢绝入馆。&nbsp;<p></p><p>&nbsp;        </p></div>
+                <div class="item">
+            【开放展厅】目前开放 “ 主展厅 ”、“儿童乐园” 和 “ 猛犸时代 ” 主题展，排队和观展时请保持1.5米以上距离，建议参观时间控制在2小时内。儿童乐园内“丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券。<p></p><p>        </p></div>
+                <div class="item">
+            【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆。&nbsp;
+<p></p><p>        </p></div>
+                <div class="item">
+            【婴幼儿票】身高1.2米以下婴幼儿至首页中“展厅免费票”产品组实名制预约。<p></p><p>&nbsp;        </p></div>
+                <div class="item">
+            【特殊证件】持非身份证的观众若无法完成在线预约，须至少提前一天拨打预约电话，预约成功后，凭有效证件至售票处核验购票。预约电话：0592-5148555，预约时间：周二至周日，9:00-17:00。<p></p><p>&nbsp;        </p></div>
+                <div class="item">
+            【取票地点】观众实名制购票后，持 “ 本人身份证 ” 或短信中 “ 8位数字码 ” 至思明区体育路95号厦门科技馆 “ 序厅自助机 ” 取票，然后验证入馆参观。
+
+        </div>
+                <div class="item">
+            【联系电话】0592-5148555、5147666<p></p><p>        </p></div>
+                <div class="item">
+            【温馨提示】由于疫情期间应相关部门要求，仅开放主展厅单个入馆通道，暂不提供儿童馆、临时展厅单展门票售卖，由此带来的不便，敬请见谅!<p></p><p><br></p>        </div>
+        		<!--<div class="item">
+			<div class="label1">
+				预订说明
+			</div>
+			<div class="content">
+				预订时间：需要在游玩<span class="ddays">前1天的</span><span class="dhour">23:58</span>前预订<br>
+				有 效 期：<span class="valid_date">游玩日期当天有效</span><br>
+				限购政策：每笔订单最多购买<span class="uplimit">19</span>份
+			</div>
+		</div>
+		<div class="item">
+			<div class="label1">
+				入园须知
+			</div>
+			<div class="content">
+				&lt;!&ndash;<p>【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆</p><p>【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定。一个手机号每天最多预约5张票。<br></p><p>&nbsp;【入馆须知】参观当日，观众须全程佩戴口罩，携带有效身份证原件、预约订单短信，同时提供本人实时的  “ 闽政通 ” 绿色健康码 ，配合工作人员做好体温测量工作，安检后入馆；体温≥37.3℃谢绝入馆。&nbsp;</p><p>&nbsp;【开放展厅】目前开放 “ 主展厅 ”、“儿童乐园” 和 “ 猛犸时代 ” 主题展，排队和观展时请保持1.5米以上距离，建议参观时间控制在2小时内。儿童乐园内“丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券。</p><p>【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆。&nbsp;
+</p><p>【婴幼儿票】身高1.2米以下婴幼儿至首页中“展厅免费票”产品组实名制预约。</p><p>&nbsp;【特殊证件】持非身份证的观众若无法完成在线预约，须至少提前一天拨打预约电话，预约成功后，凭有效证件至售票处核验购票。预约电话：0592-5148555，预约时间：周二至周日，9:00-17:00。</p><p>&nbsp;【取票地点】观众实名制购票后，持 “ 本人身份证 ” 或短信中 “ 8位数字码 ” 至思明区体育路95号厦门科技馆 “ 序厅自助机 ” 取票，然后验证入馆参观。
+
+【联系电话】0592-5148555、5147666</p><p>【温馨提示】由于疫情期间应相关部门要求，仅开放主展厅单个入馆通道，暂不提供儿童馆、临时展厅单展门票售卖，由此带来的不便，敬请见谅!</p><p><br></p>&ndash;&gt;
+				入园方式：天最多预约5张票<br>
+				商家短信：<span class="sms_intro">商家确认短信会在下单成功后1分钟内发送</span><br>
+				景区暑期开放时间：<span class="intro">周二-周四 9：00-17：30（逢周一闭馆）
+				周五-周日 9：00-18：00</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="label1">
+				退款说明
+			</div>
+			<div class="content">
+				退款规则：<span class="refund_rule">90天内支持随时退款，经核实如未取票，可免费取消</span><br>额外说明：<span class="refund_extra">未使用可申请退款</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="label1">
+				费用说明
+			</div>
+			<div class="content">
+				【费用包含】<span class="fee">厦门科技馆主展厅+儿童乐园+虫现江湖成人票1张</span><br>
+				【费用不含】 <span class="fee_un">未提及其他一切费用</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="label1">
+				使用说明
+			</div>
+			<div class="content">
+				<p>【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆</p><p>【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定<br>
+								【兑换时间】周二至周日，<span class="ex_time">9：00－16：00</span><br>
+				（周一闭馆，节假日以馆内公示时间为准）；<br>
+				</p><p>【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆				<br>
+				【入园凭证】<span class="cert">凭票付通6位数字码（或下单手机号），至科技馆序厅自助机或展馆入口处自助机验证兑换实体票。</span>
+			</div>
+		</div>
+		<div class="item">
+			<div class="label1">
+				备  注
+			</div>
+			<div class="content">
+				<span class='uunotes'></span>
+			</div>
+		</div>-->
+	</div>
+	<div class="bottom">
+		<div class="txt">
+			门票价:
+		</div>
+		<div class="num weui-cell__bd">¥120.00</div>
+		<!--<a href="javascript:return false;" title="" class="btn1" id="buy_submit"  onclick="layer.msg('该门票已停售');">立即购票</a>-->
+		<!--<a href="javascript:return false;" title="" class="btn1"  onclick="layer.msg('模块升级中');">立即购票</a>-->
+	</div>
+</div>
+<div class="mask" style="display: none;">
+
+</div>
+<style>
+	.tourbuy .itembox .item .txt1{text-decoration: line-through}
+</style>
+<script type="text/javascript">
+    $(function(){
+        $("header .navs .item").eq(3).addClass("on")
+        $(".details").click(function(){
+            var id = $(this).attr('data-id')
+            var price = $(this).attr('data-price')
+            var title = $(this).attr('data-title')
+            var dhour = $(this).attr('data-hour')
+            var ddays = $(this).attr('data-ddays')
+            var ticket_status = $(this).attr('data-status')
+
+            var valid_date = $(this).attr('data-valid-date')
+            var sms_intro = $(this).attr('data-sms-intro')
+            var intro = $(this).attr('data-intro')
+            var refund_extra = $(this).attr('data-refund-extra')
+            var fee = $(this).attr('data-fee')
+            var cert = $(this).attr('data-cert')
+            var fee_un = $(this).attr('data-fee-un')
+            var ex_time = $(this).attr('data-ex-time')
+            var uunotes = $(this).attr('data-notes')
+            if(ddays == 0){
+                ddays = '日期的'
+            }else{
+                ddays = '前'+ddays+'天的'
+            }
+            if(valid_date == 0){
+                valid_date = '游玩日期起有效'
+            }else if(valid_date == 1){
+                valid_date = '下单日期起有效'
+            }else{
+                valid_date = '期票模式'
+            }
+
+            var uplimit = $(this).attr('data-up-limit')
+            var addr = $(this).attr('data-addr')
+            var refund_rule = $(this).attr('data-refund-rule');
+            var rule ='';
+            if(refund_rule == 0){
+                rule = '游玩日期内可退'/*1游玩日期前可退需在验证
+                截止时间前退，2 不可退*/
+            }else if(refund_rule == 1){
+                rule = '游玩日期前可退需在验证截止时间前退';
+            }else if(refund_rule == 2){
+                rule = '不可退'
+            }
+            // //console.log(price)
+            // $('.ticket-box .num').text('¥'+price)
+            // $('.ticket-box .title').text(title)
+            // $('.ticket-box .dhour').text(dhour)
+            // $('.ticket-box .uplimit').text(uplimit)
+            // $('.ticket-box .addr').text(addr)
+            // $('.ticket-box .refund_rule').text(rule)
+            // $('.ticket-box .ddays').text(ddays)
+            // $('.ticket-box .ex_time').text(ex_time)
+            // $('.ticket-box .valid_date').text(valid_date)
+            // $('.ticket-box .sms_intro').text(sms_intro)
+            // $('.ticket-box .intro').text(intro)
+            // $('.ticket-box .fee').text(fee)
+            // $('.ticket-box .cert').text(cert)
+            // $('.ticket-box .fee_un').text(fee_un)
+            // $('.ticket-box .refund_extra').text(refund_extra)
+            // $('.ticket-box .uunotes').text(uunotes)
+            $(".mask").fadeIn()
+            $(".ticket-box").fadeIn()
+            /*if(price > 0){
+                if(ticket_status == 0){
+                    $('#buy_submit').removeAttr('onclick');
+                    $('#buy_submit').attr('href','/g/flow/'+id);
+                }
+            }*/
+            $('#buy_submit').removeAttr('onclick');
+            $('#buy_submit').attr('href','/g/flow/'+id);
+
+        })
+
+        $(".ticket-close").click(function(){
+            $(".mask").fadeOut()
+            $(".ticket-box").fadeOut()
+        })
+        
+        var swiper = new Swiper('.news1-top .swiper-container', {
+            speed:800,
+            autoplay: {
+                delay: 5000,
+            },
+            slidesPerView: 2,
+            breakpoints: {
+                767: {
+                    slidesPerView: 1
+                },
+            }
+        });
+    })
+</script>
+<footer>
+	<div class="left">
+		咨询热线：0592-5148555	</div>
+	<div class="navs">
+		<a href="/g" title="首页">首页</a>
+		<a href="/g/about" title="参观指南">参观指南</a>
+		<a href="/g/news" title="新闻中心">新闻中心</a>
+		<a href="/g/buy" title="游客服务">游客服务</a>
+		<a href="/g/cases" title="展馆活动">展馆活动</a>
+
+					<a href="/g/login" title="登录/注册">登录/注册</a>
+			</div>
+	<div class="right">
+		COPYRIGHT厦门科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备09055120号网安备案号35020302034028<a href="http://beian.miit.gov.cn" target="_blank"></a>
+	</div>
+	<script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?317b4274e7a05ddafcfecd4d48ac044e";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+        })();
+	</script>
+</footer>
+
+</body></html>

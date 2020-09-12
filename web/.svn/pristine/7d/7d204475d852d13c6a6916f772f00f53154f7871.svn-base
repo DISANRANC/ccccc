@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>游客服务</title>
+    <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+    <meta name="description"
+    content="淮安科技馆位于淮安市文化艺术中心，于2007年3月16日正式对外开放，建筑面积21000平方米，常设展厅面积12000平方米，设有&ldquo;海洋摇篮&rdquo;、&ldquo;探索发现&rdquo;、&ldquo;创造文明&rdquo;、&ldquo;和谐发展&rdquo;、&ldquo;儿童未来&rdquo;5大主题展馆，以及1个健康主题乐园、1个光学展区、1个&ldquo;海峡两岸海洋科技展示馆&rdquo;、3个特效影院，馆藏设施近400套件。">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="/image/logo.ico">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+    <link rel="stylesheet" type="text/css" href="/css/tourist.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/ele-index.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/qs.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="/js/layer/layer.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/nprogress.js"></script>
+    <script type="text/javascript" src="/js/wow.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            new WOW().init();
+            NProgress.start();
+            NProgress.done();
+        })
+    </script>
+</head>
+
+<body ontouchstart>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="weui-cell__bd title">
+                    <a href="/index.html" title="" class="logo">LOGO XXX科技馆</a>
+                </div>
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner2">
+        <img src="/images/new/tourist/touristbg.png" alt="游客服务" class="bgimg">
+        <div class="banner-title">
+            <div class="container2 exhibitionHall">
+                <div class="cn wow fadeup animated" data-wow-delay=".2s" style="visibility: visible;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;">
+                    <!-- 参观指南 -->
+                    <img src="/images/new/exhibitionHall.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subnav">
+        <div class="container2">
+            <a href="/html/tourist/tourist.html" title="" class="item on">在线购票</a>
+            <a href="/html/tourist/trafficRoutes.html" title="" class="item">交通线路</a>
+            <a href="/html/tourist/serviceFacilities.html" title="" class="item">服务设施</a>
+            <a href="/html/tourist/playStrategy.html" title="" class="item ">游玩攻略</a>
+            <a href="/html/tourist/commonProblem.html" title="" class="item">常见问题</a>
+            <a href="/html/tourist/questionnaire.html" title="问卷调查" class="item">问卷调查</a>
+        </div>
+    </div>
+
+    <div class="tourbuy">
+        <div class="container2 wow fadeup animated" style="visibility: visible;">
+            <div class="news1-top">
+                <div class="title">
+                    <span class="news-span">新闻公告</span>
+                </div>
+                <div class="swiper-container swiper-container-horizontal">
+                    <div class="swiper-wrapper" style="transition-duration: 800ms; transform: translate3d(-716px, 0px, 0px);">
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/16" class="item">
+                                <span class="time">2020.02.14</span>
+                                <span class="txt weui-cell_primary">
+                                    万众一心积极打响防疫攻坚战，厦门…
+                                </span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-prev" style="width: 358px;">
+                            <a href="/g/newsintro/21" class="item">
+                                <span class="time">2020.04.13</span>
+                                <span class="txt weui-cell_primary">厦门科技馆有序恢复开放，迎来首批…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-active" style="width: 358px;">
+                            <a href="/g/newsintro/22" class="item">
+                                <span class="time">2020.04.13</span>
+                                <span class="txt weui-cell_primary">千里共学堂，厦门科技馆开拓别样趣…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide swiper-slide-next" style="width: 358px;">
+                            <a href="/g/newsintro/23" class="item">
+                                <span class="time">2020.04.13</span>
+                                <span class="txt weui-cell_primary">厦门科技馆《猛犸时代》主题展览火…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/24" class="item">
+                                <span class="time">2020.04.13</span>
+                                <span class="txt weui-cell_primary">致敬最美逆行者，厦门科技馆邀约全…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/25" class="item">
+                                <span class="time">2020.04.13</span>
+                                <span class="txt weui-cell_primary">厦门科技馆恢复开放多举措保障旅游…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/27" class="item">
+                                <span class="time">2020.05.19</span>
+                                <span class="txt weui-cell_primary">厦门科技馆首次“探海直播”上线直…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/28" class="item">
+                                <span class="time">2020.05.19</span>
+                                <span class="txt weui-cell_primary">各项举措并行，厦门科技馆晋江SM“探…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/29" class="item">
+                                <span class="time">2020.05.19</span>
+                                <span class="txt weui-cell_primary">千里共学堂，厦门科技馆开拓别样趣…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/32" class="item">
+                                <span class="time">2020.06.05</span>
+                                <span class="txt weui-cell_primary">“益童成长·童创未来”——困境儿童…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/33" class="item">
+                                <span class="time">2020.08.11</span>
+                                <span class="txt weui-cell_primary">“童心童梦，助力成长”六·一公益活…</span>
+                            </a>
+                        </div>
+                        <div class="swiper-slide" style="width: 358px;">
+                            <a href="/g/newsintro/34" class="item">
+                                <span class="time">2020.08.11</span>
+                                <span class="txt weui-cell_primary">厦门科技馆带领外来务工子女走进&amp;…</span>
+                            </a>
+                        </div>
+                    </div>
+                    <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span>
+                </div>
+                <a href="/g/news" title="" class="more">
+                    <img src="/images/dian.png" alt="">
+                    <img src="/images/dian1.png" alt="">
+                </a>
+            </div>
+            
+            <div class="tourenter">
+                <h1 style="font-size: 0.24rem; font-family: 'Microsoft Yahei'; color: #333333; font-weight: bold;">展览介绍</h1>
+                <h2 style="font-size: 0.18rem; color: #333333; font-family: 'Microsoft Yahei'; margin-top: 0.1rem;">Exhibits Introduction</h2>
+                <div class="row row-btn">
+                    <input class="btn btn-default" type="button" value="全部">
+                    <input class="btn btn-default" type="button" value="文创科娱">
+                    <input class="btn btn-default" type="button" value="远古时代">
+                    <input class="btn btn-default" type="button" value="尖端科技">
+                    <div class="row-ol">
+                        <ol class="breadcrumb">
+                            <li>您的位置</li>
+                            <li><a href="/index.html">首页</a></li>
+                            <li class="active">展览活动</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="app">
+                    <div class="row">
+                        <div class="col-sm-4" v-for="(item,index) in productList" :key="index">
+                            <a class="details item"  @click="popup">
+                                <div class="imgbox">
+                                    <img src="https://images.pft12301.cc/125455/product/15928162340.jpeg" alt="主展厅+儿童馆+猛犸时代">
+                                    <!-- <img :src="item.imageMain" alt="主展厅+儿童馆+猛犸时代"> -->
+                                </div>
+                                <div class="content">
+                                    <div class="h1">{{item.name}}</div>
+                                    <div class="h3"><span>￥{{item.price}}</span>起</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button @click="prevPage()">
+                        上一页
+                    </button>
+                    <span>第{{currentPage}}页/共{{totalPage}}页</span>
+                    <button @click="nextPage()">
+                        下一页
+                    </button>
+                </div>
+            </div>
+            <!-- <div class="tourenter">
+                <h1 style="font-size: 0.24rem; font-family: 'Microsoft Yahei'; color: #333333; font-weight: bold;">展览介绍</h1>
+                <h2 style="font-size: 0.18rem; color: #333333; font-family: 'Microsoft Yahei'; margin-top: 0.1rem;">Exhibits Introduction</h2>
+                <div class="row row-btn">
+                    <input class="btn btn-default" type="button" value="全部">
+                    <input class="btn btn-default" type="button" value="文创科娱">
+                    <input class="btn btn-default" type="button" value="远古时代">
+                    <input class="btn btn-default" type="button" value="尖端科技">
+                    <div class="row-ol">
+                        <ol class="breadcrumb">
+                            <li>您的位置</li>
+                            <li><a href="/index.html">首页</a></li>
+                            <li class="active">展览活动</li>
+                        </ol>
+                    </div>
+                </div>
+                <div id="app">                             
+                    <div class="row">
+                        <div class="col-sm-4" v-for="(item,index) in productList" :key="index">
+                            <a class="details item" title="查看详情" data-cert="" data-status="1" data-notes="0" data-intro="" data-fee-un="" data-fee="" data-refund-extra="" data-sms-intro="" data-valid-date="0" data-ex-time="10:00~23:59" data-id="67" data-refund-rule="3" data-title="购票须知" data-ddays="0" data-name="成人票（上午场）" data-addr="持“本人身份证”至思明区体育路的厦门科技馆 序厅 自助机取票后验证入馆" data-price="120.00" data-up-limit="10" data-hour="16:00">
+                                <div class="imgbox" style="height: 211.26px;">
+                                    <img src="/images/new/tourist/tourist1.png" alt="主展厅+儿童馆+猛犸时代">
+                                </div>
+                                <div class="content">
+                                    <div class="h1">{{item.name}}</div>
+                                    <div class="h3"><span>￥{{item.price}}</span>起</div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <button @click="prevPage()">
+                        上一页
+                    </button>
+                    <span>第{{currentPage}}页/共{{totalPage}}页</span>
+                    <button @click="nextPage()">
+                        下一页
+                    </button>
+                </div>
+                <div class="pager" id="pager">
+                <span class="form-inline">
+                    <select class="form-control" v-model="pagesize" v-on:change="showPage(pageCurrent,$event,true)" number>
+                        <option value="12">每页12个</option>
+                        <option value="20">每页20个</option>
+                        <option value="30">每页30个</option>
+                        <option value="40">每页40个</option>
+                    </select>
+                </span>
+                <span v-for="item in pageCount+1">
+                    <span v-if="item==1" class="btn btn-default" v-on:click="showPage(1,$event)" :class="{'disabled':fDisabled}">
+                        首页
+                    </span>
+                    <span v-if="item==1" class="btn btn-default" v-on:click="showPage(pageCurrent-1,$event)" :class="{'disabled':fDisabled}">
+                        上一页
+                    </span>
+                    <span v-if="item==1" class="btn btn-default" v-on:click="showPage(item,$event)">
+                        {{item}}
+                    </span>
+                    <span v-if="item==1&&item<showPagesStart-1" class="btn btn-default disabled">
+                        ...
+                    </span>
+                    <span v-if="item>1&&item<=pageCount-1&&item>=showPagesStart&&item<=showPageEnd&&item<=pageCount" class="btn btn-default" v-on:click="showPage(item,$event)">
+                        {{item}}
+                    </span>
+                    <span v-if="item==pageCount&&item>showPageEnd+1" class="btn btn-default disabled">
+                        ...
+                    </span>
+                    <span v-if="item==pageCount" class="btn btn-default" v-on:click="showPage(item,$event)"  >
+                        {{item}}
+                    </span>
+                    <span v-if="item==pageCount" class="btn btn-default" v-on:click="showPage(pageCurrent+1,$event)" :class="{'disabled':lDisabled}">
+                        下一页
+                    </span>
+                    <span v-if="item==pageCount" class="btn btn-default" v-on:click="showPage(pageCount,$event)" :class="{'disabled':lDisabled}">
+                        尾页
+                    </span>
+                </span>
+                <span>{{pageCurrent}}/{{pageCount}}</span>
+            </div>
+            </div> -->
+        </div>
+    </div>
+    
+    <div class="ticket-box" style="margin-top: -328.484px; display: none;">
+        <img src="/images/close10.png" alt="" class="ticket-close">
+        <div class="title"> </div>
+        <div class="item-box">
+            <!-- <h4 style="text-align:center">预订须知</h4> -->
+            <div class="item">
+                【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆
+            </div>
+            <div class="item">
+                【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定。一个手机号每天最多预约5张票。<br>
+            </div>
+            <div class="item">
+                【入馆须知】参观当日，观众须全程佩戴口罩，携带有效身份证原件、预约订单短信，同时提供本人实时的  “ 闽政通 ” 绿色健康码 ，配合工作人员做好体温测量工作，安检后入馆；体温≥37.3℃谢绝入馆。&nbsp;
+            </div>    
+            <div class="item">
+                【开放展厅】目前开放 “ 主展厅 ”、“儿童乐园” 和 “ 猛犸时代 ” 主题展，排队和观展时请保持1.5米以上距离，建议参观时间控制在2小时内。儿童乐园内“丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券。
+            </div>
+            <div class="item">
+                【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆。&nbsp;
+            </div>
+            <div class="item">
+                【婴幼儿票】身高1.2米以下婴幼儿至首页中“展厅免费票”产品组实名制预约。
+            </div>
+            <div class="item">
+                【特殊证件】持非身份证的观众若无法完成在线预约，须至少提前一天拨打预约电话，预约成功后，凭有效证件至售票处核验购票。预约电话：0592-5148555，预约时间：周二至周日，9:00-17:00。
+            </div> 
+            <div class="item">
+                【取票地点】观众实名制购票后，持 “ 本人身份证 ” 或短信中 “ 8位数字码 ” 至思明区体育路95号厦门科技馆 “ 序厅自助机 ” 取票，然后验证入馆参观。
+            </div>
+            <div class="item">
+                【联系电话】0592-5148555、5147666
+            </div>
+            <div class="item">
+                【温馨提示】由于疫情期间应相关部门要求，仅开放主展厅单个入馆通道，暂不提供儿童馆、临时展厅单展门票售卖，由此带来的不便，敬请见谅!
+            </div>
+            <!--<div class="item">
+                <div class="label1">
+                    预订说明
+                </div>
+                <div class="content">
+                    预订时间：需要在游玩<span class="ddays">前1天的</span><span class="dhour">23:58</span>前预订<br>
+                    有 效 期：<span class="valid_date">游玩日期当天有效</span><br>
+                    限购政策：每笔订单最多购买<span class="uplimit">19</span>份
+                </div>
+            </div>
+            <div class="item">
+                <div class="label1">
+                    入园须知
+                </div>
+                <div class="content">
+                    &lt;!&ndash;<p>【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆</p><p>【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定。一个手机号每天最多预约5张票。<br></p><p>&nbsp;【入馆须知】参观当日，观众须全程佩戴口罩，携带有效身份证原件、预约订单短信，同时提供本人实时的  “ 闽政通 ” 绿色健康码 ，配合工作人员做好体温测量工作，安检后入馆；体温≥37.3℃谢绝入馆。&nbsp;</p><p>&nbsp;【开放展厅】目前开放 “ 主展厅 ”、“儿童乐园” 和 “ 猛犸时代 ” 主题展，排队和观展时请保持1.5米以上距离，建议参观时间控制在2小时内。儿童乐园内“丛林探险”项目仅限1.4米以下儿童入场，需凭门票兑换入场券。</p><p>【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆。&nbsp;
+    </p><p>【婴幼儿票】身高1.2米以下婴幼儿至首页中“展厅免费票”产品组实名制预约。</p><p>&nbsp;【特殊证件】持非身份证的观众若无法完成在线预约，须至少提前一天拨打预约电话，预约成功后，凭有效证件至售票处核验购票。预约电话：0592-5148555，预约时间：周二至周日，9:00-17:00。</p><p>&nbsp;【取票地点】观众实名制购票后，持 “ 本人身份证 ” 或短信中 “ 8位数字码 ” 至思明区体育路95号厦门科技馆 “ 序厅自助机 ” 取票，然后验证入馆参观。
+    
+    【联系电话】0592-5148555、5147666</p><p>【温馨提示】由于疫情期间应相关部门要求，仅开放主展厅单个入馆通道，暂不提供儿童馆、临时展厅单展门票售卖，由此带来的不便，敬请见谅!</p><p><br></p>&ndash;&gt;
+                    入园方式：天最多预约5张票<br>
+                    商家短信：<span class="sms_intro">商家确认短信会在下单成功后1分钟内发送</span><br>
+                    景区暑期开放时间：<span class="intro">周二-周四 9：00-17：30（逢周一闭馆）
+                    周五-周日 9：00-18：00</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label1">
+                    退款说明
+                </div>
+                <div class="content">
+                    退款规则：<span class="refund_rule">90天内支持随时退款，经核实如未取票，可免费取消</span><br>额外说明：<span class="refund_extra">未使用可申请退款</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label1">
+                    费用说明
+                </div>
+                <div class="content">
+                    【费用包含】<span class="fee">厦门科技馆主展厅+儿童乐园+虫现江湖成人票1张</span><br>
+                    【费用不含】 <span class="fee_un">未提及其他一切费用</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label1">
+                    使用说明
+                </div>
+                <div class="content">
+                    <p>【开放时间】周一闭馆，周二至周日开放，上午场9：00~13：00；下午场13：00~17：00；16：00停止取票、检票，17:00闭馆</p><p>【限量接待】馆内日接待量不超过核定最大承载量50%的限流规定<br>
+                                    【兑换时间】周二至周日，<span class="ex_time">9：00－16：00</span><br>
+                    （周一闭馆，节假日以馆内公示时间为准）；<br>
+                    </p><p>【优惠人群】1.2米（含）以上及本科（含）以下学生、60周岁至70周岁老人、教师（持教师资格证）购买 “ 优惠票 ” ，至科技馆 “ 自助机 ” 取票后，同时出示有效优惠证件核验入馆				<br>
+                    【入园凭证】<span class="cert">凭票付通6位数字码（或下单手机号），至科技馆序厅自助机或展馆入口处自助机验证兑换实体票。</span>
+                </div>
+            </div>
+            <div class="item">
+                <div class="label1">
+                    备  注
+                </div>
+                <div class="content">
+                    <span class='uunotes'></span>
+                </div>
+            </div>-->
+        </div>
+        <div class="bottom">
+            <div class="txt">
+                门票价:
+            </div>
+            <div class="num weui-cell__bd">¥120.00</div>
+            <button type="button" class="btn btn-default">立即购票</button>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        $(function(){
+            $(".ticket-close").click(function(){
+                $(".mask").fadeOut()
+                $(".ticket-box").fadeOut()
+            })
+        })
+    </script>
+
+    <footer>
+        <div class="left">
+            咨询热线：0592-5148555 
+        </div>
+        <div class="navs">
+            <a href="" title="首页">首页</a>
+            <a href="" title="参观指南">参观指南</a>
+            <a href="" title="新闻中心">新闻中心</a>
+            <a href="" title="游客服务">游客服务</a>
+            <a href="" title="展馆活动">展馆活动</a>
+            <a href="" title="登录/注册">登录/注册</a>
+        </div>
+        <div class="right">
+            COPYRIGHT淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备09055120号网安备案号999999999999
+            <a href="http://beian.miit.gov.cn" target="_blank"></a>
+        </div>
+        <script>
+            var _hmt = _hmt || [];
+            (function () {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?317b4274e7a05ddafcfecd4d48ac044e";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </footer>
+
+    <script type="text/javascript">
+        $(function () {
+            $("header .navs .item").eq(0).addClass("on");
+            var active1 = $(".index2 .col").eq(1).find(".item");
+            active1.addClass("on");
+            var video1 = new Swiper('.banner .video-box .swiper-container', {
+                speed: 800,
+                autoplay: {
+                    delay: 4000,
+                },
+                navigation: {
+                    nextEl: '.banner .video-btn.next',
+                    prevEl: '.banner .video-btn.prev',
+                },
+                on: {
+                    init: function () {
+                        console.log(this)
+                        $(".banner .swiper-num .total").html("0" + this.slides.length)
+                        $(".banner .swiper-num .current").html("01")
+                    },
+                    slideChangeTransitionStart: function () {
+                        var idx = this.activeIndex + 1
+                        $(".banner .swiper-num .current").html("0" + idx)
+                        $(".video-item .imgbox").show()
+                        $(".video-item video").hide().trigger('pause')
+                    },
+                },
+            });
+            $(".play-btn").click(function () {
+                var video = $(this).attr("data-video")
+                $(".video-window").fadeIn()
+                $(".mask").fadeIn()
+                $(".video-window").find("video").attr("src", video).trigger("play")
+            });
+            $(".video-close").click(function () {
+                $(".video-window").fadeOut()
+                $(".mask").fadeOut()
+                $(".video-window").find("video").trigger("pause")
+            });
+            var index2swiper = new Swiper('.index2 .swiper-container', {
+                loop: true,
+                speed: 800,
+                slidesPerView: 3,
+                centeredSlides: true,
+                breakpoints: {
+                    767: {
+                        slidesPerView: 1
+                    },
+                    1000: {
+                        slidesPerView: 2,
+                        centeredSlides: false
+                    }
+                },
+                navigation: {
+                    nextEl: '.index2 .next',
+                    prevEl: '.index2 .prev',
+                },
+            });
+            var news2 = new Swiper('.announcebox .swiper-container', {
+                loop: true,
+                speed: 800,
+                autoplay: {
+                    delay: 5000,
+                },
+                navigation: {
+                    nextEl: '.announcebox .next',
+                    prevEl: '.announcebox .prev',
+                },
+            });
+            $(".announcebox .closebox").click(function () {
+                $(".announcebox").hide('400', function () {});
+            });
+        });
+    </script>
+
+
+    <script>
+        new Vue({
+            el: '#app',
+            data() {
+                return {
+                    productList:"", //所有数据
+                    // name:"",
+                    totalPage: "", // 统共页数，默认为1
+                    currentPage: 1, //当前页数 ，默认为1
+                    pageSize:1, // 每页显示数量
+                    totalCount:"",
+                    currentPageData: [] //当前页显示内容
+                };
+            },
+            mounted() {
+                // 计算一共有几页
+                setTimeout(()=>{
+                    console.log(this.totalPage); 
+                    this.totalPage = Math.ceil(this.totalCount / this.pageSize);
+                    // 计算得0时设置为1
+                    console.log(this.totalCount )
+                    this.totalPage = this.totalPage == 0 ? 1 : this.totalPage;
+                    this.setCurrentPageData();
+                },100)
+                
+            },
+            created(){
+                this.getList();
+            },
+            methods: {
+                // 设置当前页面数据，对数组操作的截取规则为[0~pageSize],
+                setCurrentPageData() {
+                    let begin = (this.currentPage - 1) * this.pageSize;
+                    console.log(begin)
+                    let end = this.currentPage * this.pageSize;
+                    this.currentPageData = this.productList.slice(
+                        begin,
+                        end
+                    );
+                    console.log(this.currentPageData)
+                },
+                //上一页
+                prevPage() {
+                    console.log(this.currentPage);
+                    console.log(this.productList.length);
+                    if (this.currentPage == 1) return;
+                
+                    this.currentPage--;
+                    console.log(this.currentPage)
+                    this.getList()
+                },
+                // 下一页
+                nextPage() {
+                    console.log(this.totalPage); 
+                    if (this.currentPage == this.totalPage)return ;
+                    this.currentPage++;
+                    console.log(this.currentPage)
+                    // this.setCurrentPageData();
+                    this.getList()
+                },
+                getList(){
+                    this.$http.get(
+                        'http://192.168.100.92/api/payitem/findPayitemPage',
+                        {
+                            'params':{
+                                limit:this.pageSize,
+                                page:this.currentPage
+                            }
+                        }).then(res => {
+                            console.log(res)
+                            if (res.data.code === 0) {
+                                //msg等于回调函数返回的res(值)
+                                this.pageSize = res.data.data.pageSize//每页数量
+                                this.totalPage = res.data.data.totalPage//总页数
+                                this.currentPage = res.data.data.currPage//当前页数
+                                this.totalCount = res.data.data.totalCount//总数量
+
+                                this.productList=res.data.data.list;
+                                //在打印台测试打印，无误后一定要删除
+                                console.log(this.productList,this.pageSize,this.totalPage); 
+                            }
+                        }).catch(err => {
+                            console.error(err)
+                        })
+                },
+                popup(){
+                    $(".mask").fadeIn()
+                    $(".ticket-box").fadeIn()
+                }
+            }
+        })	
+    </script>
+    <!-- <script>
+        var app = new Vue({
+            el:"#app",
+            data(){
+                return{
+                    //为第一页或者最后一页时，首页，尾页不能点击
+                    fDisabled:false,
+                    lDisabled:false,
+                    //总项目数
+                    totalCount: 110,
+                    //分页数
+                    pageCount: 20,
+                    //当前页面
+                    pageCurrent: 1,
+                    //分页大小
+                    pagesize: 12,
+                    //显示分页按钮数
+                    showPages: 4,
+                    //开始显示的分页按钮
+                    showPagesStart: 1,
+                    //结束显示的分页按钮
+                    showPageEnd: 100,
+                    //分页数据
+                    arrayData: []
+                }
+            },
+            methods:{
+                showdata(){
+                    axios({
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        method: '',
+                        url: '',
+                        data: {},
+                    }).then(res => {
+                        console.log(res)
+                        if (res.data.code === 0) {
+                            // this.totalCount = res.data.captcha.captchaKey
+                            // this.captcha = res.data.captcha.captcha
+                        }
+                    }).catch(err => {
+                        console.error(err)
+                    })
+                },
+                showPage(pageIndex, $event, forceRefresh){
+                    if (pageIndex > 0) {
+                        if (pageIndex > this.pageCount) {
+                            pageIndex = this.pageCount;
+                        }
+                        //判断数据是否需要更新
+                        var currentPageCount = Math.ceil(this.totalCount / this.pagesize);
+                        if (currentPageCount != this.pageCount) {
+                            pageIndex = 1;
+                            this.pageCount = currentPageCount;
+                        }
+                        else if (this.pageCurrent == pageIndex && currentPageCount == this.pageCount && typeof (forceRefresh) == "undefined") {
+                            console.log("not refresh");
+                            return;
+                        }
+        
+                        //处理分页点中样式
+                        var buttons = $("#pager").find("span");
+                        for (var i = 0; i < buttons.length; i++) {
+                            if (buttons.eq(i).html() != pageIndex) {
+                                buttons.eq(i).removeClass("active");
+                            }
+                            else {
+                                buttons.eq(i).addClass("active");
+                            }
+                        }
+        
+                        //测试数据 随机生成的
+                        var newPageInfo = [
+	        {
+	          name: 'Frozen Yogurt',
+	          calories: 159,
+	          fat: 6.0,
+	          carbs: 24,
+	          protein: 4.0,
+	          iron: '1%',
+	        },
+	        {
+	          name: 'Ice cream sandwich',
+	          calories: 237,
+	          fat: 9.0,
+	          carbs: 37,
+	          protein: 4.3,
+	          iron: '1%',
+	        },
+	        {
+	          name: 'Eclair',
+	          calories: 262,
+	          fat: 16.0,
+	          carbs: 23,
+	          protein: 6.0,
+	          iron: '7%',
+	        },
+	        {
+	          name: 'Cupcake',
+	          calories: 305,
+	          fat: 3.7,
+	          carbs: 67,
+	          protein: 4.3,
+	          iron: '8%',
+	        },
+	        {
+	          name: 'Gingerbread',
+	          calories: 356,
+	          fat: 16.0,
+	          carbs: 49,
+	          protein: 3.9,
+	          iron: '16%',
+	        },
+	        {
+	          name: 'Jelly bean',
+	          calories: 375,
+	          fat: 0.0,
+	          carbs: 94,
+	          protein: 0.0,
+	          iron: '0%',
+	        },
+	        {
+	          name: 'Lollipop',
+	          calories: 392,
+	          fat: 0.2,
+	          carbs: 98,
+	          protein: 0,
+	          iron: '2%',
+	        },
+	        {
+	          name: 'Honeycomb',
+	          calories: 408,
+	          fat: 3.2,
+	          carbs: 87,
+	          protein: 6.5,
+	          iron: '45%',
+	        },
+	        {
+	          name: 'Donut',
+	          calories: 452,
+	          fat: 25.0,
+	          carbs: 51,
+	          protein: 4.9,
+	          iron: '22%',
+	        },
+	        {
+	          name: 'KitKat',
+	          calories: 518,
+	          fat: 26.0,
+	          carbs: 65,
+	          protein: 7,
+	          iron: '6%',
+	        },
+	      ];
+                        var time=new Date();
+                        for (var i = 0; i < this.pagesize; i++) {
+                            newPageInfo[newPageInfo.length] = {
+                                src:"/images/new/tourist/tourist1.png",
+                                name: this.name,
+                                calories: this.calories
+                            };
+                        }
+                        this.pageCurrent = pageIndex;
+                        this.arrayData = newPageInfo;
+
+                        //如果当前页首页或者尾页，则上一页首页就不能点击，下一页尾页就不能点击
+                        if(this.pageCurrent===1){
+                            this.fDisabled=true;
+                        }else if(this.pageCurrent===this.pageCount){
+                            this.lDisabled=true;
+                        }else{
+                            this.fDisabled=false;
+                            this.lDisabled=false;
+                        }
+                    
+                        //计算分页按钮数据
+                        if (this.pageCount > this.showPages) {
+                            if (pageIndex <= (this.showPages - 1) / 2) {
+                                this.showPagesStart = 1;
+                                this.showPageEnd = this.showPages - 1;
+                                console.log("showPage1")
+                            }
+                            else if (pageIndex >= this.pageCount - (this.showPages - 3) / 2) {
+                                this.showPagesStart = this.pageCount - this.showPages + 2;
+                                this.showPageEnd = this.pageCount;
+                                console.log("showPage2")
+                            }
+                            else {
+                                console.log("showPage3")
+                                this.showPagesStart = pageIndex - (this.showPages - 3) / 2;
+                                this.showPageEnd = pageIndex + (this.showPages - 3) / 2;
+                            }
+                        }
+                        console.log("showPagesStart:" + this.showPagesStart + ",showPageEnd:" + this.showPageEnd + ",pageIndex:" + pageIndex);
+                    }
+                }
+            },
+            created() {
+                // new WOW().init();
+                // NProgress.start();
+                // NProgress.done();
+                // this.handlerCaptcha()
+            },
+            mounted(){
+                this.showPage(this.pageCurrent, null, true);
+            },
+            computed:{}
+        })
+    </script> -->
+
+</body>
+
+</html>

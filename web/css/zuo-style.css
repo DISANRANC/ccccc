@@ -18,8 +18,8 @@
   line-height: 1.5;
   font-size: .38rem;
   color: #fff;
-  /* text-shadow: 1.753px 3.595px 4px rgba(0, 0, 0, 0.08); */
-  text-shadow: 0 0 0.1em, 0 0 0.3em !important;
+  text-shadow: 1.753px 3.595px 4px rgba(0, 0, 0, 0.08);
+  /* text-shadow: 0 0 0.1em, 0 0 0.3em !important; */
 }
 
 .content-box .h2 {
