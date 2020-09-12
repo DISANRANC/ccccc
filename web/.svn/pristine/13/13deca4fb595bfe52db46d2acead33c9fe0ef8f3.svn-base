@@ -1,0 +1,316 @@
+<!--
+ * @Author: 丶灵感仰
+ * @Date: 2020-09-04 17:01:52
+ * @LastEditors: 丶灵感仰
+ * @LastEditTime: 2020-09-10 12:45:39
+ * @Description: file content
+ * @FilePath: \khe:\zuo\web\html\guide\guide.html
+-->
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>参观指南</title>
+  <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+  <meta name="description" content="   ">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="stylesheet" type="text/css" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+  <link rel="stylesheet" type="text/css" href="/css/guide.css">
+  <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="/js/layer/layer.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/js/nprogress.js"></script>
+  <script type="text/javascript" src="/js/wow.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      new WOW().init();
+      NProgress.start();
+      NProgress.done();
+    })
+  </script>
+</head>
+
+<body ontouchstart>
+  <div id="app">
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="weui-cell__bd title">
+            淮安科技馆
+          </div>
+          <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navs">
+          <a href="/index" title="首页" class="item">
+            <div class="cn">首页</div>
+            <div class="en">Home</div>
+          </a>
+          <a href="/html/guide/guide" title="参观指南" class="item">
+            <div class="cn">参观指南 </div>
+            <div class="en">Tour guide</div>
+          </a>
+          <a href="/html/news/news" title="新闻公告" class="item">
+            <div class="cn">新闻公告 </div>
+            <div class="en">News</div>
+          </a>
+          <a href="" title="游客服务" class="item">
+            <div class="cn">游客服务 </div>
+            <div class="en">Tourist Service </div>
+          </a>
+          <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+            <div class="cn">展馆活动 </div>
+            <div class="en">Exhibition hall activities</div>
+          </a>
+          <a href="/html/login" title="我与科技馆" class="item">
+            <div class="cn">我与科技馆</div>
+            <div class="en">Me and STC</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="banner2">
+      <img src="/images/guide/guide-header-bg.png" alt="参观指南" class="bgimg">
+      <div class="banner-title">
+        <div class="container2">
+          <div class="en wow fadeup">Visitor's Guide </div>
+          <div class="cn wow fadeup" data-wow-delay=".2s">参观指南 </div>
+        </div>
+      </div>
+    </div>
+    <div class="subnav">
+      <div class="container2">
+        <a href="/html/guide/guide" title="" class="item on">关于我们</a>
+        <a href="/html/guide/often-exhibition" title="" class="item">常设展览</a>
+        <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
+        <a href="/html/guide/cinema-info" title="" class="item ">影院信息</a>
+        <a href="/html/guide/recommend-router" title="" class="item ">推荐线路</a>
+        <!-- target="_blank" -->
+        <a href="" title="" class="item">科技馆VR全景</a>
+      </div>
+    </div>
+    <div class="about">
+      <div class="container2">
+        <div class="news1-top">
+          <div class="title">
+            <img src="/images/newsicon.png" alt="">
+            <span>新闻公告</span>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="" class="item">
+                  <span class="time">2020.09.01</span>
+                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="item">
+                  <span class="time">2020.09.01</span>
+                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="item">
+                  <span class="time">2020.09.01</span>
+                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="" title="" class="more">
+            <img src="/images/dian.png" alt="">
+            <img src="/images/dian1.png" alt="">
+          </a>
+        </div>
+        <div class="one">
+          <div class="title wow fadeup">
+            <div class="h1">关于我们</div>
+            <div class="h2">ABout US</div>
+          </div>
+          <div class="imgbox wow fadeup">
+            <img src="/images/guide/kejiguan.png" alt="淮安科技馆">
+          </div>
+        </div>
+        <div class="three wow fadeup">
+          <div>
+            <div class="about-text-container">
+              <h3>海洋馆</h3>
+              <p>海洋馆介绍文字海海洋馆介绍文字海字海洋馆介绍文字海洋文字海洋海洋馆介绍文字海，
+                馆介绍文字海海洋馆介绍文字海洋馆海洋馆馆介绍文字海洋馆介绍文字文字海海洋馆介。
+                海洋馆介绍文字海海洋馆介绍文字海字海洋馆介绍文字海洋文字海洋海洋馆介绍文字海，
+                馆介绍文字海海洋馆介绍文字海洋馆海洋馆馆介绍文字海洋馆介绍文字文字海海洋馆介。
+                海洋馆介绍文字海海洋馆介绍文字海字海洋馆介绍文字海洋文字海洋海洋馆介绍文字海，
+                馆介绍文字海海洋馆介绍文字海洋馆海洋馆馆介绍文字海洋馆介绍文字文字海海洋馆介。
+                海洋馆介绍文字海海海洋馆介绍文字海绍文字海洋馆介绍文字海洋馆介绍文字,
+                绍文字海海洋馆介绍文字海海洋馆介绍文字海</p>
+            </div>
+            <div class="about-img-container">
+              <div class="kexue">
+                <div class="sheji">
+                  <img src="/images/guide/keji.png" alt="科技">
+                  <img src="/images/guide/jiaoyu.png" alt="教育">
+                </div>
+                <div class="sheji">
+                  <img src="/images/guide/qidi.png" alt="教育">
+                  <img src="/images/guide/chuangxin.png" alt="创新">
+                </div>
+              </div>
+            </div>
+            <div class="about-text-container">
+              <h3>海洋馆</h3>
+              <p>海洋馆介绍文字海海洋馆介绍文字海字海洋馆介绍文字海洋文字海洋海洋馆介绍文字海，
+                馆介绍文字海海洋馆介绍文字海洋馆海洋馆馆介绍文字海洋馆介绍文字文字海海洋馆介。
+                海洋馆介绍文字海海洋馆介绍文字海字海洋馆介绍文字海洋文字海洋海洋馆介绍文字海，
+                馆介绍文字海海洋馆介绍文字海洋馆海洋馆馆介绍文字海洋馆介绍文字文字海海洋馆介。
+                海洋馆介绍文字海海洋馆介绍文字海字海洋馆介绍文字海洋文字海洋海洋馆介绍文字海，
+                馆介绍文字海海洋馆介绍文字海洋馆海洋馆馆介绍文字海洋馆介绍文字文字海海洋馆介。
+                海洋馆介绍文字海海海洋馆介绍文字海绍文字海洋馆介绍文字海洋馆介绍文字,
+                绍文字海海洋馆介绍文字海海洋馆介绍文字海</p>
+            </div>
+            <div class="about-text-container">
+              <div class="heng-container">
+                <div class="heng-item"></div>
+                <div class="heng-item"></div>
+              </div>
+              <h3>言语不尽 期待同游</h3>
+            </div>
+            <div class="footer-img">
+              <div v-for="(item,index) in footerImgList" :key="index">
+                <img :src="item.url" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="link-box">
+      <div class="container2">
+        <h4>友情链接</h4>
+      </div>
+      <div class="temp-heng"></div>
+      <div class="container2">
+        <div class="link-container">
+          <div v-for="(item,index) in linkList" :key="index" class="link-item">
+            <a :href="item.url">{{item.name}}</a>
+            <span>|</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="/js/jquery.countup.min.js"></script>
+    <script type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <script type="text/javascript" src="/js/swiper.min.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        $("header .navs .item").eq(1).addClass("on")
+        $(".about .one .area-box .num").countUp({
+          time: 600
+        })
+        var swiper = new Swiper('.news1-top .swiper-container', {
+          speed: 800,
+          autoplay: {
+            delay: 5000,
+          },
+          slidesPerView: 2,
+          breakpoints: {
+            767: {
+              slidesPerView: 1
+            },
+          }
+        });
+      })
+    </script>
+    <footer>
+      <div class="left">
+        咨询热线：0592-5148555 </div>
+      <div class="navs">
+        <a href="/index" title="首页">首页</a>
+        <a href="/html/guide/guide" title="参观指南">参观指南</a>
+        <a href="/html/news/news" title="新闻中心">新闻中心</a>
+        <a href="" title="游客服务">游客服务</a>
+        <a href="" title="展馆活动">展馆活动</a>
+        <a href="" title="我与科技馆">我与科技馆</a>
+      </div>
+      <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
+      <script>
+        var _hmt = _hmt || [];
+        (function () {
+          var hm = document.createElement("script");
+
+          hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+    </footer>
+  </div>
+  <link rel="stylesheet" href="/css/ele-index.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/ele-index.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          footerImgList: [{
+            url: '/images/guide/about.png'
+          }, {
+            url: '/images/guide/about.png'
+          }, {
+            url: '/images/guide/about.png'
+          }, ],
+          linkList: [{
+            url: '',
+            name: '北京科技馆'
+          }, {
+            url: '',
+            name: '杭州科技馆'
+          }, {
+            url: '',
+            name: '上海科技馆'
+          }, {
+            url: '',
+            name: '广州科技馆'
+          }, {
+            url: '',
+            name: '武汉科技馆'
+          }, {
+            url: '',
+            name: '成都科技馆'
+          }, {
+            url: '',
+            name: '天津科技馆'
+          }, {
+            url: '',
+            name: '南京科技馆'
+          }, {
+            url: '',
+            name: '深圳科技馆'
+          }, ]
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>

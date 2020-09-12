@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>参观指南</title>
+  <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+  <meta name="description" content="   ">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="stylesheet" type="text/css" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+  <link rel="stylesheet" type="text/css" href="/css/temporary-exhibition.css">
+  <link rel="stylesheet" type="text/css" href="/css/guide.css">
+  <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="/js/layer/layer.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/js/nprogress.js"></script>
+  <script type="text/javascript" src="/js/wow.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      new WOW().init();
+      NProgress.start();
+      NProgress.done();
+    })
+  </script>
+</head>
+
+<body ontouchstart>
+  <div id="app">
+    <header>
+      <div class="container">
+        <div class="header-top">
+          <div class="weui-cell__bd title">
+            淮安科技馆
+          </div>
+          <div class="nav-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </div>
+        <div class="navs">
+          <a href="/index" title="首页" class="item">
+            <div class="cn">首页</div>
+            <div class="en">Home</div>
+          </a>
+          <a href="/html/guide/guide" title="参观指南" class="item">
+            <div class="cn">参观指南 </div>
+            <div class="en">Tour guide</div>
+          </a>
+          <a href="/html/news/news" title="新闻公告" class="item">
+            <div class="cn">新闻公告 </div>
+            <div class="en">News</div>
+          </a>
+          <a href="" title="游客服务" class="item">
+            <div class="cn">游客服务 </div>
+            <div class="en">Tourist Service </div>
+          </a>
+          <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+            <div class="cn">展馆活动 </div>
+            <div class="en">Exhibition hall activities</div>
+          </a>
+          <a href="/html/login" title="我与科技馆" class="item">
+            <div class="cn">我与科技馆</div>
+            <div class="en">Me and STC</div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div class="banner2">
+      <img src="/images/guide/guide-header-bg.png" alt="参观指南" class="bgimg">
+      <div class="banner-title">
+        <div class="container2">
+          <div class="en wow fadeup">Visitor's Guide </div>
+          <div class="cn wow fadeup" data-wow-delay=".2s">参观指南 </div>
+        </div>
+      </div>
+    </div>
+    <div class="subnav">
+      <div class="container2">
+        <a href="/html/guide/guide" title="" class="item">关于我们</a>
+        <a href="/html/guide/often-exhibition" title="" class="item">常设展览</a>
+        <a href="/html/guide/temporary-exhibition" title="" class="item on">临时展览</a>
+        <a href="/html/guide/cinema-info" title="" class="item">影院信息</a>
+        <a href="/html/guide/recommend-router" title="" class="item">推荐线路</a>
+        <a href="" title="" class="item">科技馆VR全景</a>
+      </div>
+    </div>
+    <div class="about">
+      <div class="container2">
+        <div class="news1-top">
+          <div class="title">
+            <img src="/images/newsicon.png" alt="">
+            <span>新闻公告</span>
+          </div>
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a href="" class="item">
+                  <span class="time">2020.09.01</span>
+                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="item">
+                  <span class="time">2020.09.01</span>
+                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a href="" class="item">
+                  <span class="time">2020.09.01</span>
+                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                </a>
+              </div>
+            </div>
+          </div>
+          <a href="" title="" class="more">
+            <img src="/images/dian.png" alt="">
+            <img src="/images/dian1.png" alt="">
+          </a>
+        </div>
+        <div>
+          <div class="tabs">
+            <div :class="['tabs-item',index===tabsIndex?'tabs-item-temp':'']" v-for="(item,index) in tabsList"
+              :key="index" @click="handlerTabs(index)">{{item.title}}</div>
+            <el-dropdown>
+              <el-button type="primary">
+                展览回顾<i class="el-icon-arrow-down el-icon--right"></i>
+              </el-button>
+              <el-dropdown-menu slot="dropdown">
+                <el-dropdown-item v-for="(item,index) in dropdownList" :key="index"
+                  @click.native="handlerFindAllYears(item)">{{item}}</el-dropdown-item>
+              </el-dropdown-menu>
+            </el-dropdown>
+          </div>
+          <div class="tabs-tow">
+            <div class="tabs-tow-item" v-for="(item,index) in exhibitionList" :key="item.id">
+              <el-button type="primary" @click="handlerExhibition(index)">{{item.name}}</el-button>
+            </div>
+          </div>
+          <div class="main" v-if="exhibitionList.length!==0">
+            <h3>{{exhibitionList[exhibitionIndex].name}}</h3>
+            <div class="title-box">
+              <span class="temp-shu"></span>
+              <span class="temp-title">策展初衷</span>
+            </div>
+            <p class="curation-text">{{exhibitionList[exhibitionIndex].originalIntention}}</p>
+            <div class="curation-img-box">
+              <img :src="downloadBaseUrl+exhibitionList[exhibitionIndex].mainImage" alt="">
+              <div class="time-box">
+                <p class="time-title">展出时间 :</p>
+                <p class="time">{{exhibitionList[exhibitionIndex].openingDate}} ——
+                  {{exhibitionList[exhibitionIndex].closingDate}}</p>
+              </div>
+            </div>
+            <div class="title-box">
+              <span class="temp-shu"></span>
+              <span class="temp-title">展览模块</span>
+            </div>
+            <div class="text-container" v-for="(item,index) in exhibitionList[exhibitionIndex].moduleList"
+              :key="item.id">
+              <h4 class="text-title">第{{++index}}主题：《{{item.themeName}}》</h4>
+              <p class="main-text">{{item.themeContent}}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div class="temporary2 wow fadeup">
+        <div class="tem2-title">展览设置</div>
+        <!-- v-if="arr.length!==0" -->
+        <div class="swiper-box">
+          <div style="display: block;">
+            <div class="tem2-tabs">
+              <div :class="['item',carouselIndex===i?'on':'']" v-for="(e,i) in arr.length" :key="i">
+                <span v-if="i+1<10">0{{++i}}</span>
+                <span v-else>{{++i}}</span>
+              </div>
+            </div>
+            <el-carousel :interval="2000" :autoplay="false" type="card" height="9rem" @change="handlerCarousel">
+              <el-carousel-item v-for="(item,index) in arr" :key="item.id">
+                <div class="imgBox">
+                  <img :src="downloadBaseUrl + item.imageUrl" :alt="item.fileName ">
+                  <div v-show="carouselIndex===index">
+                    <h5>{{item.displayName }}</h5>
+                    <p>{{item.displayContent}}</p>
+                  </div>
+                </div>
+                <!-- <div class="tem2-box">
+                  <div class="imgbox">
+                    <img :src="downloadBaseUrl + item.imageUrl" :alt="item.fileName ">
+                  </div>
+                  <div class="content-box">
+                    <div class="h1">{{item.displayName }}</div>
+                    <p style="text-align:center;line-height:150%">{{item.displayContent}}</p>
+                  </div>
+                </div> -->
+              </el-carousel-item>
+            </el-carousel>
+            <!-- <div class="swiper-container smallswiper">
+              <div class="tem2-prev tem2-btn">
+                <img src="/images/prev3.png" alt="">
+              </div>
+              <div class="tem2-next tem2-btn">
+                <img src="/images/next3.png" alt="">
+              </div>
+              <div class="swiper-wrapper">
+                <div class="swiper-slide" v-for="item in arr" :key="item.id">
+                  <div class="tem2-box">
+                    <div class="imgbox">
+                      <img :src="downloadBaseUrl + item.imageUrl" :alt="item.fileName ">
+                    </div>
+                    <div class="content-box">
+                      <div class="h1">{{item.displayName }}</div>
+                      <p style="text-align:center;line-height:150%">{{item.displayContent}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="link-box">
+    <div class="container2">
+      <h4>友情链接</h4>
+    </div>
+    <div class="temp-heng"></div>
+    <div class="container2">
+      <div class="link-container">
+        <div class="link-item">
+          <a :href="item.url">北京科技馆</a>
+          <span>|</span>
+          <a :href="item.url">杭州科技馆</a>
+          <span>|</span>
+          <a :href="item.url">上海科技馆</a>
+          <span>|</span>
+          <a :href="item.url">广州科技馆</a>
+          <span>|</span>
+          <a :href="item.url">武汉科技馆</a>
+          <span>|</span>
+          <a :href="item.url">成都科技馆</a>
+          <span>|</span>
+          <a :href="item.url">天津科技馆</a>
+          <span>|</span>
+          <a :href="item.url">南京科技馆</a>
+          <span>|</span>
+          <a :href="item.url">深圳科技馆</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="text/javascript" src="/js/jquery.countup.min.js"></script>
+  <script type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("header .navs .item").eq(1).addClass("on")
+      $(".about .one .area-box .num").countUp({
+        time: 600
+      })
+      var swiper = new Swiper('.news1-top .swiper-container', {
+        speed: 800,
+        autoplay: {
+          delay: 5000,
+        },
+        slidesPerView: 2,
+        breakpoints: {
+          767: {
+            slidesPerView: 1
+          },
+        }
+      });
+    })
+  </script>
+  <footer>
+    <div class="left">咨询热线：0592-5148555 </div>
+    <div class="navs">
+      <a href="/index" title="首页">首页</a>
+      <a href="/html/guide/guide" title="参观指南">参观指南</a>
+      <a href="/html/news/news" title="新闻中心">新闻中心</a>
+      <a href="" title="游客服务">游客服务</a>
+      <a href="" title="展馆活动">展馆活动</a>
+      <a href="" title="我与科技馆">我与科技馆</a>
+    </div>
+    <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </footer>
+  </div>
+  <link rel="stylesheet" href="/css/ele-index.css">
+  <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+  <script src="/js/ele-index.js"></script>
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data() {
+        return {
+          carouselIndex: 0,
+          year: '',
+          baseUrl: 'http://192.168.100.92',
+          downloadBaseUrl: 'http://192.168.100.92:8089/download/',
+          tabsIndex: 0,
+          tabsList: [{
+            title: '正在展览'
+          }, {
+            title: '巡展合作'
+          }],
+          dropdownList: [],
+          arr: [],
+          exhibitionList: [],
+          exhibitionIndex: 0,
+          footerSwiper: null,
+          numIndex: 0,
+        }
+      },
+      async created() {
+        this.findAllYears()
+        const res = await this.findExhibiting()
+        res.data.code === 0 ? this.exhibitionList = res.data.data : layer.msg(res.data.msg)
+        res.data.code === 0 ? this.arr = [...this.exhibitionList[this.exhibitionIndex].displayList]:''
+      },
+      async mounted() {
+        // const res = await this.findExhibiting()
+        // res.data.code === 0 ? this.exhibitionList = res.data.data : layer.msg(res.data.msg)
+        // this.arr = [...this.exhibitionList[this.exhibitionIndex].displayList]
+        // this.initSwiper()
+      },
+      methods: {
+        initSwiper() {
+          const that = this
+          this.footerSwiper = new Swiper(".swiper-box .swiper-container", {
+            speed: 800, // 切换速度
+            loop: true, // 环形模式
+            centeredSlides: true, // active slide会居中
+            slidesPerView: 'auto', // 设置slide容器 oop模式下如果设置为'auto'还需要设置另外一个参数loopedSlides
+            slideToClickedSlide: true, // 设置为true则点击slide会过渡到这个slide
+            navigation: { //使用前进后退按钮来控制Swiper切换
+              nextEl: '.tem2-next',
+              prevEl: '.tem2-prev'
+            },
+            // 回调
+            on: {
+              //swiper从当前slide开始过渡到另一个slide时执行
+              slideChangeTransitionStart: function () {
+                const index = this.activeIndex - that.arr.length
+                that.numIndex = index === that.arr.length ? 0 : index
+                that.numIndex = that.numIndex === -1 ? that.arr.length - 1 : that.numIndex
+              }
+            }
+          })
+        },
+        findAll(year) {
+          axios({
+            method: 'POST',
+            url: `${this.baseUrl}/api/exhibitiontemporary/findAll`,
+            data: {
+              year
+            },
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          }).then(res => {
+            console.log(res)
+            res.data.code === 0 ? this.tabsIndex = -1 : ''
+            res.data.code === 0 ? this.carouselIndex = 0 : ''
+            res.data.code === 0 ? this.exhibitionIndex = 0 : ''
+            res.data.code === 0 ? this.exhibitionList = res.data.data : layer.msg(res.data.msg)
+            this.arr = [...this.exhibitionList[0].displayList]
+            console.log(this.arr)
+            // this.numIndex = 0  
+            // this.initSwiper()
+            // this.footerSwiper.slideTo(this.arr.length, 800)
+          }).catch(err => {
+            console.error(err)
+          })
+        },
+        findExhibiting() {
+          return new Promise(resolve => {
+            axios({
+              method: 'POST',
+              url: `${this.baseUrl}/api/exhibitiontemporary/findExhibiting`,
+              headers: {
+                'Content-Type': 'application/json'
+              },
+            }).then(res => {
+              resolve(res)
+            }).catch(err => {
+              console.error(err)
+            })
+          })
+        },
+        findAllYears() {
+          axios({
+            method: 'POST',
+            url: `${this.baseUrl}/api/exhibitiontemporary/findAllYears`,
+            headers: {
+              'Content-Type': 'application/json'
+            },
+          }).then(res => {
+            res.data.code === 0 ? this.dropdownList = [...res.data.data] : ''
+          }).catch(err => {
+            console.error(err)
+          })
+        },
+        handlerFindAllYears(val) {
+          this.findAll(val)
+        },
+        handlerCarousel(val) {
+          this.carouselIndex = val
+        },
+        handlerExhibition(val) {
+          console.log(val)
+          this.exhibitionIndex = val
+          this.carouselIndex = 0
+          this.arr = [...this.exhibitionList[val].displayList]
+        },
+        async handlerTabs(num) {
+          if (num === 0) {
+            const res = await this.findExhibiting()
+            res.data.code === 0 ? this.exhibitionList = res.data.data : layer.msg(res.data.msg)
+            res.data.code === 0 ? this.arr = [...this.exhibitionList[this.exhibitionIndex].displayList]:''
+            res.data.code === 0 ? this.tabsIndex = 0 : ''
+          }
+
+        }
+      },
+    })
+  </script>
+</body>
+
+</html>

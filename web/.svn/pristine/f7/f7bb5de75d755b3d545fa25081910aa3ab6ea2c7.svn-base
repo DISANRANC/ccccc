@@ -1,0 +1,167 @@
+.tabs {
+  display: flex;
+  font-size: .18rem;
+  color: #333333;
+  border-bottom: 1px solid #ededed;
+}
+
+.tabs .tabs-item {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.8rem;
+  height: .6rem;
+  background-color: #EEEEEE;
+}
+
+.tabs .tabs-item:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  background: #2184FF;
+  height: 3px;
+  transition: all .5s ease;
+}
+
+.tabs .tabs-item:hover {
+  color: #2184FF;
+  background-color: #FFFFFF;
+}
+
+.tabs .tabs-item:hover:after {
+  width: 100%;
+}
+
+.tabs .tabs-item-temp {
+  color: #2184FF;
+  background-color: #FFFFFF;
+}
+
+.tabs .tabs-item-temp:after {
+  width: 100%;
+}
+
+.tabs /deep/ .el-button {
+  padding: 0 !important;
+  width: 1.8rem !important;
+  height: .6rem !important;
+}
+
+.tabs-tow {
+  display: flex;
+  margin-top: .3rem;
+}
+
+.tabs-tow-item {
+  margin-right: .1rem;
+}
+
+.main {
+  color: #333333;
+}
+
+.main h3 {
+  margin: .56rem 0 .77rem 0;
+  font-size: .3rem;
+  color: #333333;
+  text-align: center;
+  font-weight: 600;
+}
+
+.title-box {
+  display: flex;
+  align-items: center;
+  margin-bottom: .4rem;
+}
+
+.temp-shu {
+  margin-right: .14rem;
+  width: .08rem;
+  height: .32rem;
+  background: #2184FF;
+  border-radius: .04rem;
+}
+
+.temp-title {
+  font-size: .24rem;
+  font-weight: 600;
+}
+
+.curation-text {
+  margin-bottom: .6rem;
+  line-height: .26rem;
+  font-size: .16rem;
+  color: #333333;
+  text-align: justify;
+}
+
+.curation-img-box {
+  display: flex;
+  margin-bottom: 1.31rem;
+  border: 1px solid #E5E5E5;
+}
+
+.curation-img-box img {
+  margin-right: .53rem;
+  width: 5.95rem;
+  height: 2.32rem;
+  border-radius: .05rem;
+}
+
+.time-box {
+  padding-top: .31rem;
+}
+
+.time-box .time-title {
+  font-size: .16rem;
+  color: #2184FF;
+}
+
+.time-box .time {
+  padding: .2rem 0 0 .4rem;
+  font-size: .18rem;
+  color: #333333;
+}
+
+.text-container{
+  margin-bottom: .52rem;
+  color: #333333;
+}
+
+.text-container .text-title{
+  margin-bottom: .1rem;
+  font-size: .18rem;
+  font-weight: 600;
+}
+
+.text-container .main-text{
+  font-size: .16rem;
+  text-align: justify;
+}
+
+.imgBox{
+  display: flex;
+  flex-direction: column;
+  padding: .6rem;
+  color: #333333;
+  background: #edf1f4;
+}
+
+.imgBox img{
+  width: 100%;
+  height: 5rem;
+}
+
+.imgBox h5{
+  margin: .5rem 0;
+  font-size: .3rem;
+  text-align: center;
+}
+
+.imgBox p{
+  font-size: .2rem;
+  text-align: center;
+}
