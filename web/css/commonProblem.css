@@ -9,7 +9,7 @@
         transition:all .3s
     }
     .tourenter .item .content{
-        padding: .15rem .2rem;a
+        padding: .15rem .2rem;
     }
     .tourenter .row{margin:0 -.2rem;}
     .tourenter .col-sm-4{
@@ -179,6 +179,138 @@
         color: #555555;
         font-size: 0.16rem;
         font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 .view-box .txt {
+        font-size: .14rem;
+        color: #aaaaaa;
+        font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 .h1 {
+        font-size: .20rem;
+        color: #333333;
+        font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 p {
+        font-size: .16rem;
+        color: #aaaaaa;
+    }
+    .method1 .item1 .view-box-one {
+        position: absolute;
+        left: 2.69rem;
+        bottom: .35rem;
+        font-size: 0;
+    }
+    .method1 .item1 .view-box-one img {
+        display: inline-block;
+        width: .18rem;
+    }
+    .method1 .item1 .view-box-one .txt {
+        font-size: .14rem;
+        color: #aaaaaa;
+        font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 .view-box-one .txt {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: .14rem;
+        color: rgb(153, 153, 153);
+    }
+    .method1 .item1 .view-box-one .txt span {
+        margin-left: .1rem;
+        margin-right: .05rem;
+        font-family: "DIN";
+    }
+    .method-top {
+        padding-bottom: 0.2rem;
+    }
+    .method-top .sort-item.on span {
+        color: #2184ff;
+    }
+    .method-top .sort-item span {
+        font-size: .16rem;
+    }
+    .method-top .sort-item:nth-child(2) img {
+        width: auto;
+    }
+    .method-top .search input {
+        font-size: .14rem;
+        color: #555555;
+    }
+    .question .item1 .numbox:before {
+        content: none;
+        width: .09rem;
+        height: .09rem;
+        background: url(/images/new/commonProblem/question.png) no-repeat;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -.04rem;
+    }
+    .question .item1 {
+        border-bottom: none;
+    }
+    .question-main {
+        border-bottom: 1px solid #e4e4e4;
+    }
+    .info-main{
+        position: relative;
+    }
+    .question .item1 .content {
+        padding-right: 0.2rem;
+    }
+    .question .item1 .btnbox {
+        position: absolute;
+        top: 0.35rem;
+        right: 0;
+    }
+    .info-main {
+        /* 设置元素两端对齐 */
+        text-align: justify;
+    }
+     
+    /* 这里的伪元素一定要加上，不然span元素不能两端对齐 */			
+    .info-main:after {
+        content: "";
+        display: inline-block;
+        overflow: hidden;
+        width: 100%;
+    }
+                
+    .info-main span {
+        /* 设置盒子为行内块 */
+        display: inline-block;
+        /* 设置盒子内元素水平居中 */
+        text-align: center;
+        /* 设置盒子内容垂直居中 */
+        line-height: 1;
+    }
+                
+    .info-main span.info-time {
+        font-family: 'Microsoft Yahei';
+        font-size: 0.14rem;
+        color: #aaaaaa;
+    }
+                
+    .info-main span.info-scanCount {
+        font-family: 'Microsoft Yahei';
+        font-size: 0.14rem;
+        color: #aaaaaa;
+    }
+    .info-main img {
+        display: inline-block;
+        width: .18rem;
+    }
+    .question .item1 .content {
+        padding-left: 0.5rem;
+    }
+    .question .item1 {
+        margin-left:0rem;
+    }
+    .question .item1 .numbox {
+        position: absolute;
+        left: 0rem;
+        top: .4rem;
+        width: 1.5rem;
     }
 /* change end */
 

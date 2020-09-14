@@ -15,6 +15,49 @@
   color: #2B333D;
 }
 
+.navs a {
+  display: flex;
+  flex-direction: column;
+}
+
+.video-container {
+  position: relative;
+  height: 100%;
+}
+
+.video-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.video-container div {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, .5);
+  z-index: 1;
+}
+
+.video-container .open-video {
+  position: absolute;
+  cursor: pointer;
+  left: 50%;
+  top: 50%;
+  margin-top: -.16rem;
+  margin-left: -.1rem;
+  width: .28rem;
+  height: .32rem;
+  z-index: 5;
+}
+
+@media(min-width: 1400px) {
+  .video-box {
+    margin-top: .2rem;
+  }
+}
+
 @media(max-width: 767px) {
   .hall-info {
     padding-bottom: 1.8rem;
@@ -39,6 +82,7 @@
     width: 100% !important;
   }
 }
+
 /* @media (min-width:1120px) {
   .hall-info .hall-info-container {
     width: 11.17rem;

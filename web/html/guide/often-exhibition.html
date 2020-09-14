@@ -63,7 +63,7 @@
             <div class="cn">新闻公告 </div>
             <div class="en">News</div>
           </a>
-          <a href="" title="游客服务" class="item">
+          <a href="/html/tourist/tourist" title="游客服务" class="item">
             <div class="cn">游客服务 </div>
             <div class="en">Tourist Service </div>
           </a>
@@ -91,12 +91,8 @@
     </div>
     <div class="subnav">
       <div class="container2">
-        <a href="/html/guide/guide" title="" class="item">关于我们</a>
-        <a href="/html/guide/often-exhibition" title="" class="item on">常设展览</a>
-        <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
-        <a href="/html/guide/cinema-info" title="" class="item ">影院信息</a>
-        <a href="/html/guide/recommend-router" title="" class="item ">推荐线路</a>
-        <a href="" title="" class="item">科技馆VR全景</a>
+        <a v-for="(item,index) in navsArr" :key="index" :href="item.url" :title="item.title"
+          :class="['item',index===0?'on':'']">{{item.title}}</a>
       </div>
     </div>
     <div class="permanent">
@@ -136,7 +132,7 @@
         <div class="permanent1" style="margin-top: 0">
           <div class="container-list">
             <div :class="[exhibitionAreaIndex===index?'temp-exhibition':'','btn-container']"
-             v-for="(item,index) in exhibitionAreaArr" :key="item.id" @click="selectArea(item.id,index)">
+              v-for="(item,index) in exhibitionAreaArr" :key="item.id" @click="selectArea(item.id,index)">
               <div class="button">
                 <div class="button__content">
                   <!-- <span class="num">0{{++index}}</span> -->
@@ -178,7 +174,7 @@
             <div class="permanent-main-bottom" v-if="projectList.length!==0">
               <div class="main-title-list">
                 <div :class="[projectIndex===index?'temp-exhibition':'','btn-container']"
-                 v-for="(item,index) in projectList" :key="item.id" @click="selectProject(index,item)">
+                  v-for="(item,index) in projectList" :key="item.id" @click="selectProject(index,item)">
                   <div class="button">
                     <div class="button__content">
                       <span class="num">0{{++index}}</span>
@@ -204,8 +200,8 @@
       <a href="/index" title="首页">首页</a>
       <a href="/html/guide/guide" title="参观指南">参观指南</a>
       <a href="/html/news/news" title="新闻中心">新闻中心</a>
-      <a href="" title="游客服务">游客服务</a>
-      <a href="" title="展馆活动">展馆活动</a>
+      <a href="/html/tourist/tourist" title="游客服务">游客服务</a>
+      <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动">展馆活动</a>
       <a href="" title="我与科技馆">我与科技馆</a>
     </div>
     <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
@@ -246,9 +242,28 @@
       el: '#app',
       data() {
         return {
+          navsArr: [{
+            url: '/html/guide/guide',
+            title: '关于我们'
+          }, {
+            url: '/html/guide/often-exhibition',
+            title: '常设展览'
+          }, {
+            url: '/html/guide/temporary-exhibition',
+            title: '临时展览'
+          }, {
+            url: '/html/guide/cinema-info',
+            title: '影院信息'
+          }, {
+            url: '/html/guide/recommend-router',
+            title: '推荐线路'
+          }, {
+            url: '',
+            title: '科技馆VR全景'
+          }],
           exhibitionAreaIndex: 0,
           exhibitionAreaId: '',
-          exhibitionAreaArr: [],//区域 project
+          exhibitionAreaArr: [], //区域 project
           projectList: [], // 项目
           projectIndex: 0,
           baseUrl: 'http://192.168.100.92',
@@ -339,9 +354,9 @@
           }).then(res => {
             console.log(res)
             res.data.code === 0 ? this.projectList = res.data.data : ''
-            if (res.data.code === 0){
+            if (res.data.code === 0) {
               this.projectList = res.data.data
-            }else{
+            } else {
               layer.msg(res.data.msg)
             }
           }).catch(err => {
@@ -352,11 +367,11 @@
           this.iconimgIndex = index
           this.iconSwiper.slideTo(index, 800)
         },
-        selectArea(id,index){
+        selectArea(id, index) {
           this.handlerExhibition(id)
           this.exhibitionAreaIndex = index
         },
-        selectProject(index,item){
+        selectProject(index, item) {
           console.log(index)
           this.projectIndex = --index
           console.log(item)
@@ -365,5 +380,4 @@
     })
   </script>
 </body>
-
 </html>

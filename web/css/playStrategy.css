@@ -9,7 +9,7 @@
         transition:all .3s
     }
     .tourenter .item .content{
-        padding: .15rem .2rem;a
+        padding: .15rem .2rem;
     }
     .tourenter .row{margin:0 -.2rem;}
     .tourenter .col-sm-4{
@@ -179,6 +179,62 @@
         color: #555555;
         font-size: 0.16rem;
         font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 .view-box .txt {
+        font-size: .14rem;
+        color: #aaaaaa;
+        font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 .h1 {
+        font-size: .20rem;
+        color: #333333;
+        font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 p {
+        font-size: .16rem;
+        color: #aaaaaa;
+    }
+    .method1 .item1 .view-box-one {
+        position: absolute;
+        left: 2.69rem;
+        bottom: .35rem;
+        font-size: 0;
+    }
+    .method1 .item1 .view-box-one img {
+        display: inline-block;
+        width: .18rem;
+    }
+    .method1 .item1 .view-box-one .txt {
+        font-size: .14rem;
+        color: #aaaaaa;
+        font-family: 'Microsoft Yahei';
+    }
+    .method1 .item1 .view-box-one .txt {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: .14rem;
+        color: rgb(153, 153, 153);
+    }
+    .method1 .item1 .view-box-one .txt span {
+        margin-left: .1rem;
+        margin-right: .05rem;
+        font-family: "DIN";
+    }
+    .method-top {
+        padding-bottom: 0.2rem;
+    }
+    .method-top .sort-item.on span {
+        color: #2184ff;
+    }
+    .method-top .sort-item span {
+        font-size: .16rem;
+    }
+    .method-top .sort-item:nth-child(2) img {
+        width: 0.19rem;
+    }
+    .method-top .search input {
+        font-size: .14rem;
+        color: #555555;
     }
 /* change end */
 

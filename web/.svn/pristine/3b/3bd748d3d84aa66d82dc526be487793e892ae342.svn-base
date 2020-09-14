@@ -1,0 +1,1142 @@
+<<<<<<< .mine
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>参观指南</title>
+  <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+  <meta name="description" content="   ">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="stylesheet" type="text/css" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+  <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="/js/layer/layer.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/js/nprogress.js"></script>
+  <script type="text/javascript" src="/js/wow.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      new WOW().init();
+      NProgress.start();
+      NProgress.done();
+    })
+  </script>
+</head>
+
+<body ontouchstart>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="weui-cell__bd title">
+          淮安科技馆
+        </div>
+        <div class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navs">
+        <a href="/index" title="首页" class="item">
+          <div class="cn">首页</div>
+          <div class="en">Home</div>
+        </a>
+        <a href="/html/guide/guide" title="参观指南" class="item">
+          <div class="cn">参观指南 </div>
+          <div class="en">Tour guide</div>
+        </a>
+        <a href="/html/news/news" title="新闻公告" class="item">
+          <div class="cn">新闻公告 </div>
+          <div class="en">News</div>
+        </a>
+        <a href="/html/tourist/tourist" title="游客服务" class="item">
+          <div class="cn">游客服务 </div>
+          <div class="en">Tourist Service </div>
+        </a>
+        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+          <div class="cn">展馆活动 </div>
+          <div class="en">Exhibition hall activities</div>
+        </a>
+        <a href="/html/login" title="我与科技馆" class="item">
+          <div class="cn">我与科技馆</div>
+          <div class="en">Me and STC</div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="banner2">
+    <img src="/images/guide/guide-header-bg.png" alt="参观指南" class="bgimg">
+    <div class="banner-title">
+      <div class="container2">
+        <div class="en wow fadeup">
+          Visitor's Guide </div>
+        <div class="cn wow fadeup" data-wow-delay=".2s">
+          参观指南 </div>
+      </div>
+    </div>
+  </div>
+  <div class="subnav">
+    <div class="container2">
+      <a href="/html/guide/guide" title="" class="item">关于我们</a>
+      <a href="/html/guide/often-exhibition" title="" class="item">常设展览</a>
+      <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
+      <a href="/html/guide/cinema-info" title="" class="item">影院信息</a>
+      <a href="/html/guide/recommend-router" title="" class="item on">推荐线路</a>
+      <a href="" title="" class="item">科技馆VR全景</a>
+    </div>
+  </div>
+  <div class="guideline">
+    <div class="container2">
+      <div class="news1-top">
+        <div class="title">
+          <img src="/images/newsicon.png" alt="">
+          <span>新闻公告</span>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="" class="item">
+                <span class="time">2020.09.01</span>
+                <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="" class="item">
+                <span class="time">2020.09.01</span>
+                <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="" class="item">
+                <span class="time">2020.09.01</span>
+                <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="" title="" class="more">
+          <img src="/images/dian.png" alt="">
+          <img src="/images/dian1.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="guidetab1">
+      <div class="container2">
+        <div class="tabbox clearfix">
+          <div class="item">
+            <div class="cn">
+              第一层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <div class="item">
+            <div class="cn">
+              第二层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <div class="item">
+            <div class="cn">
+              第三层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <div class="item">
+            <div class="cn">
+              第四层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <img src="/images/busicon.png" alt="" class="busimg">
+        </div>
+      </div>
+    </div>
+    <div class="guideline1">
+      <div class="left">
+        <div class="swiper-container swiper-no-swiping">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/guidemap.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan5.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="proitem-window">
+          <div class="h1"></div>
+          <div class="h2"></div>
+          <img src="">
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <div class="title">
+            <div class="cn">
+              五大馆区 </div>
+            <div class="en">
+              Parent-child </div>
+          </div>
+          <div class="itembox">
+            <div data-id='34' data-class='15' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='35' data-class='15' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='36' data-class='15' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='37' data-class='15' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+            <div data-id='38' data-class='15' class='btn01' data-index="5">
+              <img src="/images/20191210/4631a081bf09ec64ad076c14b60acd03.png" alt="儿童·未来馆"
+                class="iconimg">
+              <div class="txt">
+                儿童·未来馆 </div>
+              <img src="/images/into3.png" alt="儿童·未来馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              Parent-child </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/d913f96bfa948e922d063964b4306161.jpg" alt="模拟冲浪">
+              <div class="content ">
+                <div class="h1">模拟冲浪</div>
+                <p>模拟海上冲浪，站在冲浪板上，左右晃动避开障碍物，寻找宝箱。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/038b29e577fa9682fdbc9d3ee042b010.jpg" alt="鱼眼中的世界">
+              <div class="content ">
+                <div class="h1">鱼眼中的世界</div>
+                <p>展品通过模拟鱼眼，可以带大家从鱼的角度观察世界，发现鱼眼和人眼在构造和成像上的不同。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/d55680be9596cbff23d6d99bbc1899db.jpg" alt="海水不易结冰">
+              <div class="content ">
+                <div class="h1">海水不易结冰</div>
+                <p>通过实验装置呈现海水和淡水两种液体结冰的真实过程，展示海水和淡水结冰点，揭示海水为什么不易结冰的原理。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/7a07890555e6c86b5b378ab53a2992df.jpg" alt="海底世界">
+              <div class="content ">
+                <div class="h1">海底世界</div>
+                <p>在海底世界，小朋友可以通过动手涂色，然后利用投影，将自己绘画的小鱼投放到“大海”中遨游。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/5e877b320d93d78745bba40e506f0b73.jpg" alt="深海电梯">
+              <div class="content ">
+                <div class="h1">深海电梯</div>
+                <p>展项为模拟一次深海下潜的体验过程，通过乘坐“电梯”，体验从海平面下潜至万米深海的整个过程，认识深海世界。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title">
+            <div class="cn">
+              四大馆区 </div>
+            <div class="en">
+              Teenager </div>
+          </div>
+          <div class="itembox">
+            <div data-id='39' data-class='16' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='40' data-class='16' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='41' data-class='16' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='42' data-class='16' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              Teenager </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/bdac57b289ff6e534bbd11846ddc3455.jpg" alt="深海电梯">
+              <div class="content ">
+                <div class="h1">深海电梯</div>
+                <p>展项为一个深海下潜体验的电梯空间，通过模拟电梯下沉，体验从海平面下潜至万米深海的整个过程，认识深海世界。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/1a0478c239f0d7a79444f0afc152c4ab.jpg" alt="蛟龙号">
+              <div class="content ">
+                <div class="h1">蛟龙号</div>
+                <p>展品为1:1还原的蛟龙号深海载人潜水器模型，通过观察认识蛟龙号的内外部构造，了解深海勘测技术以及蛟龙号的重大研发意义。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/df55f0ee5ea7f94157bd2272b7b570a0.jpg" alt="海水的应用">
+              <div class="content ">
+                <div class="h1">海水的应用</div>
+                <p>展现海水在直接应用、海水淡化和海水化学元素等不同方面是如何运用于工业、农场和日常家庭生活中的。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/d05adb48c491ea5c6717c414380b57b4.jpg" alt="地球上有多少水？">
+              <div class="content ">
+                <div class="h1">地球上有多少水？</div>
+                <p>通过极具视听震憾效果的演绎，表现地球上海水和淡水的比例、分布及淡水与海水循环，认识了解水资源对地球生命的重要作用。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title">
+            <div class="cn">
+              四大馆区 </div>
+            <div class="en">
+              The elderly </div>
+          </div>
+          <div class="itembox">
+            <div data-id='44' data-class='17' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='45' data-class='17' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='46' data-class='17' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='48' data-class='17' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              The elderly </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/d31ac9524588176ebc40d7e02d0a2ece.jpg" alt="深海电梯">
+              <div class="content ">
+                <div class="h1">深海电梯</div>
+                <p>展项为一个深海下潜体验的电梯空间，通过模拟电梯下沉，体验从海平面下潜至万米深海的整个过程，认识深海世界。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/60ed83fdeff67f586fae83e7f2e6b5ae.jpg" alt="蛟龙号">
+              <div class="content ">
+                <div class="h1">蛟龙号</div>
+                <p>借助1:1还原的蛟龙号深海载人潜水器模型观察认识蛟龙号的外部、内部构造，了解深海勘测技术以及蛟龙号的重大研发意义。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/ea408a00549991cef9a80262ab8526c6.jpg" alt="万里海疆">
+              <div class="content ">
+                <div class="h1">万里海疆</div>
+                <p>通过弧形屏幕欣赏关于我国海洋国土以及台湾的视频介绍还有互动海浪。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/df95f8cb6a97d6c8773eb28312da8096.jpg" alt="鱼的那些事">
+              <div class="content ">
+                <div class="h1">鱼的那些事</div>
+                <p>在半封闭的小剧场，通过欣赏鱼类的纪录片了解更多和鱼有关的奇闻趣事。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title">
+            <div class="cn">
+              五大馆区 </div>
+            <div class="en">
+              Group </div>
+          </div>
+          <div class="itembox">
+            <div data-id='49' data-class='18' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='50' data-class='18' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='51' data-class='18' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='52' data-class='18' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+            <div data-id='53' data-class='18' class='btn01' data-index="5">
+              <img src="/images/20191210/4631a081bf09ec64ad076c14b60acd03.png" alt="儿童·未来馆"
+                class="iconimg">
+              <div class="txt">
+                儿童·未来馆 </div>
+              <img src="/images/into3.png" alt="儿童·未来馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              Group </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/2f72b52797ad457fac15278602debebf.jpg" alt="蛟龙号">
+              <div class="content ">
+                <div class="h1">蛟龙号</div>
+                <p>借助1:1还原的蛟龙号深海载人潜水器模型观察认识蛟龙号的外部、内部构造，了解深海勘测技术以及蛟龙号的重大研发意义。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/09d0e855e4a9350a73946e332927b5d8.jpg" alt="万里海疆">
+              <div class="content ">
+                <div class="h1">万里海疆</div>
+                <p>通过弧形屏幕欣赏关于我国海洋国土以及台湾的视频介绍还有互动海浪。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/37f4a2d34b5ec005fca4902ba4825bfc.jpg" alt="地球上有多少水？">
+              <div class="content ">
+                <div class="h1">地球上有多少水？</div>
+                <p>过极具视听震憾效果的演绎，表现地球上海水和淡水的比例关系，认识了解水资源对地球生命的重要作用。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/325d4a6a3a48c724c9f40062e7b00cc6.jpg" alt="鱼眼中的世界">
+              <div class="content ">
+                <div class="h1">鱼眼中的世界</div>
+                <p>展品通过模拟鱼眼，可以带大家从鱼的角度观察世界，发现鱼眼和人眼在构造和成像上的不同。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="proitem-window2">
+    <div class="close2">×</div>
+    <div class="h1"></div>
+    <div class="h2"></div>
+    <img src="">
+  </div>
+  <footer>
+    <div class="left">咨询热线：0592-5148555 </div>
+    <div class="navs">
+      <a href="/index" title="首页">首页</a>
+      <a href="/html/guide/guide" title="参观指南">参观指南</a>
+      <a href="/html/news/news" title="新闻中心">新闻中心</a>
+      <a href="/html/tourist/tourist" title="游客服务">游客服务</a>
+      <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动">展馆活动</a>
+      <a href="" title="我与科技馆">我与科技馆</a>
+    </div>
+    <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("header .navs .item").eq(1).addClass("on")
+      var swiper = new Swiper('.news-top .swiper-container', {
+        autoplay: {
+          delay: 5000,
+        },
+        slidesPerView: 2,
+        breakpoints: {
+          767: {
+            slidesPerView: 1
+          },
+        }
+      });
+    })
+  </script>
+</body>
+
+</html>||||||| .r0
+=======
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="format-detection" content="telephone=no">
+  <title>参观指南</title>
+  <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+  <meta name="description" content="   ">
+  <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+  <link rel="stylesheet" type="text/css" href="/css/animate.css">
+  <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+  <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+  <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="/js/layer/layer.js"></script>
+  <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript" src="/js/nprogress.js"></script>
+  <script type="text/javascript" src="/js/wow.min.js"></script>
+  <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      new WOW().init();
+      NProgress.start();
+      NProgress.done();
+    })
+  </script>
+</head>
+
+<body ontouchstart>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="weui-cell__bd title">
+          淮安科技馆
+        </div>
+        <div class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+      <div class="navs">
+        <a href="/index" title="首页" class="item">
+          <div class="cn">首页</div>
+          <div class="en">Home</div>
+        </a>
+        <a href="/html/guide/guide" title="参观指南" class="item">
+          <div class="cn">参观指南 </div>
+          <div class="en">Tour guide</div>
+        </a>
+        <a href="/html/news/news" title="新闻公告" class="item">
+          <div class="cn">新闻公告 </div>
+          <div class="en">News</div>
+        </a>
+        <a href="" title="游客服务" class="item">
+          <div class="cn">游客服务 </div>
+          <div class="en">Tourist Service </div>
+        </a>
+        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+          <div class="cn">展馆活动 </div>
+          <div class="en">Exhibition hall activities</div>
+        </a>
+        <a href="/html/login" title="我与科技馆" class="item">
+          <div class="cn">我与科技馆</div>
+          <div class="en">Me and STC</div>
+        </a>
+      </div>
+    </div>
+  </header>
+  <div class="banner2">
+    <img src="/images/guide/guide-header-bg.png" alt="参观指南" class="bgimg">
+    <div class="banner-title">
+      <div class="container2">
+        <div class="en wow fadeup">
+          Visitor's Guide </div>
+        <div class="cn wow fadeup" data-wow-delay=".2s">
+          参观指南 </div>
+      </div>
+    </div>
+  </div>
+  <div class="subnav">
+    <div class="container2">
+      <a href="/html/guide/guide" title="" class="item">关于我们</a>
+      <a href="/html/guide/often-exhibition" title="" class="item">常设展览</a>
+      <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
+      <a href="/html/guide/cinema-info" title="" class="item">影院信息</a>
+      <a href="/html/guide/recommend-router" title="" class="item on">推荐线路</a>
+      <a href="" title="" class="item">科技馆VR全景</a>
+    </div>
+  </div>
+  <div class="guideline">
+    <div class="container2">
+      <div class="news1-top">
+        <div class="title">
+          <img src="/images/newsicon.png" alt="">
+          <span>新闻公告</span>
+        </div>
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a href="" class="item">
+                <span class="time">2020.09.01</span>
+                <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="" class="item">
+                <span class="time">2020.09.01</span>
+                <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+              </a>
+            </div>
+            <div class="swiper-slide">
+              <a href="" class="item">
+                <span class="time">2020.09.01</span>
+                <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="" title="" class="more">
+          <img src="/images/dian.png" alt="">
+          <img src="/images/dian1.png" alt="">
+        </a>
+      </div>
+    </div>
+    <div class="guidetab1">
+      <div class="container2">
+        <div class="tabbox clearfix">
+          <div class="item">
+            <div class="cn">
+              第一层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <div class="item">
+            <div class="cn">
+              第二层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <div class="item">
+            <div class="cn">
+              第三层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <div class="item">
+            <div class="cn">
+              第四层 </div>
+            <div class="en">
+              xxxxx </div>
+          </div>
+          <img src="/images/busicon.png" alt="" class="busimg">
+        </div>
+      </div>
+    </div>
+    <div class="guideline1">
+      <div class="left">
+        <div class="swiper-container swiper-no-swiping">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="/images/guidemap.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan1.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan4.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="/images/guan5.jpg" alt=""></div>
+          </div>
+        </div>
+        <div class="proitem-window">
+          <div class="h1"></div>
+          <div class="h2"></div>
+          <img src="">
+        </div>
+      </div>
+      <div class="right">
+        <div>
+          <div class="title">
+            <div class="cn">
+              五大馆区 </div>
+            <div class="en">
+              Parent-child </div>
+          </div>
+          <div class="itembox">
+            <div data-id='34' data-class='15' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='35' data-class='15' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='36' data-class='15' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='37' data-class='15' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+            <div data-id='38' data-class='15' class='btn01' data-index="5">
+              <img src="/images/20191210/4631a081bf09ec64ad076c14b60acd03.png" alt="儿童·未来馆"
+                class="iconimg">
+              <div class="txt">
+                儿童·未来馆 </div>
+              <img src="/images/into3.png" alt="儿童·未来馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              Parent-child </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/d913f96bfa948e922d063964b4306161.jpg" alt="模拟冲浪">
+              <div class="content ">
+                <div class="h1">模拟冲浪</div>
+                <p>模拟海上冲浪，站在冲浪板上，左右晃动避开障碍物，寻找宝箱。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/038b29e577fa9682fdbc9d3ee042b010.jpg" alt="鱼眼中的世界">
+              <div class="content ">
+                <div class="h1">鱼眼中的世界</div>
+                <p>展品通过模拟鱼眼，可以带大家从鱼的角度观察世界，发现鱼眼和人眼在构造和成像上的不同。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/d55680be9596cbff23d6d99bbc1899db.jpg" alt="海水不易结冰">
+              <div class="content ">
+                <div class="h1">海水不易结冰</div>
+                <p>通过实验装置呈现海水和淡水两种液体结冰的真实过程，展示海水和淡水结冰点，揭示海水为什么不易结冰的原理。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/7a07890555e6c86b5b378ab53a2992df.jpg" alt="海底世界">
+              <div class="content ">
+                <div class="h1">海底世界</div>
+                <p>在海底世界，小朋友可以通过动手涂色，然后利用投影，将自己绘画的小鱼投放到“大海”中遨游。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/5e877b320d93d78745bba40e506f0b73.jpg" alt="深海电梯">
+              <div class="content ">
+                <div class="h1">深海电梯</div>
+                <p>展项为模拟一次深海下潜的体验过程，通过乘坐“电梯”，体验从海平面下潜至万米深海的整个过程，认识深海世界。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title">
+            <div class="cn">
+              四大馆区 </div>
+            <div class="en">
+              Teenager </div>
+          </div>
+          <div class="itembox">
+            <div data-id='39' data-class='16' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='40' data-class='16' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='41' data-class='16' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='42' data-class='16' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              Teenager </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/bdac57b289ff6e534bbd11846ddc3455.jpg" alt="深海电梯">
+              <div class="content ">
+                <div class="h1">深海电梯</div>
+                <p>展项为一个深海下潜体验的电梯空间，通过模拟电梯下沉，体验从海平面下潜至万米深海的整个过程，认识深海世界。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/1a0478c239f0d7a79444f0afc152c4ab.jpg" alt="蛟龙号">
+              <div class="content ">
+                <div class="h1">蛟龙号</div>
+                <p>展品为1:1还原的蛟龙号深海载人潜水器模型，通过观察认识蛟龙号的内外部构造，了解深海勘测技术以及蛟龙号的重大研发意义。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/df55f0ee5ea7f94157bd2272b7b570a0.jpg" alt="海水的应用">
+              <div class="content ">
+                <div class="h1">海水的应用</div>
+                <p>展现海水在直接应用、海水淡化和海水化学元素等不同方面是如何运用于工业、农场和日常家庭生活中的。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/d05adb48c491ea5c6717c414380b57b4.jpg" alt="地球上有多少水？">
+              <div class="content ">
+                <div class="h1">地球上有多少水？</div>
+                <p>通过极具视听震憾效果的演绎，表现地球上海水和淡水的比例、分布及淡水与海水循环，认识了解水资源对地球生命的重要作用。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title">
+            <div class="cn">
+              四大馆区 </div>
+            <div class="en">
+              The elderly </div>
+          </div>
+          <div class="itembox">
+            <div data-id='44' data-class='17' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='45' data-class='17' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='46' data-class='17' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='48' data-class='17' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              The elderly </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/d31ac9524588176ebc40d7e02d0a2ece.jpg" alt="深海电梯">
+              <div class="content ">
+                <div class="h1">深海电梯</div>
+                <p>展项为一个深海下潜体验的电梯空间，通过模拟电梯下沉，体验从海平面下潜至万米深海的整个过程，认识深海世界。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/60ed83fdeff67f586fae83e7f2e6b5ae.jpg" alt="蛟龙号">
+              <div class="content ">
+                <div class="h1">蛟龙号</div>
+                <p>借助1:1还原的蛟龙号深海载人潜水器模型观察认识蛟龙号的外部、内部构造，了解深海勘测技术以及蛟龙号的重大研发意义。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/ea408a00549991cef9a80262ab8526c6.jpg" alt="万里海疆">
+              <div class="content ">
+                <div class="h1">万里海疆</div>
+                <p>通过弧形屏幕欣赏关于我国海洋国土以及台湾的视频介绍还有互动海浪。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/df95f8cb6a97d6c8773eb28312da8096.jpg" alt="鱼的那些事">
+              <div class="content ">
+                <div class="h1">鱼的那些事</div>
+                <p>在半封闭的小剧场，通过欣赏鱼类的纪录片了解更多和鱼有关的奇闻趣事。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="title">
+            <div class="cn">
+              五大馆区 </div>
+            <div class="en">
+              Group </div>
+          </div>
+          <div class="itembox">
+            <div data-id='49' data-class='18' class='btn01' data-index="1">
+              <img src="/images/20191210/e701a94cce16f1d792d0288bc47d9799.png" alt="海洋·摇篮馆"
+                class="iconimg">
+              <div class="txt">
+                海洋·摇篮馆 </div>
+              <img src="/images/into3.png" alt="海洋·摇篮馆" class="intoimg">
+            </div>
+            <div data-id='50' data-class='18' class='btn01' data-index="2">
+              <img src="/images/20191210/b6a6dfdaad5371b8ce5148c447dc718d.png" alt="探索·发现馆"
+                class="iconimg">
+              <div class="txt">
+                探索·发现馆 </div>
+              <img src="/images/into3.png" alt="探索·发现馆" class="intoimg">
+            </div>
+            <div data-id='51' data-class='18' class='btn01' data-index="3">
+              <img src="/images/20191210/03a7682236049a1e566031d257eda3ae.png" alt="创造·文明馆"
+                class="iconimg">
+              <div class="txt">
+                创造·文明馆 </div>
+              <img src="/images/into3.png" alt="创造·文明馆" class="intoimg">
+            </div>
+            <div data-id='52' data-class='18' class='btn01' data-index="4">
+              <img src="/images/20191210/00b20031b170fe6ac755621336e7ed0e.png" alt="和谐·发展馆"
+                class="iconimg">
+              <div class="txt">
+                和谐·发展馆 </div>
+              <img src="/images/into3.png" alt="和谐·发展馆" class="intoimg">
+            </div>
+            <div data-id='53' data-class='18' class='btn01' data-index="5">
+              <img src="/images/20191210/4631a081bf09ec64ad076c14b60acd03.png" alt="儿童·未来馆"
+                class="iconimg">
+              <div class="txt">
+                儿童·未来馆 </div>
+              <img src="/images/into3.png" alt="儿童·未来馆" class="intoimg">
+            </div>
+          </div>
+          <div class="title">
+            <div class="cn">
+              展品列表 </div>
+            <div class="en">
+              Group </div>
+          </div>
+          <div class="prolist">
+            <div class="item">
+              <img src="/images/20200527/2f72b52797ad457fac15278602debebf.jpg" alt="蛟龙号">
+              <div class="content ">
+                <div class="h1">蛟龙号</div>
+                <p>借助1:1还原的蛟龙号深海载人潜水器模型观察认识蛟龙号的外部、内部构造，了解深海勘测技术以及蛟龙号的重大研发意义。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/09d0e855e4a9350a73946e332927b5d8.jpg" alt="万里海疆">
+              <div class="content ">
+                <div class="h1">万里海疆</div>
+                <p>通过弧形屏幕欣赏关于我国海洋国土以及台湾的视频介绍还有互动海浪。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/37f4a2d34b5ec005fca4902ba4825bfc.jpg" alt="地球上有多少水？">
+              <div class="content ">
+                <div class="h1">地球上有多少水？</div>
+                <p>过极具视听震憾效果的演绎，表现地球上海水和淡水的比例关系，认识了解水资源对地球生命的重要作用。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+            <div class="item">
+              <img src="/images/20200527/325d4a6a3a48c724c9f40062e7b00cc6.jpg" alt="鱼眼中的世界">
+              <div class="content ">
+                <div class="h1">鱼眼中的世界</div>
+                <p>展品通过模拟鱼眼，可以带大家从鱼的角度观察世界，发现鱼眼和人眼在构造和成像上的不同。</p>
+              </div>
+              <div class="more">查看</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <div class="proitem-window2">
+    <div class="close2">×</div>
+    <div class="h1"></div>
+    <div class="h2"></div>
+    <img src="">
+  </div>
+  <footer>
+    <div class="left">咨询热线：0592-5148555 </div>
+    <div class="navs">
+      <a href="/index" title="首页">首页</a>
+      <a href="/html/guide/guide" title="参观指南">参观指南</a>
+      <a href="/html/news/news" title="新闻中心">新闻中心</a>
+      <a href="" title="游客服务">游客服务</a>
+      <a href="" title="展馆活动">展馆活动</a>
+      <a href="" title="我与科技馆">我与科技馆</a>
+    </div>
+    <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </footer>
+  <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+  <script type="text/javascript" src="/js/swiper.min.js"></script>
+  <script type="text/javascript">
+    $(function () {
+      $("header .navs .item").eq(1).addClass("on")
+      var swiper = new Swiper('.news-top .swiper-container', {
+        autoplay: {
+          delay: 5000,
+        },
+        slidesPerView: 2,
+        breakpoints: {
+          767: {
+            slidesPerView: 1
+          },
+        }
+      });
+    })
+  </script>
+</body>
+
+</html>>>>>>>> .r3600

@@ -21,15 +21,6 @@
   <link rel="stylesheet" type="text/css" href="/css/common.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
   <link rel="stylesheet" type="text/css" href="/css/index.css">
-
-  <link rel="stylesheet" type="text/css" href="/css/ele-index.css">
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-  <script type="text/javascript" src="/js/vue.min.js"></script>
-  <script type="text/javascript" src="/js/axios.min.js"></script>
-  <script type="text/javascript" src="/js/ele-index.js"></script>
-
-
-  <script type="text/javascript" src="/js/qs.min.js"></script>
   <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="/js/layer/layer.js"></script>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -51,19 +42,76 @@
     <header>
       <div class="container">
         <div class="header-top">
-          <div class="weui-cell__bd title">淮安科技馆</div>
+          <div class="weui-cell__bd title">
+            淮安科技馆
+          </div>
           <div class="nav-icon">
-            <span v-for="(item,index) in 3" :key="index"></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
         </div>
+<<<<<<< .mine
         <div class="navs">
-          <a v-for="(item,index) in navsList" :key="index" :href="item.url" :title="item.cn"
-            :class="['item',index===0?'on':'']">
-            <span class="cn">{{item.cn}}</span>
-            <span class="en">{{item.en}}</span>
+          <a href="/index" title="首页" class="item">
+            <div class="cn">首页</div>
+            <div class="en">Home</div>
           </a>
+          <a href="/html/guide/guide" title="参观指南" class="item">
+            <div class="cn">参观指南 </div>
+            <div class="en">Tour guide</div>
+          </a>
+          <a href="/html/news/news" title="新闻公告" class="item">
+            <div class="cn">新闻公告 </div>
+            <div class="en">News</div>
+          </a>
+          <a href="/html/tourist/tourist" title="游客服务" class="item">
+            <div class="cn">游客服务 </div>
+            <div class="en">Tourist Service </div>
+          </a>
+          <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+            <div class="cn">展馆活动 </div>
+            <div class="en">Exhibition hall activities</div>
+          </a>
+          <a href="/html/login" title="我与科技馆" class="item">
+            <div class="cn">我与科技馆</div>
+            <div class="en">Me and STC</div>
+          </a>
+||||||| .r3594
+        <div class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+=======
+        <div class="navs">
+          <a href="/index" title="首页" class="item">
+            <div class="cn">首页</div>
+            <div class="en">Home</div>
+          </a>
+          <a href="/html/guide/guide" title="参观指南" class="item">
+            <div class="cn">参观指南 </div>
+            <div class="en">Tour guide</div>
+          </a>
+          <a href="/html/news/news" title="新闻公告" class="item">
+            <div class="cn">新闻公告 </div>
+            <div class="en">News</div>
+          </a>
+          <a href="" title="游客服务" class="item">
+            <div class="cn">游客服务 </div>
+            <div class="en">Tourist Service </div>
+          </a>
+          <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+            <div class="cn">展馆活动 </div>
+            <div class="en">Exhibition hall activities</div>
+          </a>
+          <a href="/html/login" title="我与科技馆" class="item">
+            <div class="cn">我与科技馆</div>
+            <div class="en">Me and STC</div>
+          </a>
+>>>>>>> .r3600
         </div>
       </div>
+<<<<<<< .mine
     </header>
     <div class="banner">
       <div class="swiper-container bannerswiper">
@@ -71,13 +119,157 @@
           <div class="swiper-slide">
             <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
               <div class="container content-box">
-                <div class="h1" style="text-shadow: 0 0 0.1em, 0 0 0.3em">淮安科技馆 </div>
+                <div class="h1">淮安科技馆 </div>
                 <div class="title2">
-                  <div class="h1" style="text-shadow: 0 0 0.1em, 0 0 0.3em">
+                  <div class="h1">
                     让科学更好玩 </div>
                   <div class="h2">
                     Huaian Science and Technology Museum Make Science More Fun </div>
                 </div>
+||||||| .r3594
+      <div class="navs">
+        <a href="/index" title="首页" class="item">
+          <div class="cn">首页</div>
+          <div class="en">Home</div>
+        </a>
+        <a href="/html/guide/guide" title="参观指南" class="item">
+          <div class="cn">参观指南 </div>
+          <div class="en">Tour guide</div>
+        </a>
+        <a href="/html/news/news" title="新闻公告" class="item">
+          <div class="cn">新闻公告 </div>
+          <div class="en">News</div>
+        </a>
+        <a href="/html/tourist/tourist.html" title="游客服务" class="item">
+          <div class="cn">游客服务 </div>
+          <div class="en">Tourist Service </div>
+        </a>
+        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+          <div class="cn">展馆活动 </div>
+          <div class="en">Exhibition hall activities</div>
+        </a>
+        <a href="/html/login" title="我与科技馆" class="item">
+          <div class="cn">我与科技馆</div>
+          <div class="en">Me and STC</div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="swiper-container bannerswiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
+            <div class="container content-box">
+              <div class="h1">淮安科技馆 </div>
+              <div class="title2">
+                <div class="h1">
+                  让科学更好玩 </div>
+                <div class="h2">
+                  Huaian Science and Technology Museum Make Science More Fun </div>
+=======
+<<<<<<< .mine
+    </header>
+    <div class="banner">
+      <div class="swiper-container bannerswiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
+              <div class="container content-box">
+                <div class="h1">淮安科技馆 </div>
+                <div class="title2">
+                  <div class="h1">
+                    让科学更好玩 </div>
+                  <div class="h2">
+                    Huaian Science and Technology Museum Make Science More Fun </div>
+                </div>
+||||||| .r3538
+      <div class="navs">
+        <a href="/index" title="首页" class="item">
+          <div class="cn">首页</div>
+          <div class="en">Home</div>
+        </a>
+        <a href="/html/guide/guide" title="参观指南" class="item">
+          <div class="cn">参观指南 </div>
+          <div class="en">Tour guide</div>
+        </a>
+        <a href="/html/news/news" title="新闻公告" class="item">
+          <div class="cn">新闻公告 </div>
+          <div class="en">News</div>
+        </a>
+        <a href="" title="游客服务" class="item">
+          <div class="cn">游客服务 </div>
+          <div class="en">Tourist Service </div>
+        </a>
+        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+          <div class="cn">展馆活动 </div>
+          <div class="en">Exhibition hall activities</div>
+        </a>
+        <a href="/html/login" title="我与科技馆" class="item">
+          <div class="cn">我与科技馆</div>
+          <div class="en">Me and STC</div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="swiper-container bannerswiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
+            <div class="container content-box">
+              <div class="h1">淮安科技馆 </div>
+              <div class="title2">
+                <div class="h1">
+                  让科学更好玩 </div>
+                <div class="h2">
+                  Huaian Science and Technology Museum Make Science More Fun </div>
+=======
+      <div class="navs">
+        <a href="/index" title="首页" class="item">
+          <div class="cn">首页</div>
+          <div class="en">Home</div>
+        </a>
+        <a href="/html/guide/guide" title="参观指南" class="item">
+          <div class="cn">参观指南 </div>
+          <div class="en">Tour guide</div>
+        </a>
+        <a href="/html/news/news" title="新闻公告" class="item">
+          <div class="cn">新闻公告 </div>
+          <div class="en">News</div>
+        </a>
+        <a href="/html/tourist/tourist.html" title="游客服务" class="item">
+          <div class="cn">游客服务 </div>
+          <div class="en">Tourist Service </div>
+        </a>
+        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+          <div class="cn">展馆活动 </div>
+          <div class="en">Exhibition hall activities</div>
+        </a>
+        <a href="/html/login" title="我与科技馆" class="item">
+          <div class="cn">我与科技馆</div>
+          <div class="en">Me and STC</div>
+        </a>
+      </div>
+    </div>
+    </div>
+  </header>
+  <div class="banner">
+    <div class="swiper-container bannerswiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="bannerbox" style="background-image:url(/images/ui/girl.png)">
+            <div class="container content-box">
+              <div class="h1">淮安科技馆 </div>
+              <div class="title2">
+                <div class="h1">
+                  让科学更好玩 </div>
+                <div class="h2">
+                  Huaian Science and Technology Museum Make Science More Fun </div>
+>>>>>>> .r3600
+>>>>>>> .r3594
               </div>
             </div>
           </div>
@@ -89,15 +281,41 @@
         </div>
       </div>
       <div class="video-box wow faderight container" data-wow-delay=".2s">
-        <el-carousel indicator-position="outside" arrow="always" height="2.3rem">
-          <el-carousel-item v-for="item in videoList" :key="item.id">
-            <div class="video-container">
-              <img :src="downloadBaseUrl + item.imgUrl" alt="" />
-              <img src="/images/paly.png" alt="" @click="openVideo(item.id)" class="open-video" />
-              <div></div>
+        <div class="video-top">
+          <div class="swiper-num weui-cell__bd">
+            <span class="current"></span>
+            <span>/</span>
+            <span class="total"></span>
+          </div>
+          <div class="video-btn prev">
+            <img src="/images/prev.png" alt="">
+          </div>
+          <div class="video-btn next">
+            <img src="/images/next.png" alt="">
+          </div>
+        </div>
+        <div class="swiper-container video-swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="imgbox">
+                  <img src="/images/20191216/d6798df44aec6ead9d87636c2a8674bf.jpg" alt="" class="postimg">
+                  <img src="/images/paly.png" alt="" class="play-btn"
+                    data-video="/video/349804b0d1ed8b682397b19129252477.mp4">
+                </div>
+              </div>
             </div>
-          </el-carousel-item>
-        </el-carousel>
+            <div class="swiper-slide">
+              <div class="video-item">
+                <div class="imgbox">
+                  <img src="/images/20191216/bfd37534c8920a9e6b7133d936fce0e3.jpg" alt="" class="postimg">
+                  <img src="/images/paly.png" alt="" class="play-btn"
+                    data-video="/video/b4710a8e6578b53dc164a9a7ab20ce21.mp4">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <div class="wrapper">
@@ -202,9 +420,7 @@
                       <img :src="downloadBaseUrl+item.coverImg" alt="">
                       <div class="my-swiper-info">
                         <h3>{{item.title}}</h3>
-                        <!-- <p>{{item.descripation}}</p> -->
-                        <div v-html='item.descripation'></div>
-                        <!-- <content v-html='item.descripation' /> -->
+                        <p>{{item.descripation}}</p>
                         <div class="my-swiper-pagination-box">
                           <div :class="['my-swiper-pagination',swiperPaginationIndex === ++index?'current-swiper':'']"
                             v-for="(item,index) in footerImgList.length" :key="index"></div>
@@ -236,14 +452,23 @@
         </div>
       </div>
     </div>
-    <el-dialog :visible.sync="dialogVisible" width="50%">
-      <video style="width: 100%;height: 100%;" :src="downloadBaseUrl + videoUrl" controls="controls" autoplay></video>
-    </el-dialog>
+    <div class="video-window">
+      <div class="top clearfix">
+        <div class="video-close"><img src="/images/close10.png" alt=""></div>
+      </div>
+      <video src="" controls></video>
+    </div>
     <div class="mask"></div>
     <footer>
-      <div class="left">咨询热线：0592-5148555 </div>
+      <div class="left">
+        咨询热线：0592-5148555 </div>
       <div class="navs">
-        <a v-for="(item,index) in navsList" :href="item.url" :title="item.cn">{{item.cn}}</a>
+        <a href="/index" title="首页">首页</a>
+        <a href="/html/guide" title="参观指南">参观指南</a>
+        <a href="/html/news" title="新闻中心">新闻中心</a>
+        <a href="" title="游客服务">游客服务</a>
+        <a href="" title="展馆活动">展馆活动</a>
+        <a href="" title="我与科技馆">我与科技馆</a>
       </div>
       <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
       <script>
@@ -257,44 +482,91 @@
       </script>
     </footer>
   </div>
-
+  <script type="text/javascript">
+    $(function () {
+      $("header .navs .item").eq(0).addClass("on")
+      var active1 = $(".index2 .col").eq(1).find(".item")
+      active1.addClass("on")
+      var video1 = new Swiper('.banner .video-box .swiper-container', {
+        speed: 800,
+        autoplay: {
+          delay: 4000,
+        },
+        navigation: {
+          nextEl: '.banner .video-btn.next',
+          prevEl: '.banner .video-btn.prev',
+        },
+        on: {
+          init: function () {
+            $(".banner .swiper-num .total").html("0" + this.slides.length)
+            $(".banner .swiper-num .current").html("01")
+          },
+          slideChangeTransitionStart: function () {
+            var idx = this.activeIndex + 1
+            $(".banner .swiper-num .current").html("0" + idx)
+            $(".video-item .imgbox").show()
+            $(".video-item video").hide().trigger('pause')
+          },
+        },
+      })
+      $(".play-btn").click(function () {
+        var video = $(this).attr("data-video")
+        $(".video-window").fadeIn()
+        $(".mask").fadeIn()
+        $(".video-window").find("video").attr("src", video).trigger("play")
+      })
+      $(".video-close").click(function () {
+        $(".video-window").fadeOut()
+        $(".mask").fadeOut()
+        $(".video-window").find("video").trigger("pause")
+      })
+      var index2swiper = new Swiper('.index2 .swiper-container', {
+        loop: true,
+        speed: 800,
+        slidesPerView: 3,
+        centeredSlides: true,
+        breakpoints: {
+          767: {
+            slidesPerView: 1
+          },
+          1000: {
+            slidesPerView: 2,
+            centeredSlides: false
+          }
+        },
+        navigation: {
+          nextEl: '.index2 .next',
+          prevEl: '.index2 .prev',
+        },
+      })
+      var news2 = new Swiper('.announcebox .swiper-container', {
+        loop: true,
+        speed: 800,
+        autoplay: {
+          delay: 5000,
+        },
+        navigation: {
+          nextEl: '.announcebox .next',
+          prevEl: '.announcebox .prev',
+        },
+      })
+      $(".announcebox .closebox").click(function () {
+        $(".announcebox").hide('400', function () {});
+      })
+    })
+  </script>
+  <script src="/js/vue.min.js"></script>
+  <script src="/js/axios.min.js"></script>
+  <script src="/js/qs.min.js"></script>
   <script>
     var app = new Vue({
       el: '#app',
       data() {
         return {
-          navsList: [{
-            url: '/index',
-            cn: '首页',
-            en: 'Home'
-          }, {
-            url: '/html/guide/guide',
-            cn: '参观指南',
-            en: 'Tour guide'
-          }, {
-            url: '/html/news/news',
-            cn: '新闻公告',
-            en: 'News'
-          }, {
-            url: '/html/tourist/tourist',
-            cn: '游客服务',
-            en: 'Tourist Service'
-          }, {
-            url: '/html/exhibitionHall/exhibitionHall',
-            cn: '展馆活动',
-            en: 'Exhibition hall activities'
-          }, {
-            url: '/html/login',
-            cn: '我与科技馆',
-            en: 'Me and STC'
-          }],
           hallInfoList: [],
           downloadBaseUrl: 'http://192.168.100.92:8089/download/',
           baseUrl: 'http://192.168.100.92',
           iconSwiper: null,
-          dialogVisible: false,
-          videoUrl: '',
-          videoList: [],
           // footerImgList: [{
           //   id: 5,
           //   title: "最新活动",
@@ -344,7 +616,6 @@
         }
       },
       async created() {
-        this.handlerVideo()
         this.handlerHallInfo()
         await this.init()
       },
@@ -406,35 +677,6 @@
                 console.error(err)
               })
           })
-        },
-        handlerVideo() {
-          axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/official/officialsitehomevideo/list`,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              res.data.code === 0 ? this.videoList = res.data.list : ''
-            })
-            .catch(err => {
-              console.error(err)
-            })
-        },
-        openVideo(id) {
-          axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/official/officialsitehomevideo/info/${id}`,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              res.data.code === 0 ? this.videoUrl = res.data.officialSiteHomeVideo.url : ''
-              this.dialogVisible = true
-            })
-            .catch(err => {
-              console.error(err)
-            })
         }
       },
     })

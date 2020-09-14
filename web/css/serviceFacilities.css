@@ -180,6 +180,9 @@
         font-size: 0.16rem;
         font-family: 'Microsoft Yahei';
     }
+    .facility .item .en {
+        font-family: "Microsoft Yahei";
+    }
 /* change end */
 
 /* media start */

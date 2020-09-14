@@ -1373,3 +1373,8 @@ header .center {
 .link-container .link-item a:hover {
   color: #337ab7;
 }
+
+.navs a {
+  display: flex;
+  flex-direction: column;
+}

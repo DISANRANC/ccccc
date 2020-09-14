@@ -9,7 +9,7 @@
         transition:all .3s
     }
     .tourenter .item .content{
-        padding: .15rem .2rem;a
+        padding: .15rem .2rem;
     }
     .tourenter .row{margin:0 -.2rem;}
     .tourenter .col-sm-4{
@@ -168,6 +168,10 @@
         border: none;
         letter-spacing: 0.02rem;
     }
+
+    .tourline .one .timebox {
+        margin-left: 0;
+    }
     .ticket-box .title {
         font-size: .24rem;
         color: #555555;
@@ -179,6 +183,48 @@
         color: #555555;
         font-size: 0.16rem;
         font-family: 'Microsoft Yahei';
+    }
+    .tourline .one .itembox .item:before {
+        content: none;
+    }
+    .tourline .one .itembox .item:after {
+        content: none;
+    }
+    .tourline .one .timebox .title {
+        font-size: .16rem;
+        color: #fff;
+        line-height: .16rem;
+        font-family: 'Microsoft Yahei';
+        padding: 0.2rem .18rem 0.2rem .35rem;
+        background: #2184ff;
+        display: block;
+        text-transform: uppercase;
+    }
+    .tourline .one .itembox .item:nth-child(1) {
+        padding-top: .25rem;
+    }
+    .tourline .one .itembox .item .h1 {
+        font-size: .16rem;
+        font-family: 'Microsoft Yahei';
+        color: #555555;
+        margin-bottom: .2rem;
+    }
+    .tourline .one .itembox .item .h2 {
+        font-size: .18rem;
+        color: #555555;
+        font-weight: bold;
+        font-family: 'Microsoft Yahei';
+    }
+    .tourline .one .itembox .item:nth-child(2) {
+        padding-top: .5rem;
+    }
+    .tourline .one .itembox .item:nth-child(3) {
+        padding-top: .5rem;
+    }
+    .tourline .one .itembox .item {
+        padding-left: 0.35rem;
+        padding-right: .08rem;
+        position: relative;
     }
 /* change end */
 
@@ -204,8 +250,11 @@
         padding-left: 0.05rem;
     }
 }
-
 @media (max-width: 767px){
+.tourline .one .timebox {
+    margin-left: 0;
+    margin-top: 0rem;
+}
     .tourenter{padding:15px 0}
     .tourenter .item{display:flex;align-items:center;margin-bottom:15px}
     .tourenter .item .imgbox{width:40%}
