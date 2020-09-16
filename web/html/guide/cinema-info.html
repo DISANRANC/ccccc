@@ -18,16 +18,12 @@
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/commons.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
   <link rel="stylesheet" type="text/css" href="/css/cinema-info.css">
   <link rel="stylesheet" type="text/css" href="/css/guide.css">
-
   <link rel="stylesheet" type="text/css" href="/css/ele-index.css">
   <link rel="stylesheet" type="text/css" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-  <script type="text/javascript" src="/js/vue.min.js"></script>
-  <script type="text/javascript" src="/js/axios.min.js"></script>
-  <script type="text/javascript" src="/js/ele-index.js"></script>
-
   <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="/js/layer/layer.js"></script>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
@@ -35,6 +31,9 @@
   <script type="text/javascript" src="/js/nprogress.js"></script>
   <script type="text/javascript" src="/js/wow.min.js"></script>
   <script type="text/javascript" src="/js/common.js"></script>
+  <script type="text/javascript" src="/js/vue.min.js"></script>
+  <script type="text/javascript" src="/js/axios.min.js"></script>
+  <script type="text/javascript" src="/js/ele-index.js"></script>
   <script type="text/javascript">
     $(function () {
       new WOW().init();
@@ -59,29 +58,10 @@
           </div>
         </div>
         <div class="navs">
-          <a href="/index" title="首页" class="item">
-            <div class="cn">首页</div>
-            <div class="en">Home</div>
-          </a>
-          <a href="/html/guide/guide" title="参观指南" class="item">
-            <div class="cn">参观指南 </div>
-            <div class="en">Tour guide</div>
-          </a>
-          <a href="/html/news/news" title="新闻公告" class="item">
-            <div class="cn">新闻公告 </div>
-            <div class="en">News</div>
-          </a>
-          <a href="/html/tourist/tourist" title="游客服务" class="item">
-            <div class="cn">游客服务 </div>
-            <div class="en">Tourist Service </div>
-          </a>
-          <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
-            <div class="cn">展馆活动 </div>
-            <div class="en">Exhibition hall activities</div>
-          </a>
-          <a href="/html/login" title="我与科技馆" class="item">
-            <div class="cn">我与科技馆</div>
-            <div class="en">Me and STC</div>
+          <a v-for="(item,index) in navsList" :key="index" :href="item.url" :title="item.cn"
+            :class="['item',index===1?'on':'']">
+            <span class="cn">{{item.cn}}</span>
+            <span class="en">{{item.en}}</span>
           </a>
         </div>
       </div>
@@ -97,12 +77,8 @@
     </div>
     <div class="subnav">
       <div class="container2">
-        <a href="/html/guide/guide" title="" class="item">关于我们</a>
-        <a href="/html/guide/often-exhibition" title="" class="item">常设展览</a>
-        <a href="/html/guide/temporary-exhibition" title="" class="item">临时展览</a>
-        <a href="/html/guide/cinema-info" title="" class="item on">影院信息</a>
-        <a href="/html/guide/recommend-router" title="" class="item ">推荐线路</a>
-        <a href="" title="" class="item">科技馆VR全景</a>
+        <a v-for="(item,index) in navsArr" :key="index" :href="item.url" :title="item.title"
+          :class="['item',index===3?'on':'']">{{item.title}}</a>
       </div>
     </div>
     <div class="about">
@@ -114,27 +90,15 @@
           </div>
           <div class="swiper-container">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
+              <div class="swiper-slide" v-for="(item,index) in newsList" :key="index">
                 <a href="" class="item">
-                  <span class="time">2020.09.01</span>
-                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="" class="item">
-                  <span class="time">2020.09.01</span>
-                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
-                </a>
-              </div>
-              <div class="swiper-slide">
-                <a href="" class="item">
-                  <span class="time">2020.09.01</span>
-                  <span class="txt weui-cell_primary">淮安科技馆最新公告最新公告最新公告…</span>
+                  <span class="time">{{item.createTime}}</span>
+                  <span class="txt weui-cell_primary">{{item.title}}</span>
                 </a>
               </div>
             </div>
           </div>
-          <a href="" title="" class="more">
+          <a href="/html/news/news" title="" class="more">
             <img src="/images/dian.png" alt="">
             <img src="/images/dian1.png" alt="">
           </a>
@@ -142,7 +106,7 @@
       </div>
       <div class="cinema">
         <div class="cinema-box">
-          <div class="container2 clearfix">
+          <div class="container2 clearfix wow fadeup">
             <div :class="['item',cinemaIndex === index?'activity':'']" v-for="(item,index) in cinemaList" :key="index"
               @click="handlerCinema(index,item.code)">
               <img src="/images/cinema.png" alt="">
@@ -154,11 +118,11 @@
       </div>
       <div class="film">
         <div class="container2">
-          <div class="top">
+          <div class="top wow fadeup">
             <img src="/images/guide/xingxing.png" alt="">
             <p>购票须知：一人一票，一票只可观看一个影院/剧场一个场次</p>
           </div>
-          <div class="film-list" v-if="filmList.length!==0">
+          <div class="film-list wow fadeup" v-if="filmList.length!==0">
             <div class="item" v-for="(item,index) in filmList" :key="index" @click="handlerFilm(item.id)">
               <img :src="downloadBaseUrl + item.coverImg" alt="">
               <p>{{item.filmName}}</p>
@@ -209,56 +173,38 @@
       <div class="container2">
         <div class="link-container">
           <div v-for="(item,index) in linkList" :key="index" class="link-item">
-            <a :href="item.url">{{item.name}}</a>
-            <span>|</span>
+            <a :href="item.url" target="_blank">{{item.name}}</a>
+            <span v-show="index!==linkList.length-1">|</span>
           </div>
         </div>
       </div>
     </div>
-    <script type="text/javascript" src="/js/jquery.countup.min.js"></script>
-    <script type="text/javascript" src="/js/jquery.waypoints.min.js"></script>
-    <!-- <link rel="stylesheet" type="text/css" href="/css/swiper.min.css"> -->
-    <!-- <script type="text/javascript" src="/js/swiper.min.js"></script> -->
-    <script type="text/javascript">
-      $(function () {
-        $("header .navs .item").eq(1).addClass("on")
-        $(".about .one .area-box .num").countUp({
-          time: 600
-        })
-        var swiper = new Swiper('.news1-top .swiper-container', {
-          speed: 800,
-          autoplay: {
-            delay: 5000,
-          },
-          slidesPerView: 2,
-          breakpoints: {
-            767: {
-              slidesPerView: 1
-            },
-          }
-        });
-      })
-    </script>
     <footer>
-      <div class="left">咨询热线：0592-5148555 </div>
-      <div class="navs">
-        <a href="/index" title="首页">首页</a>
-        <a href="/html/guide/guide" title="参观指南">参观指南</a>
-        <a href="/html/news/news" title="新闻中心">新闻中心</a>
-        <a href="/html/tourist/tourist" title="游客服务">游客服务</a>
-        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动">展馆活动</a>
-        <a href="" title="我与科技馆">我与科技馆</a>
+      <div class="footer-navs">
+        <a v-for="(item,index) in navsList" :href="item.url" :title="item.cn">{{item.cn}}</a>
       </div>
-      <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
-      <script>
-        var _hmt = _hmt || [];
-        (function () {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-      </script>
+      <div class="footer-info">
+        <div class="logo">logo</div>
+        <div class="footer-info1">
+          <div class="footer-info1-img">
+            <img :src="item.url" alt="" v-for="(item,index) in footerLogoList" :key="index">
+          </div>
+          <p>邮编：223355</p>
+        </div>
+        <div class="footer-info2">
+          <p>科技馆服务热线：</p>
+          <p>400-000-XX00</p>
+        </div>
+        <div class="footer-info2">
+          <p>科技馆详细地址：</p>
+          <p>淮安市XX区XXX路XXX号</p>
+        </div>
+        <div class="footer-info3">
+          <p>扫一扫<br>关注公众号</p>
+          <img src="/images/ui/ma.png" alt="">
+        </div>
+      </div>
+      <p class="footer-text">Copyright © 2019 科学梦创展有科技限公司 版权所有 All Rrghts Reserved. ICP备：000XX00号</p>
     </footer>
   </div>
   <script>
@@ -266,6 +212,13 @@
       el: '#app',
       data() {
         return {
+          footerLogoList: [{
+            url: '/images/ui/qq.png',
+          }, {
+            url: '/images/ui/weixin.png',
+          }, {
+            url: '/images/ui/weibo.png',
+          }],
           dialogVisible: false,
           total: 1,
           filmDetails: {},
@@ -279,40 +232,74 @@
           downloadBaseUrl: 'http://192.168.100.92:8089/download/',
           cinemaIndex: 0,
           cinemaList: [],
-          linkList: [{
-            url: '',
-            name: '北京科技馆'
+          newsList: [],
+          navsArr: [{
+            url: '/html/guide/guide',
+            title: '关于我们'
+          }, {
+            url: '/html/guide/often-exhibition',
+            title: '常设展览'
+          }, {
+            url: '/html/guide/temporary-exhibition',
+            title: '临时展览'
+          }, {
+            url: '/html/guide/cinema-info',
+            title: '影院信息'
+          }, {
+            url: '/html/guide/recommend-router',
+            title: '推荐线路'
           }, {
             url: '',
-            name: '杭州科技馆'
+            title: '科技馆VR全景'
+          }],
+          navsList: [{
+            url: '/index',
+            cn: '首页',
+            en: 'Home'
           }, {
-            url: '',
-            name: '上海科技馆'
+            url: '/html/guide/guide',
+            cn: '参观指南',
+            en: 'Tour guide'
           }, {
-            url: '',
-            name: '广州科技馆'
+            url: '/html/news/news',
+            cn: '新闻公告',
+            en: 'News'
           }, {
-            url: '',
-            name: '武汉科技馆'
+            url: '/html/tourist/tourist',
+            cn: '游客服务',
+            en: 'Tourist Service'
           }, {
-            url: '',
-            name: '成都科技馆'
+            url: '/html/exhibitionHall/exhibitionHall',
+            cn: '展馆活动',
+            en: 'Exhibition hall activities'
           }, {
-            url: '',
-            name: '天津科技馆'
-          }, {
-            url: '',
-            name: '南京科技馆'
-          }, {
-            url: '',
-            name: '深圳科技馆'
-          }, ],
+            url: '/html/login',
+            cn: '我与科技馆',
+            en: 'Me and STC'
+          }],
+          linkList: [],
           filmList: []
         }
       },
       created() {
         // this.getFilmList()
+        this.getNewsList()
         this.getListCinema()
+        this.getLinkList()
+      },
+      mounted() {
+        var swiper = new Swiper('.news1-top .swiper-container', {
+          speed: 800,
+          autoplay: {
+            delay: 5000,
+          },
+          slidesPerView: 2,
+          breakpoints: {
+            767: {
+              slidesPerView: 1
+            },
+          }
+        });
       },
       methods: {
         handlerFilm(id) {
@@ -395,9 +382,38 @@
         handleCurrentChange(val) {
           this.params.page = val
           this.getFilmList()
+        },
+        getNewsList() {
+          axios({
+              methods: 'GET',
+              url: `${this.baseUrl}/news/newsnotice/list`,
+              headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+              }
+            }).then(res => {
+              res.data.code === 0 ? this.newsList = res.data.list : ''
+            })
+            .catch(err => {
+              console.error(err)
+            })
+        },
+        getLinkList() {
+          axios({
+              methods: 'GET',
+              url: `${this.baseUrl}/api/officialsitefriendlylink/listAll/`,
+              headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+              }
+            }).then(res => {
+              res.data.code === 0 ? this.linkList = res.data.data : ''
+            })
+            .catch(err => {
+              console.error(err)
+            })
         }
       },
     })
   </script>
 </body>
+
 </html>

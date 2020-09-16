@@ -19,6 +19,7 @@
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
+  <link rel="stylesheet" type="text/css" href="/css/commons.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
   <link rel="stylesheet" type="text/css" href="/css/index.css">
 
@@ -28,10 +29,8 @@
   <script type="text/javascript" src="/js/axios.min.js"></script>
   <script type="text/javascript" src="/js/ele-index.js"></script>
 
-
   <script type="text/javascript" src="/js/qs.min.js"></script>
   <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
-  <script type="text/javascript" src="/js/layer/layer.js"></script>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/js/swiper.min.js"></script>
   <script type="text/javascript" src="/js/nprogress.js"></script>
@@ -146,7 +145,7 @@
               <h3>展馆介绍</h3>
               <h4>Exhibition hall introduction</h4>
               <div>
-                <div v-for="(item,index) in hallInfoList" :key="index">
+                <div v-for="(item,index) in hallInfoList" :key="index" class="wow faderight" data-wow-delay=".2s">
                   <div class="hall-info-container" v-if="++index%2!==0">
                     <div class="img-box">
                       <img v-if="item.imageMain!==''" :src="downloadBaseUrl + item.imageMain" alt="">
@@ -228,8 +227,8 @@
           <div class="container2">
             <div class="link-container">
               <div v-for="(item,index) in linkList" :key="index" class="link-item">
-                <a :href="item.url">{{item.name}}</a>
-                <span>|</span>
+                <a :href="item.url" target="_blank">{{item.name}}</a>
+                <span v-show="index!==linkList.length-1">|</span>
               </div>
             </div>
           </div>
@@ -239,22 +238,32 @@
     <el-dialog :visible.sync="dialogVisible" width="50%">
       <video style="width: 100%;height: 100%;" :src="downloadBaseUrl + videoUrl" controls="controls" autoplay></video>
     </el-dialog>
-    <div class="mask"></div>
     <footer>
-      <div class="left">咨询热线：0592-5148555 </div>
-      <div class="navs">
+      <div class="footer-navs">
         <a v-for="(item,index) in navsList" :href="item.url" :title="item.cn">{{item.cn}}</a>
       </div>
-      <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
-      <script>
-        var _hmt = _hmt || [];
-        (function () {
-          var hm = document.createElement("script");
-          hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
-          var s = document.getElementsByTagName("script")[0];
-          s.parentNode.insertBefore(hm, s);
-        })();
-      </script>
+      <div class="footer-info">
+        <div class="logo">logo</div>
+        <div class="footer-info1">
+          <div class="footer-info1-img">
+            <img :src="item.url" alt="" v-for="(item,index) in footerLogoList" :key="index">
+          </div>
+          <p>邮编：223355</p>
+        </div>
+        <div class="footer-info2">
+          <p>科技馆服务热线：</p>
+          <p>400-000-XX00</p>
+        </div>
+        <div class="footer-info2">
+          <p>科技馆详细地址：</p>
+          <p>淮安市XX区XXX路XXX号</p>
+        </div>
+        <div class="footer-info3">
+          <p>扫一扫<br>关注公众号</p>
+          <img src="/images/ui/ma.png" alt="">
+        </div>
+      </div>
+      <p class="footer-text">Copyright © 2019 科学梦创展有科技限公司 版权所有 All Rrghts Reserved. ICP备：000XX00号</p>
     </footer>
   </div>
 
@@ -263,6 +272,13 @@
       el: '#app',
       data() {
         return {
+          footerLogoList: [{
+            url: '/images/ui/qq.png',
+          }, {
+            url: '/images/ui/weixin.png',
+          }, {
+            url: '/images/ui/weibo.png',
+          }],
           navsList: [{
             url: '/index',
             cn: '首页',
@@ -313,40 +329,14 @@
           // }],
           footerImgList: [],
           swiperPaginationIndex: 1,
-          linkList: [{
-            url: '',
-            name: '北京科技馆'
-          }, {
-            url: '',
-            name: '杭州科技馆'
-          }, {
-            url: '',
-            name: '上海科技馆'
-          }, {
-            url: '',
-            name: '广州科技馆'
-          }, {
-            url: '',
-            name: '武汉科技馆'
-          }, {
-            url: '',
-            name: '成都科技馆'
-          }, {
-            url: '',
-            name: '天津科技馆'
-          }, {
-            url: '',
-            name: '南京科技馆'
-          }, {
-            url: '',
-            name: '深圳科技馆'
-          }, ]
+          linkList: []
         }
       },
       async created() {
         this.handlerVideo()
         this.handlerHallInfo()
         await this.init()
+        this.getLinkList()
       },
       async mounted() {
         await this.init()
@@ -431,6 +421,20 @@
             }).then(res => {
               res.data.code === 0 ? this.videoUrl = res.data.officialSiteHomeVideo.url : ''
               this.dialogVisible = true
+            })
+            .catch(err => {
+              console.error(err)
+            })
+        },
+        getLinkList() {
+          axios({
+              methods: 'GET',
+              url: `${this.baseUrl}/api/officialsitefriendlylink/listAll/`,
+              headers: {
+                'Content-Type': 'application/x-www-form-urlencoded'
+              }
+            }).then(res => {
+              res.data.code === 0 ? this.linkList = res.data.data : ''
             })
             .catch(err => {
               console.error(err)

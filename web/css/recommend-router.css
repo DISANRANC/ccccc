@@ -1,0 +1,84 @@
+.routers .tabbox {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.routers .item {
+    text-align: center;
+    flex: 1;
+    padding: .36rem 0 .35rem;
+    position: relative;
+    cursor: pointer;
+}
+
+.routers .item:after {
+    content: "";
+    width: 11px;
+    height: 11px;
+    position: absolute;
+    bottom: -6px;
+    left: 50%;
+    margin-left: -6px;
+    border: 1px solid #16b3f7;
+    border-radius: 50%;
+    background: #fff;
+    transition: all .5s ease;
+    z-index: 5
+}
+
+.routers .item .cn {
+    font-size: .18rem;
+    color: #666;
+    transition: all .5s ease
+}
+
+.routers .item .en {
+    font-size: .14rem;
+    color: #999;
+    transition: all .5s ease
+}
+
+.routers {
+    border-bottom: 1px solid #16b3f7
+}
+
+.busimg {
+    width: .34rem;
+    position: absolute;
+    bottom: 0;
+    transition: all .5s ease
+}
+
+.routers .item.on .cn {
+    color: #16b3f7
+}
+
+.routers .item.on .en {
+    color: #16b3f7
+}
+
+.routers .item.on:after {
+    transform: scale(0);
+}
+
+@media (max-width: 767px) {
+    .routers .item .cn {
+        font-size: 13px
+    }
+
+    .routers .item .en {
+        font-size: 12px
+    }
+
+    .routers .tabbox {
+        margin: 0 -15px;
+    }
+}
+
+.dialog-img{
+    display: flex;
+}
+.dialog-img img{
+    width: 100%;
+    height: 5.8rem;
+}
