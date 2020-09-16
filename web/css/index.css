@@ -52,11 +52,11 @@
   z-index: 5;
 }
 
-@media(min-width: 1400px) {
+/* @media(min-width: 1400px) {
   .video-box {
     margin-top: .2rem;
   }
-}
+} */
 
 @media(max-width: 767px) {
   .hall-info {
