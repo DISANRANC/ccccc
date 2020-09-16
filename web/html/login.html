@@ -16,7 +16,6 @@
   <link rel="icon" type="image/x-icon" href="/images/logo.ico">
   <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
-  <link rel="stylesheet" type="text/css" href="/css/commons.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
   <link rel="stylesheet" href="/css/ele-index.css">
   <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
@@ -136,32 +135,28 @@
           </el-form-item>
         </el-form>
       </div>
-      <footer>
-        <div class="footer-navs">
-          <a v-for="(item,index) in navsList" :href="item.url" :title="item.cn">{{item.cn}}</a>
+      <footer style="position: fixed;">
+        <div class="left">咨询热线：0517-88888888 </div>
+        <div class="navs">
+          <a href="/index" title="首页">首页</a>
+          <a href="/html/guide" title="参观指南">参观指南</a>
+          <a href="/html/news" title="新闻中心">新闻中心</a>
+          <a href="" title="游客服务">游客服务</a>
+          <a href="" title="展馆活动">展馆活动</a>
+          <a href="/html/login" title="我与科技馆">我与科技馆</a>
         </div>
-        <div class="footer-info">
-          <div class="logo">logo</div>
-          <div class="footer-info1">
-            <div class="footer-info1-img">
-              <img :src="item.url" alt="" v-for="(item,index) in footerLogoList" :key="index">
-            </div>
-            <p>邮编：223355</p>
-          </div>
-          <div class="footer-info2">
-            <p>科技馆服务热线：</p>
-            <p>400-000-XX00</p>
-          </div>
-          <div class="footer-info2">
-            <p>科技馆详细地址：</p>
-            <p>淮安市XX区XXX路XXX号</p>
-          </div>
-          <div class="footer-info3">
-            <p>扫一扫<br>关注公众号</p>
-            <img src="/images/ui/ma.png" alt="">
-          </div>
+        <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000
+          <a href="http://beian.miit.gov.cn" target="_blank"></a>
         </div>
-        <p class="footer-text">Copyright © 2019 科学梦创展有科技限公司 版权所有 All Rrghts Reserved. ICP备：000XX00号</p>
+        <script>
+          var _hmt = _hmt || [];
+          (function () {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+            var s = document.getElementsByTagName("script")[0];
+            s.parentNode.insertBefore(hm, s);
+          })();
+        </script>
       </footer>
     </div>
   </div>
@@ -200,38 +195,6 @@
       el: "#app",
       data() {
         return {
-          footerLogoList: [{
-            url: '/images/ui/qq.png',
-          }, {
-            url: '/images/ui/weixin.png',
-          }, {
-            url: '/images/ui/weibo.png',
-          }],
-          navsList: [{
-            url: '/index',
-            cn: '首页',
-            en: 'Home'
-          }, {
-            url: '/html/guide/guide',
-            cn: '参观指南',
-            en: 'Tour guide'
-          }, {
-            url: '/html/news/news',
-            cn: '新闻公告',
-            en: 'News'
-          }, {
-            url: '/html/tourist/tourist',
-            cn: '游客服务',
-            en: 'Tourist Service'
-          }, {
-            url: '/html/exhibitionHall/exhibitionHall',
-            cn: '展馆活动',
-            en: 'Exhibition hall activities'
-          }, {
-            url: '/html/login',
-            cn: '我与科技馆',
-            en: 'Me and STC'
-          }],
           captcha: '',
           captchaKey: '',
           ruleForm: {
@@ -338,7 +301,7 @@
               }).catch(err => {
                 console.error(err)
               })
-            } else {
+            }else {
               return false
             }
           });

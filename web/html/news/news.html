@@ -18,23 +18,13 @@
   <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
   <link rel="stylesheet" type="text/css" href="/css/common.css">
-  <link rel="stylesheet" type="text/css" href="/css/commons.css">
   <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
-
-  <link rel="stylesheet" type="text/css" href="/css/ele-index.css">
-  <link rel="stylesheet" type="text/css" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
-  
   <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
   <script type="text/javascript" src="/js/layer/layer.js"></script>
   <script type="text/javascript" src="/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="/js/swiper.min.js"></script>
   <script type="text/javascript" src="/js/nprogress.js"></script>
   <script type="text/javascript" src="/js/wow.min.js"></script>
-
-  <script type="text/javascript" src="/js/vue.min.js"></script>
-  <script type="text/javascript" src="/js/axios.min.js"></script>
-  <script type="text/javascript" src="/js/ele-index.js"></script>
-
   <script type="text/javascript" src="/js/common.js"></script>
   <script type="text/javascript">
     $(function () {
@@ -46,172 +36,103 @@
 </head>
 
 <body ontouchstart>
-  <div id="app">
-    <header>
-      <div class="container">
-        <div class="header-top">
-          <div class="weui-cell__bd title">
-            淮安科技馆
-          </div>
-          <div class="nav-icon">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
+  <header>
+    <div class="container">
+      <div class="header-top">
+        <div class="weui-cell__bd title">
+          淮安科技馆
         </div>
-        <div class="navs">
-          <a v-for="(item,index) in navsList" :key="index" :href="item.url" :title="item.cn"
-            :class="['item',index===2?'on':'']">
-            <span class="cn">{{item.cn}}</span>
-            <span class="en">{{item.en}}</span>
-          </a>
+        <div class="nav-icon">
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
       </div>
-    </header>
-    <div class="banner2">
-      <img src="/images/20191210/488f569c342c6757515c7887b46fee42.jpg" alt="新闻中心" class="bgimg">
-      <div class="banner-title">
-        <div class="container2">
-          <div class="en wow fadeup">News</div>
-          <div class="cn wow fadeup" data-wow-delay=".2s">新闻公告</div>
-        </div>
-      </div>
-    </div>
-    <div class="news1">
-      <div class="container2">
-        <a href="" title="" class="item wow fadeup" v-for="item in newsList" :key="item.id">
-          <div class="dates">{{item.createTime}}
-          </div>
-          <div class="content weui-cell__bd weui-cell_primary">
-            <div class="h1">{{item.title}}</div>
-            <div class="h2" v-html="item.content"></div>
-          </div>
-          <img src="/images/right.png" alt="" class="before icon">
-          <img src="/images/righton.png" alt="" class="after icon">
+      <div class="navs">
+        <a href="/index" title="首页" class="item">
+          <div class="cn">首页</div>
+          <div class="en">Home</div>
+        </a>
+        <a href="/html/guide/guide" title="参观指南" class="item">
+          <div class="cn">参观指南 </div>
+          <div class="en">Tour guide</div>
+        </a>
+        <a href="/html/news/news" title="新闻公告" class="item">
+          <div class="cn">新闻公告 </div>
+          <div class="en">News</div>
+        </a>
+        <a href="" title="游客服务" class="item">
+          <div class="cn">游客服务 </div>
+          <div class="en">Tourist Service </div>
+        </a>
+        <a href="/html/exhibitionHall/exhibitionHall" title="展馆活动" class="item">
+          <div class="cn">展馆活动 </div>
+          <div class="en">Exhibition hall activities</div>
+        </a>
+        <a href="/html/login" title="我与科技馆" class="item">
+          <div class="cn">我与科技馆</div>
+          <div class="en">Me and STC</div>
         </a>
       </div>
     </div>
-    <div class="link-box">
+  </header>
+  <div class="banner2">
+    <img src="/images/20191210/488f569c342c6757515c7887b46fee42.jpg" alt="新闻中心" class="bgimg">
+    <div class="banner-title">
       <div class="container2">
-        <h4>友情链接</h4>
-      </div>
-      <div class="temp-heng"></div>
-      <div class="container2">
-        <div class="link-container">
-          <div v-for="(item,index) in linkList" :key="index" class="link-item">
-            <a :href="item.url" target="_blank">{{item.name}}</a>
-            <span v-show="index!==linkList.length-1">|</span>
-          </div>
-        </div>
+        <div class="en wow fadeup">News</div>
+        <div class="cn wow fadeup" data-wow-delay=".2s">新闻公告</div>
       </div>
     </div>
-    <footer>
-      <div class="footer-navs">
-        <a v-for="(item,index) in navsList" :href="item.url" :title="item.cn">{{item.cn}}</a>
-      </div>
-      <div class="footer-info">
-        <div class="logo">logo</div>
-        <div class="footer-info1">
-          <div class="footer-info1-img">
-            <img :src="item.url" alt="" v-for="(item,index) in footerLogoList" :key="index">
-          </div>
-          <p>邮编：223355</p>
-        </div>
-        <div class="footer-info2">
-          <p>科技馆服务热线：</p>
-          <p>400-000-XX00</p>
-        </div>
-        <div class="footer-info2">
-          <p>科技馆详细地址：</p>
-          <p>淮安市XX区XXX路XXX号</p>
-        </div>
-        <div class="footer-info3">
-          <p>扫一扫<br>关注公众号</p>
-          <img src="/images/ui/ma.png" alt="">
-        </div>
-      </div>
-      <p class="footer-text">Copyright © 2019 科学梦创展有科技限公司 版权所有 All Rrghts Reserved. ICP备：000XX00号</p>
-    </footer>
   </div>
-  <script>
-    var app = new Vue({
-      el: '#app',
-      data() {
-        return {
-          footerLogoList: [{
-            url: '/images/ui/qq.png',
-          }, {
-            url: '/images/ui/weixin.png',
-          }, {
-            url: '/images/ui/weibo.png',
-          }],
-          newsList:[],
-          navsList: [{
-            url: '/index',
-            cn: '首页',
-            en: 'Home'
-          }, {
-            url: '/html/guide/guide',
-            cn: '参观指南',
-            en: 'Tour guide'
-          }, {
-            url: '/html/news/news',
-            cn: '新闻公告',
-            en: 'News'
-          }, {
-            url: '/html/tourist/tourist',
-            cn: '游客服务',
-            en: 'Tourist Service'
-          }, {
-            url: '/html/exhibitionHall/exhibitionHall',
-            cn: '展馆活动',
-            en: 'Exhibition hall activities'
-          }, {
-            url: '/html/login',
-            cn: '我与科技馆',
-            en: 'Me and STC'
-          }],
-          linkList: [],
-          baseUrl: 'http://192.168.100.92',
-        }
-      },
-      created() {
-        this.getLinkList()
-        this.getNewsList()
-      },
-      methods: {
-        getLinkList() {
-          axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/api/officialsitefriendlylink/listAll/`,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              res.data.code === 0 ? this.linkList = res.data.data : layer.msg(res.data.msg)
-            })
-            .catch(err => {
-              console.error(err)
-            })
-        },
-        getNewsList() {
-          axios({
-              methods: 'GET',
-              url: `${this.baseUrl}/news/newsnotice/list`,
-              headers: {
-                'Content-Type': 'application/x-www-form-urlencoded'
-              }
-            }).then(res => {
-              res.data.code === 0 ? this.newsList = res.data.list : ''
-              console.log(this.newsList)
-            })
-            .catch(err => {
-              console.error(err)
-            })
-        },
-      },
+  <div class="news1">
+    <div class="container2">
+      <a href="" title="" class="item wow fadeup">
+        <div class="time">
+          <div class="date">07.24</div>
+          <div class="year">2020</div>
+        </div>
+        <div class="content weui-cell__bd weui-cell_primary">
+          <div class="h1">淮安科技馆带领外来务工子女走进&ldquo;声音的世界&rdquo; </div>
+          <div class="h2">7月17日，淮安科技馆携手“同心四点钟学堂”夏令营，带领外来务工子女们走进“声音的世界”，开展趣味科学课堂。</div>
+        </div>
+        <img src="/images/right.png" alt="" class="before icon">
+        <img src="/images/righton.png" alt="" class="after icon">
+      </a>
+    </div>
+    <div class="page wow fadeup">
+       <a href='javascript:;' class='prev btn'></a>
+       <a href="javascript:;" class="pagenum on">1</a>
+       <a href="/g/news?p=2" class="pagenum">2</a>
+       <a href='/g/news?p=2' class='page-btn next'><img src="/images/page-next1.png" alt=""></a>
+    </div>
+  </div>
+  <script type="text/javascript">
+    $(function () {
+      $("header .navs .item").eq(2).addClass("on")
     })
   </script>
+  <footer>
+    <div class="left">咨询热线：0517-88888888 </div>
+    <div class="navs">
+      <a href="/index" title="首页">首页</a>
+      <a href="/html/guide" title="参观指南">参观指南</a>
+      <a href="/html/news" title="新闻中心">新闻中心</a>
+      <a href="" title="游客服务">游客服务</a>
+      <a href="" title="展馆活动">展馆活动</a>
+      <a href="" title="我与科技馆">我与科技馆</a>
+    </div>
+    <div class="right">淮安科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备000000000000号网安备案号000000000000</div>
+    <script>
+      var _hmt = _hmt || [];
+      (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?xxxxxxxxxx";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+      })();
+    </script>
+  </footer>
 </body>
 
 </html>

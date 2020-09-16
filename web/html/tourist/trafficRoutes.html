@@ -28,18 +28,8 @@
     <script type="text/javascript" src="/js/nprogress.js"></script>
     <script type="text/javascript" src="/js/wow.min.js"></script>
     <script type="text/javascript" src="/js/common.js"></script>	
-    <script type="text/javascript" src="//api.map.baidu.com/api?v=2.0&ak=您的密钥"></script>
-    <script type="text/javascript">
-        // 百度地图API功能
-        var map = new BMap.Map("allmap"); // 创建Map实例
-        map.centerAndZoom(new BMap.Point(116.4035,39.915),8); //初始化时，即可设置中心点和地图缩放级别。
-        map.enableScrollWheelZoom(true);
-        map.disableDragging(); //禁止拖拽
-        setTimeout(function(){
-            map.enableDragging();   //两秒后开启拖拽
-            //map.enableInertialDragging();   //两秒后开启惯性拖拽
-        }, 2000);
-    </script>
+    <script type="text/javascript" src="https://api.map.baidu.com/api?v=2.0&ak=lvd2G7njEmnwIUnlxsxWLrfyLHs7xakb"></script>
+
     <script type="text/javascript">
         $(function () {
             new WOW().init();
@@ -182,6 +172,7 @@
                 <div class="mapbox">
                     <div id="map1" style="overflow: hidden; position: relative; z-index: 0; background-color: rgb(243, 241, 236); color: rgb(0, 0, 0); text-align: left;"></div>
                 </div>
+                
                 <div  style="position: absolute; top: 0.5rem; right: 0.6rem; display: flex; background-color: #ffffff; width: 4.20rem; height: 3.70rem; ">
                     <div class="timebox" style="flex: 1;">
                         <div class="title">
@@ -276,7 +267,7 @@
                         </div>
                         <div class="point"></div>
                         <div class="h1">
-                            文化艺术中心站（仙岳路）					
+                            文化艺术中心站（仙岳路）		
                         </div>
                         <p>24/25/101/116/126/780/845/846/859/954</p>
                     </div>
@@ -312,6 +303,7 @@
             $(window).resize(function(){
                 allmap()
             })
+
             function allmap(){
                 var lng="24.500257";
                 var lat="118.119638";
@@ -320,7 +312,7 @@
                     var point = new BMap.Point(lat,lng);
                     map.centerAndZoom(point,16);
                     map.disableDragging();
-                    var myIcon1 = new BMap.Icon("/public/static/guide/images/mapicon.png", new BMap.Size(80,75));
+                    var myIcon1 = new BMap.Icon("/images/new/坐标 (1).png", new BMap.Size(80,75));
                     var marker1 = new BMap.Marker(point,{icon: myIcon1,offset: new BMap.Size(20,0)});
                     map.addOverlay(marker1);
                 }else{
@@ -328,7 +320,7 @@
                     var point = new BMap.Point(lat,lng);
                     map.centerAndZoom(point,16);
                     map.disableDragging();
-                    var myIcon1 = new BMap.Icon("/public/static/guide/images/mapicon.png", new BMap.Size(48,45));
+                    var myIcon1 = new BMap.Icon("/images/new/坐标 (1).png", new BMap.Size(48,45));
                     var marker1 = new BMap.Marker(point,{icon: myIcon1,offset: new BMap.Size(12,0)});
                     map.addOverlay(marker1);
                 }
@@ -353,12 +345,12 @@
             咨询热线：0592-5148555
         </div>
         <div class="navs">
-            <a href="/g" title="首页">首页</a>
-            <a href="/g/about" title="参观指南">参观指南</a>
-            <a href="/g/news" title="新闻中心">新闻中心</a>
-            <a href="/g/buy" title="游客服务">游客服务</a>
-            <a href="/g/cases" title="展馆活动">展馆活动</a>
-            <a href="/g/login" title="登录/注册">登录/注册</a>
+            <a href="/index.html" title="首页">首页</a>
+            <a href="/html/guide/guide.html" title="参观指南">参观指南</a>
+            <a href="/html/news/news.html" title="新闻中心">新闻中心</a>
+            <a href="/html/tourist/tourist.html" title="游客服务">游客服务</a>
+            <a href="/html/exhibitionHall/exhibitionHall.html" title="展馆活动">展馆活动</a>
+            <a href="/html/login.html" title="登录/注册">登录/注册</a>
         </div>
         <div class="right">
             COPYRIGHT厦门科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备09055120号网安备案号35020302034028
@@ -374,6 +366,7 @@
             })();
         </script>
     </footer>
+
 </body>
 
 </html>

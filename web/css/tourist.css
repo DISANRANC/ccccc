@@ -1,6 +1,6 @@
 
 .exhibitionHall {
-    padding-bottom: 0.5rem;
+    padding-bottom: .5rem;
 }
 /* tourenter start */
     .tourenter .item{
@@ -9,26 +9,26 @@
         transition:all .3s
     }
     .tourenter .item .content{
-        padding: .15rem .2rem;a
+        padding: .15rem .2rem;
     }
     .tourenter .row{margin:0 -.2rem;}
     .tourenter .col-sm-4{
-        padding:0.3rem .2rem;
+        padding:.3rem .2rem;
     }
     .tourenter .row-btn{
-        padding: 0.2rem;
+        padding: .2rem;
     }
     .tourenter .row-btn .row-ol{
         float: right;
     }
     .tourenter .row-btn input:not(:first-child){
-        margin-left: 0.1rem;
+        margin-left: .1rem;
     }
     .tourenter .row-btn input.btn {
         display: inline-block;
-        padding: 0.06rem 0.12rem;
+        padding: .06rem .12rem;
         margin-bottom: 0;
-        font-size: 0.14rem;
+        font-size: .14rem;
         font-weight: 400;
         line-height: 1.42857143;
         text-align: center;
@@ -50,7 +50,7 @@
         background-color: #ffffff;
         font-family: 'Microsoft Yahei';
         border: 1px solid #d2d2d2;
-        letter-spacing: 0.02rem;
+        letter-spacing: .02rem;
     }
     .breadcrumb {
         background-color: #ffffff;
@@ -101,10 +101,10 @@
 /* change start */
     .news1-top .title span {
         background-color: #2184FF; 
-        border-radius: 0.06rem; 
+        border-radius: .06rem; 
         color: #ffffff; 
-        font-size: 0.12rem; 
-        padding: 0.05rem 0.26rem;
+        font-size: .12rem; 
+        padding: .05rem .26rem;
     }
     .news1-top .item .time {
         font-size: .18rem;
@@ -112,9 +112,9 @@
     header .logo {
         width: 1.80rem;
         font-family: 'Microsoft Yahei';
-        font-weight: bold; 
+        font-weight: 600; 
         color: #ffffff;
-        font-size: 0.2rem;
+        font-size: .2rem;
     }
     .news1-top .item .time {
         font-size: .16rem;
@@ -136,7 +136,7 @@
     .subnav .item {
         line-height: .73rem; 
         font-family: 'Microsoft Yahei';
-        font-weight: bold; 
+        font-weight: 600; 
         color: #555555;
     }
     .subnav .item:not(:last-child):before {
@@ -166,18 +166,18 @@
         background-color: #e5e5e5;
         font-family: 'Microsoft Yahei';
         border: none;
-        letter-spacing: 0.02rem;
+        letter-spacing: .02rem;
     }
     .ticket-box .title {
         font-size: .24rem;
         color: #555555;
         border-bottom: 1px solid #e5e5e5;
         text-align: center;
-        font-weight: bold;
+        font-weight: 600;
     }
     .ticket-box .item {
         color: #555555;
-        font-size: 0.16rem;
+        font-size: .16rem;
         font-family: 'Microsoft Yahei';
     }
 /* change end */
@@ -201,7 +201,7 @@
         float: left;
     }
     .tourenter .row-btn .row-ol ol{
-        padding-left: 0.05rem;
+        padding-left: .05rem;
     }
 }
 

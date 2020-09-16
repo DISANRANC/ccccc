@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, initial-scale=1.0, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <title>游客服务</title>
+    <meta name="keywords" content="淮安科技馆，海洋摇篮，探索发现，创造文明，和谐发展，儿童未来">
+    <meta name="description"
+    content="淮安科技馆位于淮安市文化艺术中心，于2007年3月16日正式对外开放，建筑面积21000平方米，常设展厅面积12000平方米，设有&ldquo;海洋摇篮&rdquo;、&ldquo;探索发现&rdquo;、&ldquo;创造文明&rdquo;、&ldquo;和谐发展&rdquo;、&ldquo;儿童未来&rdquo;5大主题展馆，以及1个健康主题乐园、1个光学展区、1个&ldquo;海峡两岸海洋科技展示馆&rdquo;、3个特效影院，馆藏设施近400套件。">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/logo.ico">
+    <link rel="icon" type="image/x-icon" href="/image/logo.ico">
+    <link rel="stylesheet" type="text/css" href="/css/animate.css">
+    <link rel="stylesheet" type="text/css" href="/css/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/swiper.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/common.css">
+    <link rel="stylesheet" type="text/css" href="/css/zuo-style.css">
+    <link rel="stylesheet" type="text/css" href="/css/questionnaireDetails.css">  
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <script src="/js/vue.min.js"></script>
+    <script src="/js/ele-index.js"></script>
+    <script src="/js/axios.min.js"></script>
+    <script src="/js/qs.min.js"></script>
+    <script type="text/javascript" src="/js/jquery-3.0.0.min.js"></script>
+    <script type="text/javascript" src="/js/layer/layer.js"></script>
+    <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/js/swiper.min.js"></script>
+    <script type="text/javascript" src="/js/nprogress.js"></script>
+    <script type="text/javascript" src="/js/wow.min.js"></script>
+    <script type="text/javascript" src="/js/common.js"></script>
+    <script src="https://cdn.staticfile.org/vue-resource/1.5.1/vue-resource.min.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            new WOW().init();
+            NProgress.start();
+            NProgress.done();
+        })
+    </script>
+</head>
+<body ontouchstart>
+    <header>
+        <div class="container">
+            <div class="header-top">
+                <div class="weui-cell__bd title">
+                    <a href="/index.html" title="" class="logo">LOGO XXX科技馆</a>
+                </div>
+                <div class="nav-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="banner2">
+        <img src="/images/new/tourist/touristbg.png" alt="游客服务" class="bgimg">
+        <div class="banner-title">
+            <div class="container2 exhibitionHall">
+                <div class="cn wow fadeup animated" data-wow-delay=".2s" style="visibility: visible;-webkit-animation-delay: .2s; -moz-animation-delay: .2s; animation-delay: .2s;">
+                    <!-- 参观指南 -->
+                    <img src="/images/new/exhibitionHall.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="subnav">
+        <div class="container2 container3">
+            <a>
+                <img src="/images/new/questionnaire/details.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <div class="question">
+        <div class="container2 question-main">
+            <div class="main">
+                <div id="app">
+                    <div class="details">
+                        <div class="question-main-top" v-for="(question,index) in questionnaireDetails.questionList" :key="question.id">
+                            <div class="question-top">
+                                <div class="sort">
+                                    {{question.sort}}
+                                </div>
+                            </div>
+                            <div class="content">
+                                <h1>{{question.content}}</h1>
+
+                                <!-- 问答题 -->
+                                <div class="item" v-if = 'question.type === 2'>
+                                    <el-input
+                                        type="textarea"
+                                        autosize
+                                        placeholder="请输入内容"
+                                        v-model="choose.answerText"
+                                        v-for="choose in question.answerList"
+                                    >
+                                    </el-input>
+                                    <!-- <div v-for="choose in question.answerList" :key = "choose.id">
+                                        <textarea  v-model = 'choose.answerText'></textarea>
+                                        <span>{{ choose.answerText }}</span>
+                                    </div> -->
+                                </div>
+
+                                <!-- 单选 -->
+                                <div class="item" v-else-if = 'question.type === 0 '>
+                                    <!-- <el-radio-group  v-model="radio">
+                                        <el-radio 
+                                            v-for="(choose,i) in question.answerList" 
+                                            :key="choose.id" 
+                                            :label="choose.id" 
+                                            @change="handlerRadio(index,i)"
+                                        >
+                                            {{choose.content}}
+                                        </el-radio>
+                                    </el-radio-group> -->
+                                    <el-radio-group v-model="radio[question.id]" class="w_radio">
+                                        <el-radio :label="i.id" v-for="(i,d) in question.answerList" :key="d" @change="handlerRadio(index,d)">{{i.content}}
+                                        </el-radio>
+                                    </el-radio-group>
+                                </div>
+                                
+                                <!-- 多选题 -->
+                                <div class="item" v-else-if = "question.type === 1" >
+                                    <!-- <el-checkbox-group v-model="checkList[question.id]">
+                                        <el-checkbox 
+                                            :label="c.id"
+                                            v-for="(c,h) in question.answerList" 
+                                            :key="h"
+                                        >
+                                            {{c.content}}
+                                        </el-checkbox>
+                                    </el-checkbox-group>
+                                    <el-checkbox-group v-model="checkList">
+                                        <el-checkbox 
+                                            v-for="choose in question.answerList" 
+                                            :key="choose.id" 
+                                            :label="choose.id"
+                                            >
+                                            {{choose.content}}
+                                        </el-checkbox>
+                                    </el-checkbox-group> -->
+                                    <div v-for = "choose in question.answerList" :key = "choose.id">
+                                        <input type="checkbox"   true-value="1" false-value="0" v-model = "choose.selected"/>
+                                        <span>{{choose.content}}</span>
+                                        <span>{{ choose.selected }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div v-for="(item,index) in questions" :key="index">
+                        <div class="tj_team fen_team" v-if="item.type === 0">  <!--单选问题-->
+                            {{item.sort}}.&nbsp;&nbsp;{{item.content}}？(单选) <br>
+                            <el-radio-group v-model="checkList[item.id]" class="w_radio">
+                                <el-radio :label="i.id" v-for="(i,d) in item.answerList" :key="d">{{i.sort}}{{i.content}}
+                                </el-radio>
+                            </el-radio-group>
+                        </div>
+                    </div>
+                    <div class="btnDiv">
+                        <button type="button" @click="submit" class="btn btn-info">（一般信息）Info</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function(){
+            $("header .navs .item").eq(3).addClass("on");
+            var swiper = new Swiper('.news1-top .swiper-container', {
+                speed:800,
+                autoplay: {
+                    delay: 5000,
+                },
+                slidesPerView: 2,
+                breakpoints: {
+                    767: {
+                        slidesPerView: 1
+                    },
+                }
+            });
+        })
+    </script>
+    <footer>
+        <div class="left">
+            咨询热线：0592-5148555
+        </div>
+        <div class="navs">
+            <a href="/g" title="首页">首页</a>
+            <a href="/g/about" title="参观指南">参观指南</a>
+            <a href="/g/news" title="新闻中心">新闻中心</a>
+            <a href="/g/buy" title="游客服务">游客服务</a>
+            <a href="/g/cases" title="展馆活动">展馆活动</a>   
+            <a href="/g/login" title="登录/注册">登录/注册</a>
+        </div>
+        <div class="right">
+            COPYRIGHT厦门科技馆管理有限公司 ALL RIGHTS RESERVED闽ICP备09055120号网安备案号35020302034028<a href="http://beian.miit.gov.cn" target="_blank"></a>
+        </div>
+        <script>
+            var _hmt = _hmt || [];
+            (function() {
+                var hm = document.createElement("script");
+                hm.src = "https://hm.baidu.com/hm.js?317b4274e7a05ddafcfecd4d48ac044e";
+                var s = document.getElementsByTagName("script")[0];
+                s.parentNode.insertBefore(hm, s);
+            })();
+        </script>
+    </footer>
+    
+    <script>
+        const vm = new Vue({
+            el:'#app',
+            data(){
+                return{
+                    radio: [],
+                    textarea1:[],
+                    checkList:[],
+                    id:'id',
+                    questionnaireDetails:[
+                    ], 
+                    questions:[],
+                    pick: '',
+                    a:'',
+                    b:''
+                };
+            },
+            created(){
+                this.id = this.get_query_string(this.id);
+                this.getdetails();
+            },
+            methods: {
+                handlerRadio(index,i){
+                    console.log(index)
+                    for ( x=0 ; x<this.questionnaireDetails.questionList[index].answerList.length;x++){
+                        this.questionnaireDetails.questionList[index].answerList[x].selected = null
+                    }
+                    this.questionnaireDetails.questionList[index].answerList[i].selected = 1;
+                    console.log()
+                },
+                get_query_string: function GetQueryString(name) {
+                    var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)", "i");
+                    var r = window.location.search.substr(1).match(reg); //获取url中"?"符后的字符串并正则匹配
+                    var context = "";
+                    if (r != null)
+                    context = r[2];
+                    reg = null;
+                    r = null;
+                    return context == null || context == "" || context == "undefined" ? "" : context;
+                },
+                getdetails:function(){
+                    console.log(this.id);
+                    this.$http.get("http://192.168.100.92/api/examine/examinepaper/getPaper",
+                    {
+                        'params':{
+                            paperId:this.id
+                        }
+                    }).then(res => {
+                        console.log(res);
+                        if (res.data.code === 0){
+                            this.questionnaireDetails = res.data.paper
+                            this.questions = res.data.paper.questions
+                        }
+                        console.log(this.questionnaireDetails.questionList)
+                    })
+                },
+                submit(){
+                    console.log(this.questionnaireDetails);
+                    console.log(this.checkList);
+                    alert(this.questionnaireDetails)
+                    this.$http.post("http://192.168.100.92/api/examine/examinepaper/submitPaper",
+                    {
+                        paper:this.questionnaireDetails
+                    }).then(res => {
+                        console.log(res);
+                        // if (res.data.code === 0){
+                        //     this.questionnaireDetails = res.data.paper.questionList
+                        //     this.questions = res.data.paper.questions
+                        // }
+                        // console.log(this.questionnaireDetails)
+                    })
+                }
+            }
+        })
+        vm.questionnaireDetails.forEach(question => {
+            const answer = question.type === 0 ? [] : '';
+            console.log(question)
+            // question.answer = answer
+            // answer为新添加的属性
+            vm.$set(question,'answer',answer);
+
+            // if(question.type === multiple){
+            //     answer = [];
+            // }else{
+            //     answer = '';
+            // }
+        })
+    </script>
+</body>
+
+</html>

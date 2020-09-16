@@ -170,7 +170,7 @@
                 </a>
             </div>
             <div id="app">
-                <a v-for="(item , index) in questionnaire" :key="index" href="https://www.wenjuan.com/s/m2EVbyB/" target="_blank" class="item1 wow fadeup animated" style="visibility: visible;">
+                <a v-for="(item , index) in questionnaire" :key="index" :href="'questionnaireDetails?id='+item.id" target="_blank" class="item1 wow fadeup animated" style="visibility: visible;">
                     <div class="numbox">
                         0{{index+1}}
                     </div>
